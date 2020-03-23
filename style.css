@@ -1,0 +1,82 @@
+body {
+	background-color:#000;
+	}
+.static {
+	background-image:url(images/WakakaLogoCMYK.png);
+	background-repeat:no-repeat;
+	height: 512px;
+	width: 512px;
+	margin:0px auto;
+	}
+.base {
+	background-image:url(images/WakakaLogoCMYK-base.png);
+	background-repeat:no-repeat;
+	height: 512px;
+	width: 512px;
+	position:relative;
+	margin:0px auto;
+	}
+.wheel {
+	background-image:url(images/WakakaLogoCMYK-wheel.png);	
+	height: 400px;
+	width: 400px;
+	position:absolute;
+	top:24px;
+	left:56px;
+	z-index:1;
+	-webkit-animation: wheel 7s infinite linear;
+	-moz-animation: wheel 7s infinite linear;
+	-o-animation: wheel 7s infinite linear;
+	animation: wheel 7s infinite linear;
+}
+.top {
+	background-image:url(images/WakakaLogoCMYK-top.png);	
+	height: 400px;
+	width: 400px;
+	position:absolute;
+	top:24px;
+	left:56px;
+	z-index:2;
+}
+@-webkit-keyframes wheel {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes wheel {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-o-keyframes wheel {
+	from {
+		-o-transform: rotate(0deg);
+	}
+	to {
+		-o-transform: rotate(360deg);
+	}
+}
+@keyframes wheel {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+#Temp {
+	color:#fff;
+	font-size:72px;
+	text-align:center;
+}
+#copyright {
+	color:#fff;
+	font-size:36px;
+	text-align:center;
+}

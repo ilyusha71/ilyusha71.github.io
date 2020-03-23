@@ -1,0 +1,214 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>《遊戲模式分析》<<《Star Conflict 中文資訊網》</title>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="fishbecat.resetCSS.1.2.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head><noscript><body></noscript>
+<body>
+<div class="wrap">
+<div class="header1"></div>
+<div class="pic">
+<img border="0" src="images/side03.png">
+</div>
+</div>
+<div class="wrap2">
+	<div class="main">
+		<div class="data">
+<h1>遊戲模式分析</h1>
+<h2>PVP 衝突戰遊戲模式</h2>
+<p align="center"><img border="0" src="images/pvemode.png" width="544" height="129" usemap="#Map2"></p>
+<p align="center">請選擇遊戲模式</p>
+<map name="Map2">
+	<area shape="rect" coords="26,27,102,120" href="mode.htm#01">
+	<area shape="rect" coords="110,27,186,120" href="mode.htm#02">
+	<area shape="rect" coords="197,27,270,124" href="mode.htm#03">
+	<area shape="rect" coords="277,27,358,120" href="mode.htm#04">
+	<area shape="rect" coords="364,27,436,120" href="mode.htm#05">
+	<area shape="rect" coords="444,27,520,126" href="mode.htm#06">
+</map>
+<h1><a name="01"></a></h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h3>隊伍戰鬥（Team Battle）</h3>
+<p><img border="0" src="images/06.jpg" width="660" height="412"></p>
+<p><b><font color="#FFCC00">任務目標：</font></b></p>
+<ul>
+	<li>削減敵方增援點數</li>
+</ul>
+<p><b><font color="#FFCC00">遊戲規則：</font></b></p><ul>
+        <li>各隊都有一定量的增援點數，依據隊伍規模決定</li>
+        <li>各隊會在戰場上不同的地方重生，但同隊依然會在同一方向（你需要在重生之後盡快會合）<br />
+        </li>
+        <li>摧毀敵隊船艦會減少增援點數</li>
+        <li>船艦被毀以後，你可以再使用一次</li>
+      </ul>
+<p><b><font color="#FFCC00">勝利條件：</font></b></p><ul>
+        <li>摧毀所有敵方船艦</li>
+        <li>耗盡敵方增援點數</li>
+        <li>當遊戲時間終了，剩下較多增援點數的隊伍獲勝</li>
+      </ul>
+<h1><a name="02"></a></h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h3>燈塔佔領（Domination）</h3>
+<p><img border="0" src="images/02.jpg" width="660" height="412"></p>
+<p><b><font color="#FFCC00">任務目標：</font></b></p>
+<ul>
+	<li>佔領敵方所有燈塔</li>
+</ul>
+<p><b><font color="#FFCC00">遊戲規則：</font></b></p><ul>
+        <li>每隊有3個燈塔</li>
+        <li>每個燈塔是由4架無人衛星保護</li>
+        <li>燈塔在4架無人衛星都被摧毀後才能被佔領</li>
+        <li>只要燈塔有多於0的點數，它可以回復到100。如果燈塔的點數歸0，則不再能回復<br />
+        </li>
+        <li>船艦有重生限制，一旦船艦被摧毀，這場戰鬥你就不能再使用它</li>
+      </ul>
+<p><b><font color="#FFCC00">勝利條件：</font></b></p><ul>
+        <li>佔領所有敵方燈塔或摧毀所有敵方船艦</li>
+        <li>當時間耗盡，有較多燈塔的一方獲勝</li>
+        <li>如果雙方最後有同樣數量的燈塔，則有較多擊殺數的一方獲勝</li>
+      </ul>
+<h1><a name="03"></a></h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h3>戰鬥偵查（Combat Recon）</h3>
+<p><img border="0" src="images/03.jpg" width="660" height="412"></p><b><font color="#FFCC00">任務目標：</font></b><ul>
+	<li>摧毀敵方的旗艦與後方的玩家</li>
+</ul>
+<p><b><font color="#FFCC00">遊戲規則：</font></b></p><ul>
+        <li>旗艦會從各隊中隨機抽選</li>
+        <li>旗艦在戰鬥中攻擊會暫時提升</li>
+        <li>雙方的旗艦都能看見所有船艦。包括在障礙物後、隱形和雷達範圍外的船，只要敵隊的旗艦被摧毀，則我方所有人都能看得見<br />
+        </li>
+        <li>無限次重生直到旗艦陣亡。當我方旗艦被毀，你只能使用當前的船直到它被摧毀，之後你無法在戰鬥中重生</li>
+      </ul>
+<p><b><font color="#FFCC00">勝利條件：</font></b></p>
+<ul>
+        <li>先摧毀敵方旗艦和所有玩家的隊伍獲勝</li>
+        <li>當遊戲時間終了，將敵隊旗艦摧毀的隊伍獲勝。如果雙方旗艦都陣亡或都存活，擊殺數較高的隊伍獲勝</li>
+      </ul>
+<h1><a name="04"></a></h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h3>燈塔獵殺（Beacon Hunt）</h3>
+<p><img border="0" src="images/04.jpg" width="660" height="412"></p>
+<p><b><font color="#FFCC00">任務目標：</font></b></p><ul>
+        <li>削減敵方所有的控制點數</li>
+      </ul>
+<p><b><font color="#FFCC00">遊戲規則：</font></b></p><ul>
+        <li>地圖上會有三座中立燈塔在不同的位置</li>
+        <li>同時間只會有一座燈塔在活動</li>
+        <li>兩隊開始時各有175點的控制點數</li>
+        <li>你必須佔領中立燈塔或敵方燈塔 </li>
+        <li>燈塔的活動會有約80秒的間隔</li>
+        <li>每個已占領燈塔會削減敵隊的控制點數</li>
+        <li>你可以修理我方燈塔</li>
+        <li>摧毀敵方船艦可加快敵隊控制點數減少</li>
+        <li>你可以重新使用你被摧毀的船艦</li>
+        <li>當我方正在控制活動中的燈塔時，你無法立即重生 </li>
+      </ul>
+<p><b><font color="#FFCC00">勝利條件：</font></b></p><ul>
+        <li>耗盡敵方控制點數為0 </li>
+        <li>當遊戲時間終了，剩下較多控制點數的隊伍獲勝</li>
+      </ul>
+<h1><a name="05"></a></h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h3>燈塔爆破（Detonation）</h3>
+<p><img border="0" src="images/05.jpg" width="660" height="412"></p>
+<p><b><font color="#FFCC00">任務目標：</font></b></p>
+<ul>
+	<li>摧毀所有敵方的基地 </li>
+</ul>
+<p><b><font color="#FFCC00">遊戲規則：</font></b></p><ul>
+        <li>雙方隊伍各有3座基地</li>
+        <li>開始時在戰場中央會有一個共用的電磁炸彈。最多有2個</li>
+        <li>你需要使用炸彈摧毀敵方基地 </li>
+        <li>向基地射擊無法造成傷害</li>
+        <li>為了撿起炸彈，你需要飛得靠近至300米之內</li>
+        <li>為了將炸彈放到敵方基地你需要帶著炸彈飛近基地</li>
+        <li>帶著炸彈時，你的飛行速度和後燃器的速度會減少 </li>
+        <li>暫時使用無敵或隱形模組或把船傳送到他地將會使炸彈掉落</li>
+        <li>無限次重生</li>
+      </ul>
+<p><b><font color="#FFCC00">勝利條件：</font></b></p>
+<ul>
+        <li>摧毀所有敵方的基地 </li>
+        <li>當遊戲時間終了，破壞較多基地的一方獲勝。如果雙方最後有同樣數量的基地，則有較多擊殺數的一方獲勝</li>
+      </ul>
+<h1><a name="06"></a></h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h3>燈塔控制（Capture the beacons）</h3>
+<p><img border="0" src="images/01.jpg" width="660" height="412"></p>
+<p><b><font color="#FFCC00">任務目標：</font></b></p>
+<ul>
+	<li>削減敵方所有控制點數</li>
+</ul>
+<p><b><font color="#FFCC00">遊戲規則：</font></b></p><ul>
+        <li>3個中立燈塔位於雙方重生點之間<sup id="cite_ref-3" class="reference"></sup> </li>
+        <li>兩隊開始時各有750點控制點數</li>
+        <li>為了削減敵隊的點數，你需要佔領中立燈塔或敵隊燈塔並守住。摧毀敵機也能減少敵隊點數。<br />
+        </li>
+        <li>如果你的隊伍守住燈塔一段時間後，將會有無人衛星出現，每個燈塔最多有4架</li>
+        <li>燈塔只有在4架無人衛星都被摧毀之後才能被佔領</li>
+        <li>隊伍守住的燈塔越多，敵隊的控制點數削減得越快</li>
+        <li>每摧毀一架敵機，敵隊將會減少10點</li>
+        <li>無限次重生 </li>
+      </ul>
+<p><b><font color="#FFCC00">勝利條件：</font></b></p>
+<ul>
+        <li>耗盡敵隊所有控制點數</li>
+        <li>當遊戲時間終了，控制點數較高的隊伍獲勝</li>
+</ul>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+		</div>
+	</div>
+</div>
+<!--navigation bar-->
+<div class="footerbar">
+<div class="navigation">
+<ul id="MenuBar1" class="MenuBarHorizontal">
+	<li><a href="index.htm">　</a></li><!--1-->
+	<li><!--2-->
+		<a href="game.htm">　</a>
+		<ul>
+			<li><a href="faction.htm">　</a></li>
+			<li><a href="ship.htm">　</a></li>
+			<li><a href="sector.htm">　</a></li>
+			<li><a href="mode.htm">　</a></li>
+	</ul>
+	</li>
+	<li><!--3-->
+		<a href="media.htm">　</a>
+	<ul>
+		<li><a href="artworks">　</a></li>
+		<li><a href="video">　</a></li>
+	</ul></li>
+	<li><a href="team.htm">　</a></li><!--4-->
+	<li><a href="contact.htm">　</a>
+	<ul>
+		<li><a href="link.htm">　</a></li>
+	</ul>
+	</li><!--5-->
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+  </script>
+</body>
+
+</html>
