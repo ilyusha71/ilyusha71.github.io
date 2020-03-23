@@ -11,8 +11,8 @@
     <description>Recent content in shortcode on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>zzossig@gmail.com (zzossig)</managingEditor>
-    <webMaster>zzossig@gmail.com (zzossig)</webMaster>
+    <managingEditor>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 25 Jan 2020 06:40:51 +0900</lastBuildDate>
     
@@ -26,13 +26,13 @@
         <title>Shortcodes</title>
         <link>http://ilyusha71.github.io/en/posts/shortcodes/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
-        <author>zzossig@gmail.com (zzossig)</author>
+        <author>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</author>
         <atom:modified>Sat, 25 Jan 2020 06:40:51 +0900</atom:modified>
         <guid>http://ilyusha71.github.io/en/posts/shortcodes/</guid>
         <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode Code tabs Make it easy to switch between different code
 javajavascript1  System.out.println(&amp;#39;Hello World!&amp;#39;);  1  console.log(&amp;#39;Hello World!&amp;#39;);  &#39;use strict&#39;;var containerId = JSON.parse(&#34;\&#34;c3a7395d19726e47\&#34;&#34;);var containerElem = document.getElementById(containerId);var codetabLinks = null;var codetabContents = null;var ids = [];if (containerElem) {codetabLinks = containerElem.</description>
         
-        <dc:creator>zzossig</dc:creator>
+        <dc:creator>iLYuSha AKA Wakaka</dc:creator>
         <media:content url="http://ilyusha71.github.io/images/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
