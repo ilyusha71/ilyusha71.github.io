@@ -1,0 +1,146 @@
+/*-網站預設格式 utf-8 -*/
+body {background: #000 url(images/bg.jpg) center top fixed repeat;padding:0px}
+h1 {color: #FC0; font-weight:normal; font-size: 1.99em; font-family: Palatino Linotype, 微軟正黑體; line-height: 1.5em; margin:0.5em 0;}
+h2 {color: #FFC; font-weight:normal; font-size: 1.55em; font-family: Palatino Linotype, 微軟正黑體; line-height: 1.5em; margin:0.5em 0;}
+h3 {color: #F22; font-weight:normal; font-size: 1.35em; font-family: Palatino Linotype, 微軟正黑體; line-height: 1.5em; margin:0.5em 0;}
+p {margin: 1em 0; line-height: 1.25em;}
+a, a:link, a:visited, a:hover, a:focus {color: #ff0; text-decoration: none;}
+a:hover {	
+	text-shadow: 0 0 30px #ff0,
+                 0 0 40px #ff0;
+}
+img {border: none;}
+li, ul {margin:0; padding:0;}
+ol, ul {list-style:none;}
+/*-網站首頁與公用元素樣式-*/
+.header {width:1098px;height:700px;background:url(images/indexbg.png);margin:auto;border:outset 2px #a86500;
+	     -webkit-border-top-left-radius:0;
+         -webkit-border-top-right-radius:0;
+         -webkit-border-bottom-left-radius:11px;
+         -webkit-border-bottom-right-radius:11px;
+
+         -khtml-border-radius-topleft:0;
+         -khtml-border-radius-topright:0;
+         -khtml-border-radius-bottomleft:11px;
+         -khtml-border-radius-bottomright:11px;
+
+         -moz-border-radius-topleft:0;
+         -moz-border-radius-topright:0;
+         -moz-border-radius-bottomleft:11px;
+         -moz-border-radius-bottomright:11px;
+}
+.news {width:1100px;background:#000 url(images/mainbg.png) repeat-y;margin:30px auto;margin-bottom:50px;opacity: 0.80;filter:alpha(opacity=80);border:outset 2px #ccc;
+	     -webkit-border-top-left-radius:11px;
+         -webkit-border-top-right-radius:11px;
+         -webkit-border-bottom-left-radius:11px;
+         -webkit-border-bottom-right-radius:11px;
+
+         -khtml-border-radius-topleft:11px;
+         -khtml-border-radius-topright:11px;
+         -khtml-border-radius-bottomleft:11px;
+         -khtml-border-radius-bottomright:11px;
+
+         -moz-border-radius-topleft:11px;
+         -moz-border-radius-topright:11px;
+         -moz-border-radius-bottomleft:11px;
+         -moz-border-radius-bottomright:11px;
+}
+.newsmain {padding:10px 10px 10px 100px;color: #fff;}
+.newsmain h1, .data h1 {
+	text-shadow: 0 0 30px #fff,
+                 0 0 40px #482400,
+                 0 0 70px #700,
+                 0 0 80px #800;
+	font-family: Palatino Linotype, 微軟正黑體;
+}
+.newsmain h2, .data h2 {
+	text-shadow: 0 0 30px #fff,
+                 0 0 40px #482400,
+                 0 0 70px #f90,
+                 0 0 80px #f90;
+	font-family: Palatino Linotype, 微軟正黑體;
+}
+.newsmain h3, .data h3 {
+	text-shadow: 0 0 30px #fff,
+                 0 0 70px #900;
+}
+.footerbar {width:100%;position:fixed;left:0px;right:0px;bottom:0px;height:57px;background:#000 url(images/navi3.png) center repeat;margin:auto;z-index:20000;}
+.navigation {width:1100px;margin:0 auto;margin-top:7px;}
+/*-網站分頁樣式-*/
+.header1, .header2, .header3, .header4, .header5 {position:fixed;left:0px;right:0px;top:0px;margin:auto;width:1100px;height:180px;z-index:10000;
+	     -webkit-border-top-left-radius:0;
+         -webkit-border-top-right-radius:0;
+         -webkit-border-bottom-left-radius:35px;
+         -webkit-border-bottom-right-radius:0;
+
+         -khtml-border-radius-topleft:0;
+         -khtml-border-radius-topright:0;
+         -khtml-border-radius-bottomleft:90px;
+         -khtml-border-radius-bottomright:0;
+
+         -moz-border-radius-topleft:0;
+         -moz-border-radius-topright:0;
+         -moz-border-radius-bottomleft:90px;
+         -moz-border-radius-bottomright:0;
+}
+.header1 {background: url(images/header1.png);}
+.header2 {background: url(images/header2.png);}
+.header3 {background: url(images/header3.png);}
+.header4 {background: url(images/header4.png);}
+.header5 {background: url(images/header5.png);}
+.pic {position:fixed;top:180px;left:50%;margin-left:220px;width:330px;height:600px;z-index:10000;}
+.wrap2 {width:1100px;margin:0 auto;margin-top:180px;margin-bottom:57px;overflow:hidden;background: #000;opacity: 0.80;filter:alpha(opacity=80)}
+.main {width:770px;background:url(images/mainbg.png) repeat-y;float:left;overflow:hidden}
+.data {padding:10px 20px 10px 90px;color:#fff;}
+.newsmain ul li, .data ul li
+{
+	padding:0 0 0 20px;
+	margin:10px 0;
+	background:url(images/azure.png) no-repeat left 8px;
+
+}
+.data table {color:#fff;}
+.data img {
+	     -webkit-border-top-left-radius:11px;
+         -webkit-border-top-right-radius:11px;
+         -webkit-border-bottom-left-radius:11px;
+         -webkit-border-bottom-right-radius:11px;
+
+         -khtml-border-radius-topleft:11px;
+         -khtml-border-radius-topright:11px;
+         -khtml-border-radius-bottomleft:11px;
+         -khtml-border-radius-bottomright:11px;
+
+         -moz-border-radius-topleft:11px;
+         -moz-border-radius-topright:11px;
+         -moz-border-radius-bottomleft:11px;
+         -moz-border-radius-bottomright:11px;
+}
+/*-DW影像地圖控制元素-*/
+#apDiv1 {
+	width:620px;
+	height:300px;
+	visibility:hidden;
+	margin:auto;
+}
+#apDiv2 {
+	color: #FC0; font-weight:normal; font-size: 1.99em; font-family: Palatino Linotype, 微軟正黑體; line-height: 1.5em;
+	margin:-77px 0 10px 37px;
+	text-shadow: 0 0 10px #000,
+                 0 0 20px #000,
+                 0 0 30px #000,
+                 0 0 40px #000,
+                 0 0 70px #fff,
+                 0 0 80px #fff;
+	font-family: Palatino Linotype, 微軟正黑體;
+}
+#apDiv10 {
+	position:fixed;
+	width:1000px;
+	z-index:15000;
+	top:110px;
+	right:50%;
+	margin-right:-500px;
+	visibility:hidden;
+	border:inset 7px #f60;
+}
