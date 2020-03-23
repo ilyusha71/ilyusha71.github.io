@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://ilyusha71.github.io/hugo/sitemap.xml

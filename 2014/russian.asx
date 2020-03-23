@@ -1,8 +1,0 @@
-<asx version = "3.0">
-<TITLE>"俄羅斯流行音樂網(102.5)"</TITLE>
-<entry>
-<MOREINFO HREF="http://www.pop-sa.ru/index.php" TARGET="_blank" />
-<ref href = "mms://stream03.rambler.ru:80/radiopopsa?WMContentBitrate=80000"/>
-<ref href = "mms://stream03.rambler.ru/radiopopsa?WMContentBitrate=80000"/>
-</entry>
-</asx>
