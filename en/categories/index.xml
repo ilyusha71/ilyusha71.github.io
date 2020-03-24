@@ -6,111 +6,20 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Categories on Hugo Zzo Theme</title>
+    <title>Categories on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
     <link>http://ilyusha71.github.io/en/categories/</link>
-    <description>Recent content in Categories on Hugo Zzo Theme</description>
+    <description>Recent content in Categories on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</managingEditor>
-    <webMaster>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</webMaster>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
     
         <atom:link href="http://ilyusha71.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
-      
-      <item>
-        <title>syntax</title>
-        <link>http://ilyusha71.github.io/en/categories/syntax/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</author>
-        
-        <guid>http://ilyusha71.github.io/en/categories/syntax/</guid>
-        <description></description>
-        
-        <dc:creator>iLYuSha AKA Wakaka</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>themes</title>
-        <link>http://ilyusha71.github.io/en/categories/themes/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</author>
-        
-        <guid>http://ilyusha71.github.io/en/categories/themes/</guid>
-        <description></description>
-        
-        <dc:creator>iLYuSha AKA Wakaka</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>hugo</title>
-        <link>http://ilyusha71.github.io/en/categories/hugo/</link>
-        <pubDate>Wed, 18 Dec 2019 10:33:41 +0900</pubDate>
-        <author>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</author>
-        
-        <guid>http://ilyusha71.github.io/en/categories/hugo/</guid>
-        <description></description>
-        
-        <dc:creator>iLYuSha AKA Wakaka</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>diagram</title>
-        <link>http://ilyusha71.github.io/en/categories/diagram/</link>
-        <pubDate>Mon, 18 Nov 2019 21:00:06 +0900</pubDate>
-        <author>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</author>
-        
-        <guid>http://ilyusha71.github.io/en/categories/diagram/</guid>
-        <description></description>
-        
-        <dc:creator>iLYuSha AKA Wakaka</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>math</title>
-        <link>http://ilyusha71.github.io/en/categories/math/</link>
-        <pubDate>Sat, 16 Nov 2019 12:00:06 +0900</pubDate>
-        <author>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</author>
-        
-        <guid>http://ilyusha71.github.io/en/categories/math/</guid>
-        <description></description>
-        
-        <dc:creator>iLYuSha AKA Wakaka</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
       
 
     

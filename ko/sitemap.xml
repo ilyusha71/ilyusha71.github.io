@@ -22,6 +22,11 @@
     <lastmod>2019-10-09T11:44:14+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-tw"
+                href="http://ilyusha71.github.io/zh-tw/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://ilyusha71.github.io/"
                 />
@@ -96,6 +101,11 @@
     <loc>http://ilyusha71.github.io/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-tw"
+                href="http://ilyusha71.github.io/zh-tw/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://ilyusha71.github.io/categories/"
                 />
@@ -138,6 +148,11 @@
     <loc>http://ilyusha71.github.io/ko/series/</loc>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-tw"
+                href="http://ilyusha71.github.io/zh-tw/series/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="http://ilyusha71.github.io/series/"
                 />
@@ -150,6 +165,11 @@
   
   <url>
     <loc>http://ilyusha71.github.io/ko/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://ilyusha71.github.io/zh-tw/tags/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

@@ -6,39 +6,20 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Series on Hugo Zzo Theme</title>
+    <title>Series on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
     <link>http://ilyusha71.github.io/en/series/</link>
-    <description>Recent content in Series on Hugo Zzo Theme</description>
+    <description>Recent content in Series on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</managingEditor>
-    <webMaster>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</webMaster>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
     
         <atom:link href="http://ilyusha71.github.io/en/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
-      
-      <item>
-        <title>Themes Guide</title>
-        <link>http://ilyusha71.github.io/en/series/themes-guide/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>ilyusha71@gmail.com (iLYuSha AKA Wakaka)</author>
-        
-        <guid>http://ilyusha71.github.io/en/series/themes-guide/</guid>
-        <description></description>
-        
-        <dc:creator>iLYuSha AKA Wakaka</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
       
 
     

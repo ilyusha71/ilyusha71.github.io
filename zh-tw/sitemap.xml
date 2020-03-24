@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://ilyusha71.github.io/zh-tw/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://ilyusha71.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://ilyusha71.github.io/ko/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://ilyusha71.github.io/zh-tw/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://ilyusha71.github.io/zh-tw/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://ilyusha71.github.io/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://ilyusha71.github.io/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://ilyusha71.github.io/zh-tw/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://ilyusha71.github.io/zh-tw/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://ilyusha71.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://ilyusha71.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://ilyusha71.github.io/zh-tw/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://ilyusha71.github.io/zh-tw/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://ilyusha71.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://ilyusha71.github.io/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://ilyusha71.github.io/zh-tw/"
+                />
+  </url>
+  
+</urlset>
