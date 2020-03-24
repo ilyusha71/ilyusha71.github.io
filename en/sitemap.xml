@@ -13,6 +13,46 @@
   </url>
   
   <url>
+    <loc>http://ilyusha71.github.io/tags/font/</loc>
+    <lastmod>2020-03-24T12:00:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ilyusha71.github.io/posts/</loc>
+    <lastmod>2020-03-24T12:00:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://ilyusha71.github.io/ko/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://ilyusha71.github.io/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://ilyusha71.github.io/tags/</loc>
+    <lastmod>2020-03-24T12:00:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://ilyusha71.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://ilyusha71.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://ilyusha71.github.io/posts/google-font-setting/</loc>
+    <lastmod>2020-03-24T12:00:06+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ilyusha71.github.io/publication/article/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
@@ -33,21 +73,6 @@
   </url>
   
   <url>
-    <loc>http://ilyusha71.github.io/posts/</loc>
-    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://ilyusha71.github.io/ko/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://ilyusha71.github.io/posts/"
-                />
-  </url>
-  
-  <url>
     <loc>http://ilyusha71.github.io/tags/shortcode/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
   </url>
@@ -55,21 +80,6 @@
   <url>
     <loc>http://ilyusha71.github.io/posts/shortcodes/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ilyusha71.github.io/tags/</loc>
-    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://ilyusha71.github.io/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://ilyusha71.github.io/tags/"
-                />
   </url>
   
   <url>
