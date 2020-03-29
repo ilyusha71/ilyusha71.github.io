@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>哆啦A夢 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>http://ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/</link>
+    <link>//ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/</link>
     <description>Recent content in 哆啦A夢 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 29 Mar 2020 16:11:41 +0800</lastBuildDate>
     
-        <atom:link href="http://ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="//ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,15 +24,15 @@
       
       <item>
         <title>哆啦A夢公園角色卡品質資訊</title>
-        <link>http://ilyusha71.github.io/posts/doraemon-park-upgrade/</link>
+        <link>//ilyusha71.github.io/posts/doraemon-park-upgrade/</link>
         <pubDate>Sun, 29 Mar 2020 16:11:41 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sun, 29 Mar 2020 16:11:41 +0800</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/doraemon-park-upgrade/</guid>
+        <guid>//ilyusha71.github.io/posts/doraemon-park-upgrade/</guid>
         <description>角色卡品質 角色卡存在兩種品質，グレード（Grade）與レベル（Level）： グレード，以下稱作等，分為S、A、B、C四等。 レベル，以下稱作級</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/post/img_tip_24_2.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/post/img_tip_24_2.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -54,15 +54,15 @@
       
       <item>
         <title>哆啦A夢牧場物語的好感度積分</title>
-        <link>http://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</link>
+        <link>//ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</link>
         <pubDate>Wed, 25 Mar 2020 23:52:31 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 25 Mar 2020 23:52:31 +0800</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</guid>
+        <guid>//ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</guid>
         <description>關注 銅鑼燒實驗牧場 伊琉沙/ PC實測/哆啦A夢牧場物語 關於好感度的計算，我從源代碼反編譯找到了。 結果跟之前自己實機測試結果一致。 只是程式碼的所</description>
         
         <dc:creator>iLYuSha</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature-dora/icon_201100013.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature-dora/icon_201100013.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

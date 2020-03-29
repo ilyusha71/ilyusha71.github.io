@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Posts on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>http://ilyusha71.github.io/posts/</link>
+    <link>//ilyusha71.github.io/posts/</link>
     <description>Recent content in Posts on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 29 Mar 2020 16:11:41 +0800</lastBuildDate>
     
-        <atom:link href="http://ilyusha71.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="//ilyusha71.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,15 +24,15 @@
       
       <item>
         <title>哆啦A夢公園角色卡品質資訊</title>
-        <link>http://ilyusha71.github.io/posts/doraemon-park-upgrade/</link>
+        <link>//ilyusha71.github.io/posts/doraemon-park-upgrade/</link>
         <pubDate>Sun, 29 Mar 2020 16:11:41 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sun, 29 Mar 2020 16:11:41 +0800</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/doraemon-park-upgrade/</guid>
+        <guid>//ilyusha71.github.io/posts/doraemon-park-upgrade/</guid>
         <description>角色卡品質 角色卡存在兩種品質，グレード（Grade）與レベル（Level）： グレード，以下稱作等，分為S、A、B、C四等。 レベル，以下稱作級</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/post/img_tip_24_2.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/post/img_tip_24_2.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -54,15 +54,15 @@
       
       <item>
         <title>HC12遠距無線通訊模組開發記錄 Part.1</title>
-        <link>http://ilyusha71.github.io/posts/hc12-development/</link>
+        <link>//ilyusha71.github.io/posts/hc12-development/</link>
         <pubDate>Fri, 27 Mar 2020 17:58:22 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Fri, 27 Mar 2020 17:58:22 +0800</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/hc12-development/</guid>
+        <guid>//ilyusha71.github.io/posts/hc12-development/</guid>
         <description>開發前 本次的項目是在兒童樂園I店建置大型迷宮密室，內部由大量隔間組成，每道門都配有RFID射頻識別門鎖。在遊戲設計初期（2020年1月）考慮</description>
         
         <dc:creator>iLYuSha</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/post/HC12-module0.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/post/HC12-module0.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -98,15 +98,15 @@
       
       <item>
         <title>哆啦A夢牧場物語的好感度積分</title>
-        <link>http://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</link>
+        <link>//ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</link>
         <pubDate>Wed, 25 Mar 2020 23:52:31 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 25 Mar 2020 23:52:31 +0800</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</guid>
+        <guid>//ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</guid>
         <description>關注 銅鑼燒實驗牧場 伊琉沙/ PC實測/哆啦A夢牧場物語 關於好感度的計算，我從源代碼反編譯找到了。 結果跟之前自己實機測試結果一致。 只是程式碼的所</description>
         
         <dc:creator>iLYuSha</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature-dora/icon_201100013.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature-dora/icon_201100013.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -128,15 +128,15 @@
       
       <item>
         <title>在網站中使用Google Fonts</title>
-        <link>http://ilyusha71.github.io/posts/google-font-setting/</link>
+        <link>//ilyusha71.github.io/posts/google-font-setting/</link>
         <pubDate>Tue, 24 Mar 2020 12:00:06 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Tue, 24 Mar 2020 12:00:06 +0800</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/google-font-setting/</guid>
+        <guid>//ilyusha71.github.io/posts/google-font-setting/</guid>
         <description>選擇合適的字體 Step 1 前往Goole Fonts網站 Goole Fonts Step 2 選擇語言 中文的部分除了繁體與簡體之外還有支援香港字形。 按照習慣選擇 Chinese (Traditio</description>
         
         <dc:creator>iLYuSha</dc:creator>
-        <media:content url="http://ilyusha71.github.io/https://www.gstatic.com/images/branding/product/1x/google_fonts_ios_180dp.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/https://www.gstatic.com/images/branding/product/1x/google_fonts_ios_180dp.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -160,16 +160,16 @@
       
       <item>
         <title>Shortcodes</title>
-        <link>http://ilyusha71.github.io/posts/shortcodes/</link>
+        <link>//ilyusha71.github.io/posts/shortcodes/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sat, 25 Jan 2020 06:40:51 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/shortcodes/</guid>
+        <guid>//ilyusha71.github.io/posts/shortcodes/</guid>
         <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode Code tabs Make it easy to switch between different code
 javajavascript1  System.out.println(&amp;#39;Hello World!&amp;#39;);  1  console.log(&amp;#39;Hello World!&amp;#39;);  &#39;use strict&#39;;var containerId = JSON.parse(&#34;\&#34;c3a7395d19726e47\&#34;&#34;);var containerElem = document.getElementById(containerId);var codetabLinks = null;var codetabContents = null;var ids = [];if (containerElem) {codetabLinks = containerElem.</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -193,15 +193,15 @@ javajavascript1  System.out.println(&amp;#39;Hello World!&amp;#39;);  1  c
       
       <item>
         <title>Markdown Syntax Guide</title>
-        <link>http://ilyusha71.github.io/posts/markdown-syntax/</link>
+        <link>//ilyusha71.github.io/posts/markdown-syntax/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/markdown-syntax/</guid>
+        <guid>//ilyusha71.github.io/posts/markdown-syntax/</guid>
         <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
         
         <dc:creator>Choi</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -245,15 +245,15 @@ javajavascript1  System.out.println(&amp;#39;Hello World!&amp;#39;);  1  c
       
       <item>
         <title>Rich Content</title>
-        <link>http://ilyusha71.github.io/posts/rich-content/</link>
+        <link>//ilyusha71.github.io/posts/rich-content/</link>
         <pubDate>Thu, 19 Dec 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Thu, 19 Dec 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/rich-content/</guid>
+        <guid>//ilyusha71.github.io/posts/rich-content/</guid>
         <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
         
         <dc:creator>Lee</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature2/content.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature2/content.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -273,15 +273,15 @@ javajavascript1  System.out.println(&amp;#39;Hello World!&amp;#39;);  1  c
       
       <item>
         <title>Syntax highlighting</title>
-        <link>http://ilyusha71.github.io/posts/syntax-highlight/</link>
+        <link>//ilyusha71.github.io/posts/syntax-highlight/</link>
         <pubDate>Wed, 18 Dec 2019 10:33:41 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 18 Dec 2019 10:33:41 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/syntax-highlight/</guid>
+        <guid>//ilyusha71.github.io/posts/syntax-highlight/</guid>
         <description>Code Syntax Highlighting Verify the following code blocks render as code blocks and highlight properly. More about tuning syntax highlighting is the Hugo documentation. Diff 1 2 3 4 5 6 7 8 9 10 *** /path/to/original &amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; --- /path/to/new &amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line *** /path/to/original</description>
         
         <dc:creator>Jeus</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature2/color-palette.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature2/color-palette.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -307,11 +307,11 @@ javajavascript1  System.out.println(&amp;#39;Hello World!&amp;#39;);  1  c
       
       <item>
         <title>Math Typesetting</title>
-        <link>http://ilyusha71.github.io/posts/math-typesetting/</link>
+        <link>//ilyusha71.github.io/posts/math-typesetting/</link>
         <pubDate>Tue, 17 Dec 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Tue, 17 Dec 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/math-typesetting/</guid>
+        <guid>//ilyusha71.github.io/posts/math-typesetting/</guid>
         <description>&lt;div class=&#34;box&#34;&gt;
 We need goldmark katex entension which is not yet we have: 
 [https://github.com/gohugoio/hugo/issues/6544](https://github.com/gohugoio/hugo/issues/6544)
@@ -329,11 +329,11 @@ We need goldmark katex entension which is not yet we have:
       
       <item>
         <title>Emoji Support</title>
-        <link>http://ilyusha71.github.io/posts/emoji-support/</link>
+        <link>//ilyusha71.github.io/posts/emoji-support/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 16 Dec 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/emoji-support/</guid>
+        <guid>//ilyusha71.github.io/posts/emoji-support/</guid>
         <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
         
         <dc:creator>Kim</dc:creator>
@@ -369,15 +369,15 @@ We need goldmark katex entension which is not yet we have:
       
       <item>
         <title>Viz support</title>
-        <link>http://ilyusha71.github.io/posts/test-viz/</link>
+        <link>//ilyusha71.github.io/posts/test-viz/</link>
         <pubDate>Mon, 18 Nov 2019 21:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 18 Nov 2019 21:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/test-viz/</guid>
+        <guid>//ilyusha71.github.io/posts/test-viz/</guid>
         <description>digraph G {subgraph cluster_0 {style=filled;color=lightgrey;node [style=filled,color=white];a0 -&amp;gt; a1 -&amp;gt; a2 -&amp;gt; a3;label = &amp;quot;process #1&amp;quot;;}subgraph cluster_1 {node [style=filled];b0 -&amp;gt; b1 -&amp;gt; b2 -&amp;gt; b3;label = &amp;quot;process #2&amp;quot;;color=blue}start -&amp;gt; a0;start -&amp;gt; b0;a1 -&amp;gt; b3;b2 -&amp;gt; a3;a3 -&amp;gt; a0;a3 -&amp;gt; end;b3 -&amp;gt; end;start [shape=Mdiamond];end [shape=Msquare];}</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature2/graph.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature2/graph.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -401,15 +401,15 @@ We need goldmark katex entension which is not yet we have:
       
       <item>
         <title>Wavedrom support</title>
-        <link>http://ilyusha71.github.io/posts/test-wavedrom/</link>
+        <link>//ilyusha71.github.io/posts/test-wavedrom/</link>
         <pubDate>Mon, 18 Nov 2019 18:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 18 Nov 2019 18:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/test-wavedrom/</guid>
+        <guid>//ilyusha71.github.io/posts/test-wavedrom/</guid>
         <description>{ &amp;quot;signal&amp;quot;: [ {&amp;quot;name&amp;quot;: &amp;quot;CLK&amp;quot;, &amp;quot;wave&amp;quot;: &amp;quot;p.....|...&amp;quot;},{&amp;quot;name&amp;quot;:&amp;quot;DAT&amp;quot;, &amp;quot;wave&amp;quot;:&amp;quot;x.345x|=.x&amp;quot;, &amp;quot;data&amp;quot;:[&amp;quot;A&amp;quot;,&amp;quot;B&amp;quot;,&amp;quot;C&amp;quot;,&amp;quot;D&amp;quot;]},{&amp;quot;name&amp;quot;: &amp;quot;REQ&amp;quot;, &amp;quot;wave&amp;quot;: &amp;quot;0.1..0|1.0&amp;quot;},{},{&amp;quot;name&amp;quot;: &amp;quot;ACK&amp;quot;, &amp;quot;wave&amp;quot;: &amp;quot;1.....|01.&amp;quot;}]}</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature1/wave.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature1/wave.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -433,15 +433,15 @@ We need goldmark katex entension which is not yet we have:
       
       <item>
         <title>Chart support</title>
-        <link>http://ilyusha71.github.io/posts/test-chartjs/</link>
+        <link>//ilyusha71.github.io/posts/test-chartjs/</link>
         <pubDate>Mon, 18 Nov 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 18 Nov 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/test-chartjs/</guid>
+        <guid>//ilyusha71.github.io/posts/test-chartjs/</guid>
         <description>{&amp;quot;type&amp;quot;: &amp;quot;bar&amp;quot;,&amp;quot;data&amp;quot;: {&amp;quot;labels&amp;quot;: [&amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;, &amp;quot;Six&amp;quot;],&amp;quot;datasets&amp;quot;: [{&amp;quot;label&amp;quot;: &amp;quot;# of Votes&amp;quot;,&amp;quot;data&amp;quot;: [12, 19, 3, 5, 3, 8]}]}}{&amp;quot;type&amp;quot;: &amp;quot;line&amp;quot;,&amp;quot;data&amp;quot;: {&amp;quot;labels&amp;quot;: [&amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;, &amp;quot;Six&amp;quot;],&amp;quot;datasets&amp;quot;: [{&amp;quot;label&amp;quot;: &amp;quot;# of Votes&amp;quot;,&amp;quot;data&amp;quot;: [12, 19, 3, 5, 2, 3],&amp;quot;backgroundColor&amp;quot;:&amp;quot;transparent&amp;quot;,&amp;quot;borderColor&amp;quot;:&amp;quot;orange&amp;quot;},{&amp;quot;label&amp;quot;: &amp;quot;Some other set&amp;quot;,&amp;quot;data&amp;quot;: [15, 8, 13, 5, 5, 9],&amp;quot;backgroundColor&amp;quot;:&amp;quot;transparent&amp;quot;,&amp;quot;borderColor&amp;quot;:&amp;quot;#44ccff&amp;quot;}]}}</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature1/graph.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature1/graph.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -465,15 +465,15 @@ We need goldmark katex entension which is not yet we have:
       
       <item>
         <title>JS Sequence Diagram support</title>
-        <link>http://ilyusha71.github.io/posts/test-js-sequence-diagrams/</link>
+        <link>//ilyusha71.github.io/posts/test-js-sequence-diagrams/</link>
         <pubDate>Mon, 18 Nov 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 18 Nov 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/test-js-sequence-diagrams/</guid>
+        <guid>//ilyusha71.github.io/posts/test-js-sequence-diagrams/</guid>
         <description>Alice-&amp;gt;Bob: Hello Bob, how are you?Note right of Bob: Bob thinksBob--&amp;gt;Alice: I am good thanks!Title: Here is a titleA-&amp;gt;B: Normal lineB--&amp;gt;C: Dashed lineC-&amp;gt;&amp;gt;D: Open arrowD--&amp;gt;&amp;gt;A: Dashed open arrow</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature2/transfer.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature2/transfer.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -497,15 +497,15 @@ We need goldmark katex entension which is not yet we have:
       
       <item>
         <title>Mermaid support</title>
-        <link>http://ilyusha71.github.io/posts/test-mermaid/</link>
+        <link>//ilyusha71.github.io/posts/test-mermaid/</link>
         <pubDate>Sun, 17 Nov 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sun, 17 Nov 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/test-mermaid/</guid>
+        <guid>//ilyusha71.github.io/posts/test-mermaid/</guid>
         <description>graph TD;A--&amp;gt;B;A--&amp;gt;C;B--&amp;gt;D;C--&amp;gt;D;sequenceDiagramparticipant Aliceparticipant BobAlice-&amp;gt;John: Hello John, how are you?loop HealthcheckJohn-&amp;gt;John: Fight against hypochondriaendNote right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail...John--&amp;gt;Alice: Great!John-&amp;gt;Bob: How about you?Bob--&amp;gt;John: Jolly good!graph TDA[Hard] --&amp;gt;|Text| B(Round)B --&amp;gt; C{Decision}C --&amp;gt;|One| D[Result 1]C --&amp;gt;|Two| E[Result 2]ganttsection SectionCompleted :done, des1, 2014-01-06,2014-01-08Active :active, des2, 2014-01-07, 3dParallel 1 : des3, after des1, 1dParallel 2 : des4, after des1, 1dParallel 3 : des5, after des3, 1dParallel 4 : des6, after des4, 1dclassDiagramClass01 &amp;lt;|-- AveryLongClass : Cool&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01Class09 --&amp;gt; C2 : Where am i?</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature2/workflow.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature2/workflow.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -531,16 +531,16 @@ We need goldmark katex entension which is not yet we have:
       
       <item>
         <title>MathJax support</title>
-        <link>http://ilyusha71.github.io/posts/test-mathjax/</link>
+        <link>//ilyusha71.github.io/posts/test-mathjax/</link>
         <pubDate>Sat, 16 Nov 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sat, 16 Nov 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/test-mathjax/</guid>
+        <guid>//ilyusha71.github.io/posts/test-mathjax/</guid>
         <description>When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature1/infinity.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature1/infinity.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -564,11 +564,11 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</description>
       
       <item>
         <title>Katex support</title>
-        <link>http://ilyusha71.github.io/posts/test-katex/</link>
+        <link>//ilyusha71.github.io/posts/test-katex/</link>
         <pubDate>Fri, 15 Nov 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Fri, 15 Nov 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/test-katex/</guid>
+        <guid>//ilyusha71.github.io/posts/test-katex/</guid>
         <description>The following
 $$ \int_{a}^{b} x^2 dx $$
 Is an integral
@@ -579,7 +579,7 @@ Note: For inline math to render correctly, your content file extension must be .
 Inline math: $ \varphi = \dfrac{1+\sqrt5}{2}= 1.</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature2/mathbook.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature2/mathbook.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -603,15 +603,15 @@ Inline math: $ \varphi = \dfrac{1+\sqrt5}{2}= 1.</description>
       
       <item>
         <title>Flowchart support</title>
-        <link>http://ilyusha71.github.io/posts/test-flowchart/</link>
+        <link>//ilyusha71.github.io/posts/test-flowchart/</link>
         <pubDate>Thu, 14 Nov 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Thu, 14 Nov 2019 12:00:06 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/test-flowchart/</guid>
+        <guid>//ilyusha71.github.io/posts/test-flowchart/</guid>
         <description>st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]e=&amp;gt;end: End|future:&amp;gt;http://www.google.comop1=&amp;gt;operation: My Operation|pastop2=&amp;gt;operation: Stuff|currentsub1=&amp;gt;subroutine: My Subroutine|invalidcond=&amp;gt;condition: Yesor No?|approved:&amp;gt;http://www.google.comc2=&amp;gt;condition: Good idea|rejectedio=&amp;gt;inputoutput: catch something...|futurest-&amp;gt;op1(right)-&amp;gt;condcond(yes, right)-&amp;gt;c2cond(no)-&amp;gt;sub1(left)-&amp;gt;op1c2(yes)-&amp;gt;io-&amp;gt;ec2(no)-&amp;gt;op2-&amp;gt;e</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature1/flowchart.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/feature1/flowchart.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

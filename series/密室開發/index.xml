@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>密室開發 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>http://ilyusha71.github.io/series/%E5%AF%86%E5%AE%A4%E9%96%8B%E7%99%BC/</link>
+    <link>//ilyusha71.github.io/series/%E5%AF%86%E5%AE%A4%E9%96%8B%E7%99%BC/</link>
     <description>Recent content in 密室開發 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 27 Mar 2020 17:58:22 +0800</lastBuildDate>
     
-        <atom:link href="http://ilyusha71.github.io/series/%E5%AF%86%E5%AE%A4%E9%96%8B%E7%99%BC/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="//ilyusha71.github.io/series/%E5%AF%86%E5%AE%A4%E9%96%8B%E7%99%BC/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,15 +24,15 @@
       
       <item>
         <title>HC12遠距無線通訊模組開發記錄 Part.1</title>
-        <link>http://ilyusha71.github.io/posts/hc12-development/</link>
+        <link>//ilyusha71.github.io/posts/hc12-development/</link>
         <pubDate>Fri, 27 Mar 2020 17:58:22 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Fri, 27 Mar 2020 17:58:22 +0800</atom:modified>
-        <guid>http://ilyusha71.github.io/posts/hc12-development/</guid>
+        <guid>//ilyusha71.github.io/posts/hc12-development/</guid>
         <description>開發前 本次的項目是在兒童樂園I店建置大型迷宮密室，內部由大量隔間組成，每道門都配有RFID射頻識別門鎖。在遊戲設計初期（2020年1月）考慮</description>
         
         <dc:creator>iLYuSha</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/post/HC12-module0.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//ilyusha71.github.io/images/post/HC12-module0.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

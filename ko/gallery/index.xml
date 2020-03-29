@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Galleries on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>http://ilyusha71.github.io/ko/gallery/</link>
+    <link>//ilyusha71.github.io/ko/gallery/</link>
     <description>Recent content in Galleries on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 12 Oct 2018 10:20:16 +0900</lastBuildDate>
     
-        <atom:link href="http://ilyusha71.github.io/ko/gallery/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="//ilyusha71.github.io/ko/gallery/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Photo</title>
-        <link>http://ilyusha71.github.io/ko/gallery/photo/</link>
+        <link>//ilyusha71.github.io/ko/gallery/photo/</link>
         <pubDate>Fri, 12 Oct 2018 10:20:16 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Fri, 12 Oct 2018 10:20:16 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/ko/gallery/photo/</guid>
+        <guid>//ilyusha71.github.io/ko/gallery/photo/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>Cartoon</title>
-        <link>http://ilyusha71.github.io/ko/gallery/cartoon/</link>
+        <link>//ilyusha71.github.io/ko/gallery/cartoon/</link>
         <pubDate>Thu, 11 Oct 2018 10:20:16 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Thu, 11 Oct 2018 10:20:16 +0900</atom:modified>
-        <guid>http://ilyusha71.github.io/ko/gallery/cartoon/</guid>
+        <guid>//ilyusha71.github.io/ko/gallery/cartoon/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
