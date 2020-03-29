@@ -33,7 +33,7 @@
 javajavascript1  System.out.println(&amp;#39;Hello World!&amp;#39;);  1  console.log(&amp;#39;Hello World!&amp;#39;);  &#39;use strict&#39;;var containerId = JSON.parse(&#34;\&#34;c3a7395d19726e47\&#34;&#34;);var containerElem = document.getElementById(containerId);var codetabLinks = null;var codetabContents = null;var ids = [];if (containerElem) {codetabLinks = containerElem.</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="http://ilyusha71.github.ioimages/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
