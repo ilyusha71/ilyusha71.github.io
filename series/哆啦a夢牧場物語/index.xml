@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>哆啦A夢牧場物語 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>//ilyusha71.github.io/series/%E5%93%86%E5%95%A6a%E5%A4%A2%E7%89%A7%E5%A0%B4%E7%89%A9%E8%AA%9E/</link>
+    <link>https://ilyusha71.github.io/series/%E5%93%86%E5%95%A6a%E5%A4%A2%E7%89%A7%E5%A0%B4%E7%89%A9%E8%AA%9E/</link>
     <description>Recent content in 哆啦A夢牧場物語 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 25 Mar 2020 23:52:31 +0800</lastBuildDate>
     
-        <atom:link href="//ilyusha71.github.io/series/%E5%93%86%E5%95%A6a%E5%A4%A2%E7%89%A7%E5%A0%B4%E7%89%A9%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ilyusha71.github.io/series/%E5%93%86%E5%95%A6a%E5%A4%A2%E7%89%A7%E5%A0%B4%E7%89%A9%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,15 +24,15 @@
       
       <item>
         <title>哆啦A夢牧場物語的好感度積分</title>
-        <link>//ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</link>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</link>
         <pubDate>Wed, 25 Mar 2020 23:52:31 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 25 Mar 2020 23:52:31 +0800</atom:modified>
-        <guid>//ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</guid>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</guid>
         <description>關注 銅鑼燒實驗牧場 伊琉沙/ PC實測/哆啦A夢牧場物語 關於好感度的計算，我從源代碼反編譯找到了。 結果跟之前自己實機測試結果一致。 只是程式碼的所</description>
         
         <dc:creator>iLYuSha</dc:creator>
-        <media:content url="//ilyusha71.github.io/images/feature-dora/icon_201100013.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/feature-dora/icon_201100013.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

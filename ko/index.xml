@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>//ilyusha71.github.io/ko/</link>
+    <link>https://ilyusha71.github.io/ko/</link>
     <description>Recent content on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 09 Oct 2019 11:44:14 +0900</lastBuildDate>
     
-        <atom:link href="//ilyusha71.github.io/ko/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ilyusha71.github.io/ko/index.xml" rel="self" type="application/rss+xml" />
     
     
     

@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>//ilyusha71.github.io/categories/</link>
+    <link>https://ilyusha71.github.io/categories/</link>
     <description>Recent content in Categories on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 29 Mar 2020 16:11:41 +0800</lastBuildDate>
     
-        <atom:link href="//ilyusha71.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ilyusha71.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>哆啦A夢</title>
-        <link>//ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/</link>
+        <link>https://ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/</link>
         <pubDate>Sun, 29 Mar 2020 16:11:41 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         
-        <guid>//ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/</guid>
+        <guid>https://ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>Arduino</title>
-        <link>//ilyusha71.github.io/categories/arduino/</link>
+        <link>https://ilyusha71.github.io/categories/arduino/</link>
         <pubDate>Fri, 27 Mar 2020 17:58:22 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         
-        <guid>//ilyusha71.github.io/categories/arduino/</guid>
+        <guid>https://ilyusha71.github.io/categories/arduino/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>syntax</title>
-        <link>//ilyusha71.github.io/categories/syntax/</link>
+        <link>https://ilyusha71.github.io/categories/syntax/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         
-        <guid>//ilyusha71.github.io/categories/syntax/</guid>
+        <guid>https://ilyusha71.github.io/categories/syntax/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
@@ -78,11 +78,11 @@
       
       <item>
         <title>themes</title>
-        <link>//ilyusha71.github.io/categories/themes/</link>
+        <link>https://ilyusha71.github.io/categories/themes/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         
-        <guid>//ilyusha71.github.io/categories/themes/</guid>
+        <guid>https://ilyusha71.github.io/categories/themes/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
@@ -96,11 +96,11 @@
       
       <item>
         <title>hugo</title>
-        <link>//ilyusha71.github.io/categories/hugo/</link>
+        <link>https://ilyusha71.github.io/categories/hugo/</link>
         <pubDate>Wed, 18 Dec 2019 10:33:41 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         
-        <guid>//ilyusha71.github.io/categories/hugo/</guid>
+        <guid>https://ilyusha71.github.io/categories/hugo/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
@@ -114,11 +114,11 @@
       
       <item>
         <title>diagram</title>
-        <link>//ilyusha71.github.io/categories/diagram/</link>
+        <link>https://ilyusha71.github.io/categories/diagram/</link>
         <pubDate>Mon, 18 Nov 2019 21:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         
-        <guid>//ilyusha71.github.io/categories/diagram/</guid>
+        <guid>https://ilyusha71.github.io/categories/diagram/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
@@ -132,11 +132,11 @@
       
       <item>
         <title>math</title>
-        <link>//ilyusha71.github.io/categories/math/</link>
+        <link>https://ilyusha71.github.io/categories/math/</link>
         <pubDate>Sat, 16 Nov 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         
-        <guid>//ilyusha71.github.io/categories/math/</guid>
+        <guid>https://ilyusha71.github.io/categories/math/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>

@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>gamoji on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>//ilyusha71.github.io/tags/gamoji/</link>
+    <link>https://ilyusha71.github.io/tags/gamoji/</link>
     <description>Recent content in gamoji on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 16 Dec 2019 12:00:06 +0900</lastBuildDate>
     
-        <atom:link href="//ilyusha71.github.io/tags/gamoji/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ilyusha71.github.io/tags/gamoji/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Emoji Support</title>
-        <link>//ilyusha71.github.io/posts/emoji-support/</link>
+        <link>https://ilyusha71.github.io/posts/emoji-support/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 16 Dec 2019 12:00:06 +0900</atom:modified>
-        <guid>//ilyusha71.github.io/posts/emoji-support/</guid>
+        <guid>https://ilyusha71.github.io/posts/emoji-support/</guid>
         <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
         
         <dc:creator>Kim</dc:creator>

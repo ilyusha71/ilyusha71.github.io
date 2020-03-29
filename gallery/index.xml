@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Galleries on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
-    <link>//ilyusha71.github.io/gallery/</link>
+    <link>https://ilyusha71.github.io/gallery/</link>
     <description>Recent content in Galleries on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 24 Mar 2020 23:05:56 +0800</lastBuildDate>
     
-        <atom:link href="//ilyusha71.github.io/gallery/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ilyusha71.github.io/gallery/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,15 +24,15 @@
       
       <item>
         <title>哆啦A夢公園名場面</title>
-        <link>//ilyusha71.github.io/gallery/doraemonp-park-spotlight/</link>
+        <link>https://ilyusha71.github.io/gallery/doraemonp-park-spotlight/</link>
         <pubDate>Tue, 24 Mar 2020 23:05:56 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Tue, 24 Mar 2020 23:05:56 +0800</atom:modified>
-        <guid>//ilyusha71.github.io/gallery/doraemonp-park-spotlight/</guid>
+        <guid>https://ilyusha71.github.io/gallery/doraemonp-park-spotlight/</guid>
         <description></description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="//ilyusha71.github.io/images/feature-dora/img_tutorial_npc_idle.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/feature-dora/img_tutorial_npc_idle.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -42,15 +42,15 @@
       
       <item>
         <title>Cartoon</title>
-        <link>//ilyusha71.github.io/gallery/cartoon/</link>
+        <link>https://ilyusha71.github.io/gallery/cartoon/</link>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Thu, 31 Oct 2019 10:20:16 +0900</atom:modified>
-        <guid>//ilyusha71.github.io/gallery/cartoon/</guid>
+        <guid>https://ilyusha71.github.io/gallery/cartoon/</guid>
         <description>Sample images from Pixabay</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="//ilyusha71.github.io/images/feature2/bam.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/feature2/bam.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -60,15 +60,15 @@
       
       <item>
         <title>Photo</title>
-        <link>//ilyusha71.github.io/gallery/photo/</link>
+        <link>https://ilyusha71.github.io/gallery/photo/</link>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Thu, 31 Oct 2019 10:20:16 +0900</atom:modified>
-        <guid>//ilyusha71.github.io/gallery/photo/</guid>
+        <guid>https://ilyusha71.github.io/gallery/photo/</guid>
         <description>Sample images from Pixabay</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="//ilyusha71.github.io/images/feature2/gallery.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/feature2/gallery.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

@@ -27,7 +27,7 @@
   "background": {
     "persistent": false
   },
-  "start_url": "//ilyusha71.github.io/",
+  "start_url": "https://ilyusha71.github.io/",
   "theme_color": "#fff",
   "background_color": "#fff",
   "display": "standalone"
