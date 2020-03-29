@@ -14,13 +14,37 @@
     <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
     <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 29 Mar 2020 16:11:41 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 00:08:15 +0800</lastBuildDate>
     
         <atom:link href="https://ilyusha71.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>在Windows使用Hugo在Github架設網站</title>
+        <link>https://ilyusha71.github.io/posts/github-hugo-website/</link>
+        <pubDate>Mon, 30 Mar 2020 00:08:15 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Mon, 30 Mar 2020 00:08:15 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/github-hugo-website/</guid>
+        <description>注意！以下內容均在Win 10環境下操作，其他作業系統的操作方式並不相同。 安裝Chocolatey Chocolatey是Windows下的軟件</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/feature/github.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>hugo</category>
+            
+          
+        
+        
+        
+      </item>
       
       <item>
         <title>哆啦A夢公園角色卡品質資訊</title>
@@ -62,7 +86,7 @@
         <description>開發前 本次的項目是在兒童樂園I店建置大型迷宮密室，內部由大量隔間組成，每道門都配有RFID射頻識別門鎖。在遊戲設計初期（2020年1月）考慮</description>
         
         <dc:creator>iLYuSha</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/HC12-module0.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/feature/module.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

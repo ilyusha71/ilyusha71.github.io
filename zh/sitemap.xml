@@ -13,6 +13,51 @@
   </url>
   
   <url>
+    <loc>https://ilyusha71.github.io/tags/hugo/</loc>
+    <lastmod>2020-03-30T00:08:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ilyusha71.github.io/posts/</loc>
+    <lastmod>2020-03-30T00:08:15+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://ilyusha71.github.io/ko/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ilyusha71.github.io/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ilyusha71.github.io/tags/</loc>
+    <lastmod>2020-03-30T00:08:15+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ilyusha71.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://ilyusha71.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ilyusha71.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ilyusha71.github.io/posts/github-hugo-website/</loc>
+    <lastmod>2020-03-30T00:08:15+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ilyusha71.github.io/categories/</loc>
     <lastmod>2020-03-29T16:11:41+08:00</lastmod>
     <xhtml:link
@@ -29,21 +74,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://ilyusha71.github.io/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://ilyusha71.github.io/posts/</loc>
-    <lastmod>2020-03-29T16:11:41+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://ilyusha71.github.io/ko/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://ilyusha71.github.io/posts/"
                 />
   </url>
   
@@ -100,26 +130,6 @@
   <url>
     <loc>https://ilyusha71.github.io/posts/hc12-development/</loc>
     <lastmod>2020-03-27T17:58:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ilyusha71.github.io/tags/</loc>
-    <lastmod>2020-03-27T17:58:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ilyusha71.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://ilyusha71.github.io/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://ilyusha71.github.io/tags/"
-                />
   </url>
   
   <url>
@@ -265,11 +275,6 @@
   <url>
     <loc>https://ilyusha71.github.io/tags/shortcodes/</loc>
     <lastmod>2019-12-19T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ilyusha71.github.io/tags/hugo/</loc>
-    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
   </url>
   
   <url>
