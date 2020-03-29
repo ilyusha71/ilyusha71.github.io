@@ -44,6 +44,80 @@
 
       
       <item>
+        <title>哆啦A夢公園角色卡品質資訊</title>
+        <link>http://ilyusha71.github.io/posts/doraemon-park-upgrade/</link>
+        <pubDate>Sun, 29 Mar 2020 16:11:41 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sun, 29 Mar 2020 16:11:41 +0800</atom:modified>
+        <guid>http://ilyusha71.github.io/posts/doraemon-park-upgrade/</guid>
+        <description>角色卡品質 角色卡存在兩種品質，グレード（Grade）與レベル（Level）： グレード，以下稱作等，分為S、A、B、C四等。 レベル，以下稱作級</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="http://ilyusha71.github.io/images/post/img_tip_24_2.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢公園</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>HC12遠距無線通訊模組開發記錄 Part.1</title>
+        <link>http://ilyusha71.github.io/posts/hc12-development/</link>
+        <pubDate>Fri, 27 Mar 2020 17:58:22 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 27 Mar 2020 17:58:22 +0800</atom:modified>
+        <guid>http://ilyusha71.github.io/posts/hc12-development/</guid>
+        <description>開發前 本次的項目是在兒童樂園I店建置大型迷宮密室，內部由大量隔間組成，每道門都配有RFID射頻識別門鎖。在遊戲設計初期（2020年1月）考慮</description>
+        
+        <dc:creator>iLYuSha</dc:creator>
+        <media:content url="http://ilyusha71.github.io/images/post/HC12-module0.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Arduino</category>
+            
+          
+            
+              <category>HC12</category>
+            
+          
+            
+              <category>無線通訊</category>
+            
+          
+        
+        
+          
+            
+              <category>Arduino</category>
+            
+          
+        
+        
+          
+            
+              <category>密室開發</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>哆啦A夢牧場物語的好感度積分</title>
         <link>http://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</link>
         <pubDate>Wed, 25 Mar 2020 23:52:31 +0800</pubDate>
@@ -83,7 +157,7 @@
         <description>選擇合適的字體 Step 1 前往Goole Fonts網站 Goole Fonts Step 2 選擇語言 中文的部分除了繁體與簡體之外還有支援香港字形。 按照習慣選擇 Chinese (Traditio</description>
         
         <dc:creator>iLYuSha</dc:creator>
-        <media:content url="http://ilyusha71.github.io/images/feature-dora/img_tutorial_npc_talk.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="http://ilyusha71.github.io/https://www.gstatic.com/images/branding/product/1x/google_fonts_ios_180dp.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
