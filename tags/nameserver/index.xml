@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>NameServer on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
+    <link>https://ilyusha71.github.io/tags/nameserver/</link>
+    <description>Recent content in NameServer on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 31 Mar 2020 15:49:25 +0800</lastBuildDate>
+    
+        <atom:link href="https://ilyusha71.github.io/tags/nameserver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>PUN2實作玩家自選地區進行連線</title>
+        <link>https://ilyusha71.github.io/posts/pun2-nameserver-region/</link>
+        <pubDate>Tue, 31 Mar 2020 15:49:25 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Tue, 31 Mar 2020 15:49:25 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/pun2-nameserver-region/</guid>
+        <description>實作環境 Unity2018.3.0f2 PUN 2.17 Photon lib 4.1.3.0 Photon Cloud Realtime App PUN2 相關筆記 關於PUN2的設置方法參考：PUN2 快速上手 關於PUN2的Realtime API參考：PUN2 Realtime API 筆記</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/https://blog.photonengine.com/wp-content/uploads/2013/10/x_unitynetworking.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Photon</category>
+            
+          
+            
+              <category>NameServer</category>
+            
+          
+            
+              <category>Networking</category>
+            
+          
+        
+        
+          
+            
+              <category>Unity</category>
+            
+          
+        
+        
+          
+            
+              <category>遊戲開發</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
