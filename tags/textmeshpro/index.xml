@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>TextMeshPro on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
+    <link>https://ilyusha71.github.io/tags/textmeshpro/</link>
+    <description>Recent content in TextMeshPro on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 01 Apr 2020 15:56:54 +0800</lastBuildDate>
+    
+        <atom:link href="https://ilyusha71.github.io/tags/textmeshpro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>讓Unity的Timeline支援TextMeshPro進行文本變化</title>
+        <link>https://ilyusha71.github.io/posts/unity-timeline-tmp/</link>
+        <pubDate>Wed, 01 Apr 2020 15:56:54 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Wed, 01 Apr 2020 15:56:54 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/unity-timeline-tmp/</guid>
+        <description>17年在台灣參加Unity工作坊的一個項目——Hover Race，曾使用preview版本的TMP，記得當時可以直接把TMP Text拖到Ti</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/https://blog.photonengine.com/wp-content/uploads/2013/10/x_unitynetworking.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Playable</category>
+            
+          
+            
+              <category>Timeline</category>
+            
+          
+            
+              <category>TextMeshPro</category>
+            
+          
+        
+        
+          
+            
+              <category>Unity</category>
+            
+          
+        
+        
+          
+            
+              <category>遊戲開發</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
