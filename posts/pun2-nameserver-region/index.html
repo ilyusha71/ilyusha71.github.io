@@ -2611,65 +2611,12 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
-<aside class="single__side main-side">
-  
-
-
-<section class="sidebar hide">
-  <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="absolute">
-    <h6 class="toc__title" data-ani="true">目录</h6>
-    
-      <label class="switch" data-ani="true">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" >
-        <span class="slider round"></span>
-      </label>
-    
-  </div>
-  <div class="toc hide" data-dir="ltr" data-folding="true" data-ani="true">
-    <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#實作環境">實作環境</a></li>
-        <li><a href="#pun2-相關筆記">PUN2 相關筆記</a></li>
-      </ul>
-    </li>
-    <li><a href="#連線前設定">連線前設定</a>
-      <ul>
-        <li><a href="#導入realtime的命名空間">導入Realtime的命名空間</a></li>
-        <li><a href="#設定應用程式idappid">設定應用程式ID（AppId）</a></li>
-        <li><a href="#設定名稱伺服器nameserverhost">設定名稱伺服器（NameServerHost）</a></li>
-        <li><a href="#連接名稱伺服器">連接名稱伺服器</a></li>
-        <li><a href="#選擇名稱伺服器">選擇名稱伺服器</a></li>
-      </ul>
-    </li>
-    <li><a href="#連線後設定">連線後設定</a>
-      <ul>
-        <li><a href="#測試各地區的ping值">測試各地區的ping值</a></li>
-        <li><a href="#讀取各地區的ping值">讀取各地區的ping值</a></li>
-        <li><a href="#選擇地區伺服器">選擇地區伺服器</a>
-          <ul>
-            <li><a href="#注意事項">注意事項</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</section>
-
-
-
-</aside>
-
 <script>
   
   
   
 
-  var enableToc = JSON.parse("true");
+  var enableToc = JSON.parse("false");
   var toc = JSON.parse("null");
   var tocPosition = JSON.parse("\"inner\"");
   
@@ -2784,9 +2731,9 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
-    var enableToc = JSON.parse("true");
+    var enableToc = JSON.parse("false");
     var toc = JSON.parse("null");
-    var hideToc = JSON.parse("true");
+    var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
     var tocFolding = JSON.parse("true");
