@@ -14,7 +14,7 @@
     <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
     <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 04 Apr 2020 16:01:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2020 19:00:26 +0800</lastBuildDate>
     
         <atom:link href="https://ilyusha71.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,7 +23,43 @@
 
       
       <item>
-        <title>【哆啦A夢牧場物語】作物出貨價格</title>
+        <title>【哆啦A夢牧場物語】雜貨店 小玩意兒</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-knick-knacks-gen-store/</link>
+        <pubDate>Sat, 04 Apr 2020 19:00:26 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 04 Apr 2020 19:00:26 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-knick-knacks-gen-store/</guid>
+        <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>MOD</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】作物出貨資料</title>
         <link>https://ilyusha71.github.io/posts/doraemon-story-crop-sell/</link>
         <pubDate>Sat, 04 Apr 2020 16:01:22 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
@@ -173,7 +209,7 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Fri, 03 Apr 2020 16:25:02 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-crop-part1/</guid>
-        <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 MO</description>
+        <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 作物</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301051200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -209,7 +245,7 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Fri, 03 Apr 2020 16:22:12 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-item-part1/</guid>
-        <description>物品的品質 MOD調用參考 物品資料庫： 物品資料（CItemData），讀取TextAsset的物品二進制資料（ItemData.text）。 物</description>
+        <description>物品MOD資料庫 物品資料檔：ItemData.text 物品資料類：CItemData，讀取TextAsset的物品二進制資料ItemData</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301001000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
