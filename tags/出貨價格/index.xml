@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>出貨價格 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
+    <link>https://ilyusha71.github.io/tags/%E5%87%BA%E8%B2%A8%E5%83%B9%E6%A0%BC/</link>
+    <description>Recent content in 出貨價格 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 05 Apr 2020 20:01:03 +0800</lastBuildDate>
+    
+        <atom:link href="https://ilyusha71.github.io/tags/%E5%87%BA%E8%B2%A8%E5%83%B9%E6%A0%BC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>【哆啦A夢牧場物語】88種料理出貨價格</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-sell-meals/</link>
+        <pubDate>Sun, 05 Apr 2020 20:01:03 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sun, 05 Apr 2020 20:01:03 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-sell-meals/</guid>
+        <description>遊戲資源 以下圖示儲存在Sprite資料夾下，各作物對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.te</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3300901.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>出貨價格</category>
+            
+          
+            
+              <category>料理</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】37種作物出貨價格</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-sell-crops/</link>
+        <pubDate>Sat, 04 Apr 2020 16:01:22 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 04 Apr 2020 16:01:22 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-sell-crops/</guid>
+        <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 遊戲</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3000501.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>出貨價格</category>
+            
+          
+            
+              <category>作物</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

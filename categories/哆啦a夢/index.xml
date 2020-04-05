@@ -14,7 +14,7 @@
     <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
     <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 04 Apr 2020 19:00:26 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 22:04:31 +0800</lastBuildDate>
     
         <atom:link href="https://ilyusha71.github.io/categories/%E5%93%86%E5%95%A6a%E5%A4%A2/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,22 +23,66 @@
 
       
       <item>
-        <title>【哆啦A夢牧場物語】雜貨店 小玩意兒</title>
-        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-knick-knacks-gen-store/</link>
-        <pubDate>Sat, 04 Apr 2020 19:00:26 +0800</pubDate>
+        <title>【哆啦A夢牧場物語】料理店農產品販售資訊</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-produce/</link>
+        <pubDate>Sun, 05 Apr 2020 22:04:31 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
-        <atom:modified>Sat, 04 Apr 2020 19:00:26 +0800</atom:modified>
-        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-knick-knacks-gen-store/</guid>
-        <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
+        <atom:modified>Sun, 05 Apr 2020 22:04:31 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-produce/</guid>
+        <description>農產品販售 每一季大雄第一次進料理店的時候都會更新料理店販售的農產品。 料理店每季販售的農產品由當季農產品與四季農產品組成。 當季農產品與四季農產</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3400101.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>MOD</category>
+              <category>農產品</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+            
+              <category>商店</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】88種料理出貨價格</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-sell-meals/</link>
+        <pubDate>Sun, 05 Apr 2020 20:01:03 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sun, 05 Apr 2020 20:01:03 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-sell-meals/</guid>
+        <description>遊戲資源 以下圖示儲存在Sprite資料夾下，各作物對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.te</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3300901.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>出貨價格</category>
+            
+          
+            
+              <category>料理</category>
             
           
         
@@ -59,22 +103,210 @@
       </item>
       
       <item>
-        <title>【哆啦A夢牧場物語】作物出貨資料</title>
-        <link>https://ilyusha71.github.io/posts/doraemon-story-crop-sell/</link>
-        <pubDate>Sat, 04 Apr 2020 16:01:22 +0800</pubDate>
+        <title>【哆啦A夢牧場物語】料理店料理販售資訊</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-meals/</link>
+        <pubDate>Sun, 05 Apr 2020 17:55:11 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
-        <atom:modified>Sat, 04 Apr 2020 16:01:22 +0800</atom:modified>
-        <guid>https://ilyusha71.github.io/posts/doraemon-story-crop-sell/</guid>
-        <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 遊戲</description>
+        <atom:modified>Sun, 05 Apr 2020 17:55:11 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-meals/</guid>
+        <description>料理販售 每一季大雄第一次進料理店的時候都會更新料理店販售的料理。 每道料理都只會在特定季節販售。 料理店每季販售的料理均為5道當季料理。 當季料理</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3300147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>食譜</category>
+            
+          
+            
+              <category>料理</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+            
+              <category>商店</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】料理店食譜販售資訊</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-recipes/</link>
+        <pubDate>Sun, 05 Apr 2020 16:14:36 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sun, 05 Apr 2020 16:14:36 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-recipes/</guid>
+        <description>食譜販售 每一季大雄第一次進料理店的時候都會更新料理店販售的食譜。 料理店每季販售的食譜由當季食譜與四季食譜組成。 當季食譜與四季食譜將根據販售權</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_9200147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>食譜</category>
+            
+          
+            
+              <category>料理</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+            
+              <category>商店</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】料理店 嚼嚼</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish/</link>
+        <pubDate>Sun, 05 Apr 2020 09:50:21 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sun, 05 Apr 2020 09:50:21 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish/</guid>
+        <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
               <category>MOD</category>
+            
+          
+            
+              <category>食譜</category>
+            
+          
+            
+              <category>料理</category>
+            
+          
+            
+              <category>作物</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+            
+              <category>商店</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】雜貨店 小玩意兒</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-knick-knacks-gen-store/</link>
+        <pubDate>Sat, 04 Apr 2020 19:00:26 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 04 Apr 2020 19:00:26 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-knick-knacks-gen-store/</guid>
+        <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>MOD</category>
+            
+          
+            
+              <category>作物</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+            
+              <category>商店</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】37種作物出貨價格</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-sell-crops/</link>
+        <pubDate>Sat, 04 Apr 2020 16:01:22 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 04 Apr 2020 16:01:22 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-sell-crops/</guid>
+        <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 遊戲</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3000501.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>出貨價格</category>
+            
+          
+            
+              <category>作物</category>
             
           
         
@@ -110,7 +342,7 @@
         
           
             
-              <category>MOD</category>
+              <category>作物</category>
             
           
         
@@ -146,7 +378,7 @@
         
           
             
-              <category>MOD</category>
+              <category>作物</category>
             
           
         
@@ -182,7 +414,7 @@
         
           
             
-              <category>MOD</category>
+              <category>作物</category>
             
           
         
@@ -219,6 +451,10 @@
           
             
               <category>MOD</category>
+            
+          
+            
+              <category>作物</category>
             
           
         
