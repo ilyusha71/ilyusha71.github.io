@@ -1742,34 +1742,33 @@
 <li><a href="../doraemon-story-crop-part3">【哆啦A夢牧場物語】作物的成長過程與相關計算</a></li>
 </ul>
 <h2 id="作物mod資料庫">作物MOD資料庫</h2>
-<p><code>作物</code>與<code>種子</code>均屬於物品類，相關MOD調用參考<a href="../doraemon-story-item-part1">物品的品質</a>。</p>
 <ul>
 <li>作物資料檔：<code>CropData.text</code></li>
-<li>作物資料類：<code>CCropData</code>，讀取TextAsset的物品二進制資料<code>CropData.text</code>。
+<li>作物資料類：<code>CCropData</code>
 <ul>
-<li>作物的資料結構：<code>CCropData.SCropData</code>
+<li>作物資料結構：<code>SCropData</code>
 <ul>
-<li>作物ID：<code>CCropData.SCropData.mCropId</code></li>
-<li>名稱ID：<code>CCropData.SCropData.mNameId</code></li>
-<li>收穫次數：<code>CCropData.SCropData.mHarvestCount</code></li>
-<li>成長階數：<code>CCropData.SCropData.mStep</code></li>
-<li>減少階數：<code>CCropData.SCropData.mReduceStep</code></li>
-<li>收成天數：<code>CCropData.SCropData.mHarvestDays</code></li>
-<li>生長季節：<code>CCropData.SCropData.mSeason</code>
+<li>作物ID：<code>mCropId</code></li>
+<li>名稱ID：<code>mNameId</code></li>
+<li>收穫次數：<code>mHarvestCount</code></li>
+<li>成長階數：<code>mStep</code></li>
+<li>減少階數：<code>mReduceStep</code></li>
+<li>收成天數：<code>mHarvestDays</code></li>
+<li>生長季節：<code>mSeason</code>
 <ul>
 <li><code>0</code>為春季生長、<code>1</code>為夏季生長、<code>2</code>為秋季生長、<code>3</code>為冬季生長、<code>-1</code>為四季皆生長。</li>
 </ul>
 </li>
-<li>是否收割：<code>CCropData.SCropData.mCanReap</code></li>
-<li>圖集ID：<code>CCropData.SCropData.mAtlasId</code></li>
-<li>圖片ID：<code>CCropData.SCropData.mSpriteId</code></li>
-<li>物品ID：<code>CCropData.SCropData.mItemId</code></li>
-<li>種子ID：<code>CCropData.SCropData.mSeedItemId</code></li>
+<li>是否收割：<code>mCanReap</code></li>
+<li>圖集ID：<code>mAtlasId</code></li>
+<li>圖片ID：<code>mSpriteId</code></li>
+<li>物品ID：<code>mItemId</code></li>
+<li>種子ID：<code>mSeedItemId</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>作物模組類：<code>CropMasterModel</code>，取得作物的資料結構並記錄所有作物參數的<code>基本值</code>。
+<li>作物主模板類：<code>CropMasterModel</code>
 <ul>
 <li>作物ID：<code>CropMasterModel.CropId</code> = <code>CCropData.SCropData.mCropId</code></li>
 <li>收穫次數：<code>CropMasterModel.HarvestCount</code> = <code>CCropData.SCropData.mHarvestCount</code></li>
@@ -1780,7 +1779,7 @@
 <li>是否收割：<code>CropMasterModel.CanReap</code> = <code>CCropData.SCropData.mCanReap</code></li>
 </ul>
 </li>
-<li>作物實體類<code>CropModel</code>，顯示目前遊戲中各項作物參數的<code>實際值</code>與具體的<code>計算方法</code>。
+<li>作物模板類<code>CropModel</code>，土裡作物的實例。
 <ul>
 <li>成長方法：<code>CropModel.Grow()</code></li>
 <li>減少成長方法：<code>CropModel.GrowStep()</code></li>
@@ -1788,7 +1787,7 @@
 <li>品質分：<code>CropModel.Quality</code></li>
 </ul>
 </li>
-<li>作物定義類：<code>Crop</code>，定義作物資料調用的相關參數。
+<li>作物定義類：<code>Crop</code>
 <ul>
 <li>最低品質分：<code>MIN_QUALITY</code>，常數值：<code>1</code></li>
 <li>最高品質分：<code>Crop.MAX_QUALITY</code>，常數值：<code>500</code></li>

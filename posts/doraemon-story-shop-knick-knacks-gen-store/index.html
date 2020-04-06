@@ -1757,9 +1757,9 @@
 <h2 id="雜貨店mod資料庫">雜貨店MOD資料庫</h2>
 <ul>
 <li>雜貨店資料檔：<code>VarietyShopData.text</code></li>
-<li>雜貨店資料類：<code>CVarietyShopData</code>，讀取TextAsset的物品二進制資料<code>VarietyShopData.text</code>。
+<li>雜貨店資料類：<code>CVarietyShopData</code>
 <ul>
-<li>雜貨店的資料結構：<code>SVarietyShopData</code>
+<li>雜貨店資料結構：<code>SVarietyShopData</code>
 <ul>
 <li>商品ID：<code>mVarietyId</code></li>
 <li>物品ID：<code>mItemId</code></li>
@@ -1779,23 +1779,24 @@
 </li>
 </ul>
 </li>
-<li>商店集成功能界面：<code>ShopMasterCollection</code>
+<li>商店功能集成介面：<code>ShopMasterCollection</code>
 <ul>
+<li>商店模版設定：<code>Setup()</code></li>
 <li>取得雜貨店所有商品的資料：<code>GetAllVarietyShopDatas()</code></li>
 <li>取得雜貨店首年販售商品的資料：<code>GetFirstYearVarietyShopDatas()</code></li>
 </ul>
 </li>
-<li>商店模組類：<code>ShopMasterModel</code>，取得指定商店的資料結構並記錄該商店所有商品參數的<code>基本值</code>。
+<li>商店主模板類：<code>ShopMasterModel</code>
 <ul>
 <li>商品ID：<code>Id</code> = <code>CVarietyShopData.SVarietyShopData.mVarietyId</code></li>
 <li>物品ID：<code>ItemId</code> = <code>CVarietyShopData.SVarietyShopData.mItemId</code></li>
 <li>販售價格：<code>Price</code> = <code>CVarietyShopData.SVarietyShopData.mPrice</code></li>
 <li>販售季節：<code>Season</code> = <code>CVarietyShopData.SVarietyShopData.mSeason</code></li>
 <li>DLC索引：<code>DLCIndex</code> = <code>CVarietyShopData.SVarietyShopData.mDLCIndex</code></li>
-<li>事件ID：<code>EventId</code></li>
+<li>事件ID：<code>EventId</code> = -1</li>
 </ul>
 </li>
-<li>商品模組類：<code>ShopItemDataModel</code>，顯示遊戲中商店目前上架的商品資料。
+<li>商品模板類：<code>ShopItemDataModel</code>，商店上架的商品實例。
 <ul>
 <li>商品ID：<code>Id</code> = <code>ShopMasterModel.Id</code></li>
 <li>物品ID：<code>ItemId</code> = <code>ShopMasterModel.ItemId</code></li>
@@ -1804,22 +1805,10 @@
 <li>商品價格：<code>Price</code> = <code>ShopMasterModel.Price</code></li>
 <li>圖集ID：<code>AtlasId</code> = <code>ItemMasterModel.AtlasId</code></li>
 <li>圖片ID：<code>SpriteId</code> = <code>ItemModel.Id</code></li>
-<li>是否為物品實體：<code>IsItemModel</code>，可進行操作的物品，詳見 <a href="../doraemon-story-item-part1#%E7%89%A9%E5%93%81MOD%E8%B3%87%E6%96%99%E5%BA%AB">物品MOD資料庫</a>。</li>
-<li>是否為單一物品：<code>IsSingleItem</code>，只能擁有一件的物品。
-<ul>
-<li>例如背包、工具（捕蟲網）、DLC。</li>
-</ul>
-</li>
-<li>只能購買一次：<code>CanBuyOnce</code>。
-<ul>
-<li>例如會升級的物品（背包）、工具（捕蟲網）、DLC。</li>
-</ul>
-</li>
-<li>是否需要庫存空間：<code>IsNeedToEmptyInventory</code>。
-<ul>
-<li>例如背包與DLC並不需要庫存空間。</li>
-</ul>
-</li>
+<li>是否為物品模板：<code>IsItemModel</code></li>
+<li>是否為單一物品：<code>IsSingleItem</code></li>
+<li>只能購買一次：<code>CanBuyOnce</code></li>
+<li>是否需要庫存空間：<code>IsNeedToEmptyInventory</code></li>
 </ul>
 </li>
 </ul>

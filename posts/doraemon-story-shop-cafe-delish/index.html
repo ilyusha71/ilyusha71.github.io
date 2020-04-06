@@ -1688,7 +1688,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月05日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;2&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1702,11 +1702,11 @@
   🏷️
   
 
+  <li><a href="https://ilyusha71.github.io/tags/mod/" class="single__tag" title="MOD">#MOD</a></li>
+
   <li><a href="https://ilyusha71.github.io/tags/%E6%96%99%E7%90%86/" class="single__tag" title="料理">#料理</a></li>
 
   <li><a href="https://ilyusha71.github.io/tags/%E9%A3%9F%E8%AD%9C/" class="single__tag" title="食譜">#食譜</a></li>
-
-  <li><a href="https://ilyusha71.github.io/tags/mod/" class="single__tag" title="MOD">#MOD</a></li>
 
   <li><a href="https://ilyusha71.github.io/tags/%E4%BD%9C%E7%89%A9/" class="single__tag" title="作物">#作物</a></li>
 
@@ -1725,7 +1725,11 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#遊戲資源">遊戲資源</a></li>
-    <li><a href="#料理店mod資料庫">料理店MOD資料庫</a></li>
+    <li><a href="#料理店mod資料庫">料理店MOD資料庫</a>
+      <ul>
+        <li><a href="#調用狀態">調用狀態</a></li>
+      </ul>
+    </li>
     <li><a href="#料理店嚼嚼餐廳商品資料">料理店/嚼嚼餐廳商品資料</a>
       <ul>
         <li><a href="#主要角色">主要角色</a></li>
@@ -1749,14 +1753,14 @@
 <h2 id="料理店mod資料庫">料理店MOD資料庫</h2>
 <ul>
 <li>料理店資料檔：<code>RestaurantShopData.text</code></li>
-<li>料理店資料類：<code>CRestaurantShopData</code>，讀取TextAsset的物品二進制資料<code>RestaurantShopData.text</code>。
+<li>料理店資料類：<code>CRestaurantShopData</code>
 <ul>
-<li>料理店的資料結構：<code>SRestaurantShopData</code>
+<li>料理店資料結構：<code>SRestaurantShopData</code>
 <ul>
 <li>商品ID：<code>mId</code></li>
 <li>物品ID：<code>mItemId</code></li>
 <li>價格：<code>mPrice</code></li>
-<li>販售季節：<code>mSeason</code>
+<li>季節：<code>mSeason</code>
 <ul>
 <li>料理店販售的食譜、料理、農產品會因季節變化而改變。</li>
 </ul>
@@ -1770,14 +1774,94 @@
 </li>
 </ul>
 </li>
-<li>商店集成功能界面：<code>ShopMasterCollection</code>
+<li>商店功能集成介面：<code>ShopMasterCollection</code>
 <ul>
+<li>商店模版設定：<code>Setup()</code></li>
 <li>取得料理店當季食譜的資料：<code>GetGroupedBySeasonCookingRecipeShopDatas(int season)</code></li>
 <li>取得料理店當季料理的資料：<code>GetGroupedBySeasonDishShopDatas(int season)</code></li>
 <li>取得料理店當季作物的資料：<code>GetGroupedBySeasonCropShopDatas(int season)</code></li>
 <li>取得料理店所有調理器具的資料：<code>GetAllCookingToolShopDatas()</code></li>
 <li>取得料理店的資料：<code>GetRestaurantShopData(int id)</code></li>
 </ul>
+</li>
+<li>料理店主模板類：<code>RestaurantShopMasterModel</code>，此類專用於<code>食譜販售</code>、<code>料理販售</code>與<code>農產品販售</code>。
+<ul>
+<li>商品ID：<code>Id</code> = <code>CRestaurantShopData.SChickenShopData.mId</code></li>
+<li>物品ID：<code>ItemId</code> = <code>CRestaurantShopData.SChickenShopData.mItemId</code></li>
+<li>販售價格：<code>Price</code> = <code>CRestaurantShopData.SChickenShopData.mPrice</code></li>
+<li>販售季節：<code>Season</code> = <code>CRestaurantShopData.SChickenShopData.mSeason</code></li>
+<li>販售權重：<code>Weight</code> = <code>CRestaurantShopData.SChickenShopData.mWeight</code></li>
+</ul>
+</li>
+<li>料理店模板類：<code>RestaurantShopDataModel</code>
+<ul>
+<li>食譜資料：<code>CookingRecipeShopItems</code>，商店上架的食譜實例。</li>
+<li>料理資料：<code>DishShopItems</code>，商店上架的料理實例。</li>
+<li>農產品資料：<code>CropShopItems</code>，商店上架的農產品實例。</li>
+<li>上架抽選方法：<code>GetLotteryRestaurantShopMasterDatas</code></li>
+<li>食譜上架方法：<code>UpdateCookingRecipeShopItemDatas(bool is_refresh_data, int season)</code></li>
+<li>料理上架方法：<code>UpdateDishShopItemDatas(bool is_refresh_data, int season)</code></li>
+<li>農產品上架方法：<code>UpdateCropShopItemDatas(bool is_refresh_data, int season)</code></li>
+</ul>
+</li>
+<li>商店主模板類：<code>ShopMasterModel</code>，此類在料理店用於<code>調理器具販售</code>。
+<ul>
+<li>商品ID：<code>Id</code> = <code>CRestaurantShopData.SChickenShopData.mId</code></li>
+<li>物品ID：<code>ItemId</code> = <code>CRestaurantShopData.SChickenShopData.mItemId</code></li>
+<li>販售價格：<code>Price</code> = <code>CRestaurantShopData.SChickenShopData.mPrice</code></li>
+<li>販售季節：<code>Season</code> = <code>CRestaurantShopData.SChickenShopData.mSeason</code></li>
+<li>DLC索引：<code>DLCIndex</code> = -1</li>
+<li>事件ID：<code>EventId</code> = -1</li>
+</ul>
+</li>
+<li>商品模板類：<code>ShopItemDataModel</code>，商店上架的商品實例。
+<ul>
+<li>商品ID：<code>Id</code> = <code>ShopMasterModel.Id</code></li>
+<li>物品ID：<code>ItemId</code> = <code>ShopMasterModel.ItemId</code></li>
+<li>商品名稱：<code>Name</code> = <code>ItemModel.Name</code></li>
+<li>商品描述：<code>Description</code> = <code>ItemModel.Description</code></li>
+<li>商品價格：<code>Price</code> = <code>ShopMasterModel.Price</code></li>
+<li>圖集ID：<code>AtlasId</code> = <code>ItemMasterModel.AtlasId</code></li>
+<li>圖片ID：<code>SpriteId</code> = <code>ItemModel.Id</code></li>
+<li>是否為物品模板：<code>IsItemModel</code></li>
+<li>是否為單一物品：<code>IsSingleItem</code></li>
+<li>只能購買一次：<code>CanBuyOnce</code></li>
+<li>是否需要庫存空間：<code>IsNeedToEmptyInventory</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="調用狀態">調用狀態</h3>
+<ul>
+<li>牧場工作狀態：<code>FarmWorkState</code>
+<ol>
+<li><code>BeginCallback(ICommandHolderObject collided_obj, ICommand stacked_command)</code></li>
+<li><code>CreateWorkResponse()</code></li>
+<li><code>AddCookingShopResponse(ResponseModel root, NpcModel npc)</code>
+<ul>
+<li><code>FarmModel.UpdateRestaurantShopData(TimeModel time)</code>
+<ul>
+<li><code>RestaurantShopDataModel.UpdateShopDatas(TimeModel time)</code></li>
+<li>食譜：<code>RestaurantShopDataModel.UpdateCookingRecipeShopItemDatas(bool is_refresh_data, int season)</code>
+<ul>
+<li><code>ShopMasterCollection.GetGroupedBySeasonCookingRecipeShopDatas(int season)</code></li>
+</ul>
+</li>
+<li>料理：<code>RestaurantShopDataModel.UpdateDishShopItemDatas(bool is_refresh_data, int season)</code>
+<ul>
+<li><code>ShopMasterCollection.GetGroupedBySeasonDishShopDatas(int season)</code></li>
+</ul>
+</li>
+<li>農產品：<code>RestaurantShopDataModel.UpdateCropShopItemDatas(bool is_refresh_data, int season)</code>
+<ul>
+<li><code>ShopMasterCollection.GetGroupedBySeasonCropShopDatas(int season)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>GetCookingToolShopItemDatas()</code></li>
+</ul>
+</li>
+</ol>
 </li>
 </ul>
 <h2 id="料理店嚼嚼餐廳商品資料">料理店/嚼嚼餐廳商品資料</h2>
