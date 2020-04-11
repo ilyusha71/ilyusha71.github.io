@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】小雞商店 咕咕之家 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1730,7 +1738,7 @@
         <li><a href="#動物餵食">動物餵食</a></li>
         <li><a href="#動物鈴">動物鈴</a>
           <ul>
-            <li><a href="#動物鈴上架條件">動物鈴上架條件</a></li>
+            <li><a href="#動物鈴解鎖條件">動物鈴解鎖條件</a></li>
           </ul>
         </li>
         <li><a href="#00">00</a></li>
@@ -1803,6 +1811,11 @@
 <li>是否為單一物品：<code>IsSingleItem</code></li>
 <li>只能購買一次：<code>CanBuyOnce</code></li>
 <li>是否需要庫存空間：<code>IsNeedToEmptyInventory</code></li>
+</ul>
+</li>
+<li>物品定義類：<code>Item</code>
+<ul>
+<li>動物鈴能否販售的方法：<code>CanSaleBell(int item_id)</code></li>
 </ul>
 </li>
 </ul>
@@ -1900,6 +1913,7 @@
             <td></td>
             <td>商品名稱</td>
             <td>販售價格</td>
+            <td>功能</td>
         </tr>
     </thead>
     <tbody>
@@ -1909,6 +1923,7 @@
             <td><img width= "64px" src= "/images/post/story_sprite/icon_1001152.png"></td>
             <td>雞鈴</td>
             <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">5000</td>
+            <td>搖鈴後，雞會往大雄的位置移動。<br>持續8分鐘。</td>
         </tr>
     </tbody>
 </table>
@@ -1922,7 +1937,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="動物鈴上架條件">動物鈴上架條件</h4>
+<h4 id="動物鈴解鎖條件">動物鈴解鎖條件</h4>
 <table>
     <tr>
         <td rowspan="2"><img src= "/images/post/story_sprite/icon_201080031.png"></td>
@@ -2385,6 +2400,13 @@
       </a>
     
     <div class="grow"></div>
+    
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-animal-affction/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">【哆啦A夢牧場物語】動物的好感度與情感度</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
     
   
 </nav>

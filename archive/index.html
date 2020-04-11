@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Archive – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1662,6 +1670,16 @@
         <span class="archive__meta" data-ani="true">
           
             <span class="archive__type">posts</span>
+            <span class="archive__date">04-11</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/doraemon-story-animal-affction/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">【哆啦A夢牧場物語】動物的好感度與情感度</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
             <span class="archive__date">04-06</span>
           
         </span>
@@ -1776,16 +1794,6 @@
           
         </span>
         <a href="https://ilyusha71.github.io/posts/doraemon-story-crop-part2/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">【哆啦A夢牧場物語】肥料對作物的品質影響</a>        
-      </li>
-      
-      <li class="archive__li" data-dir="ltr">
-        <span class="archive__meta" data-ani="true">
-          
-            <span class="archive__type">posts</span>
-            <span class="archive__date">04-03</span>
-          
-        </span>
-        <a href="https://ilyusha71.github.io/posts/doraemon-story-crop-part1/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">【哆啦A夢牧場物語】作物播種與收成的品質計算</a>        
       </li>
       
     </ul>

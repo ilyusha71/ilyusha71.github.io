@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】作物播種與收成的品質計算 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1851,17 +1859,17 @@ $$作物品質轉換率=\dfrac {最大品質分}{最大品質等級}=\dfrac {500
 <table>
 <thead>
 <tr>
-<th align="center"><strong>種子★級</strong></th>
-<th align="center"><strong>0.5★</strong></th>
-<th align="center"><strong>1★</strong></th>
-<th align="center"><strong>1.5★</strong></th>
-<th align="center"><strong>2★</strong></th>
-<th align="center"><strong>2.5★</strong></th>
-<th align="center"><strong>3★</strong></th>
-<th align="center"><strong>3.5★</strong></th>
-<th align="center"><strong>4★</strong></th>
-<th align="center"><strong>4.5★</strong></th>
-<th align="center"><strong>5★</strong></th>
+<th align="center"><strong>種子品質★</strong></th>
+<th align="center"><strong>★0.5</strong></th>
+<th align="center"><strong>★1</strong></th>
+<th align="center"><strong>★1.5</strong></th>
+<th align="center"><strong>★2</strong></th>
+<th align="center"><strong>★2.5</strong></th>
+<th align="center"><strong>★3</strong></th>
+<th align="center"><strong>★3.5</strong></th>
+<th align="center"><strong>★4</strong></th>
+<th align="center"><strong>★4.5</strong></th>
+<th align="center"><strong>★5</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -1892,21 +1900,21 @@ $$作物品質轉換率=\dfrac {最大品質分}{最大品質等級}=\dfrac {500
 <td align="center">400</td>
 </tr>
 <tr>
-<td align="center">作物★級</td>
-<td align="center">0.5★</td>
-<td align="center">0.5★</td>
-<td align="center">1★</td>
-<td align="center">1.5★</td>
-<td align="center">2★</td>
-<td align="center">2.5★</td>
-<td align="center">3★</td>
-<td align="center">3.5★</td>
-<td align="center">4★</td>
-<td align="center">4.5★</td>
+<td align="center">作物品質★</td>
+<td align="center">★0.5</td>
+<td align="center">★0.5</td>
+<td align="center">★1</td>
+<td align="center">★1.5</td>
+<td align="center">★2</td>
+<td align="center">★2.5</td>
+<td align="center">★3</td>
+<td align="center">★3.5</td>
+<td align="center">★4</td>
+<td align="center">★4.5</td>
 </tr>
 </tbody>
 </table>
-<p>所以<code>種子</code>播種後品質就會直接先降1級，相當於★級降0.5★。</p>
+<p>所以<code>種子</code>播種後品質就會直接先降1級，相當於品質★降★0.5。</p>
 <h3 id="作物收成品質轉換公式">作物收成品質轉換公式</h3>
 <p>作物的品質等級（<code>CropModel.Quality</code>）讀取子：</p>
 <div class="highlight"><div class="chroma">
@@ -1963,17 +1971,17 @@ $$作物品質等級=\dfrac{作物品質分}{作物品質轉換率}+1$$</p>
 <td align="center">10</td>
 </tr>
 <tr>
-<td align="center">作物★級</td>
-<td align="center">0.5★</td>
-<td align="center">1★</td>
-<td align="center">1.5★</td>
-<td align="center">2★</td>
-<td align="center">2.5★</td>
-<td align="center">3★</td>
-<td align="center">3.5★</td>
-<td align="center">4★</td>
-<td align="center">4.5★</td>
-<td align="center">5★</td>
+<td align="center">作物品質★</td>
+<td align="center">★0.5</td>
+<td align="center">★1</td>
+<td align="center">★1.5</td>
+<td align="center">★2</td>
+<td align="center">★2.5</td>
+<td align="center">★3</td>
+<td align="center">★3.5</td>
+<td align="center">★4</td>
+<td align="center">★4.5</td>
+<td align="center">★5</td>
 </tr>
 </tbody>
 </table>

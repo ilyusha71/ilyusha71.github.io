@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】動物商店 古騰摩克 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1732,7 +1740,7 @@
         <li><a href="#動物種子">動物種子</a></li>
         <li><a href="#動物鈴">動物鈴</a>
           <ul>
-            <li><a href="#動物鈴上架條件">動物鈴上架條件</a></li>
+            <li><a href="#動物鈴解鎖條件">動物鈴解鎖條件</a></li>
           </ul>
         </li>
       </ul>
@@ -1769,12 +1777,12 @@
 <li>商店功能集成介面：<code>ShopMasterCollection</code>
 <ul>
 <li>商店模版設定：<code>Setup()</code></li>
-<li>取得動物商店所有不陳列的資料：<code>GetAllNotDisplayCattleAndSheepShopDatas()</code>
+<li>取得動物商店所有不陳列資料的方法：<code>GetAllNotDisplayCattleAndSheepShopDatas()</code>
 <ul>
 <li>動物販售。</li>
 </ul>
 </li>
-<li>取得動物商店所有陳列的資料：<code>GetAllDisplayCattleAndSheepShopDatas()</code>
+<li>取得動物商店所有陳列資料的方法：<code>GetAllDisplayCattleAndSheepShopDatas()</code>
 <ul>
 <li>商品販售。</li>
 </ul>
@@ -1806,6 +1814,13 @@
 <li>是否需要庫存空間：<code>IsNeedToEmptyInventory</code></li>
 </ul>
 </li>
+<li>物品定義類：<code>Item</code>
+<ul>
+<li>動物鈴能否販售的方法：<code>CanSaleBell(int item_id)</code></li>
+</ul>
+</li>
+<li>吸引搖鈴指令類：<code>RingTheAttractBellCommand</code></li>
+<li>引導搖鈴指令類：<code>RingTheLeadBellCommand</code></li>
 </ul>
 <h3 id="調用狀態">調用狀態</h3>
 <ul>
@@ -1874,6 +1889,7 @@
             <td></td>
             <td>商品名稱</td>
             <td>販售價格</td>
+            <td>功能</td>
         </tr>
     </thead>
     <tbody>
@@ -1883,6 +1899,7 @@
             <td><img width= "64px" src= "/images/post/story_sprite/icon_1001110.png"></td>
             <td>刷子</td>
             <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">500</td>
+            <td>用來幫牛、羊與馬刷背</td>
         </tr>
         <tr>
             <td>100101</td>
@@ -1890,6 +1907,7 @@
             <td><img width= "64px" src= "/images/post/story_sprite/icon_1001120.png"></td>
             <td>擠乳器</td>
             <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">1000</td>
+            <td>用來幫成牛擠奶，可以獲得牛奶</td>
         </tr>
         <tr>
             <td>100102</td>
@@ -1897,6 +1915,7 @@
             <td><img width= "64px" src= "/images/post/story_sprite/icon_1001130.png"></td>
             <td>剃毛刀</td>
             <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">1000</td>
+            <td>用來幫成羊剪毛，可以獲得羊毛</td>
         </tr>
     </tbody>
 </table>
@@ -1995,6 +2014,7 @@
             <td></td>
             <td>商品名稱</td>
             <td>販售價格</td>
+            <td>功能</td>
         </tr>
     </thead>
     <tbody>
@@ -2004,6 +2024,7 @@
             <td><img width= "64px" src= "/images/post/story_sprite/icon_1001150.png"></td>
             <td>牛鈴</td>
             <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">5000</td>
+            <td>搖鈴後，牛會往大雄的位置移動。<br>持續8分鐘。</td>
         </tr>
         <tr>
             <td>100110</td>
@@ -2011,6 +2032,7 @@
             <td><img width= "64px" src= "/images/post/story_sprite/icon_1001151.png"></td>
             <td>羊鈴</td>
             <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">5000</td>
+            <td>搖鈴後，羊會往大雄的位置移動。<br>持續8分鐘。</td>
         </tr>
         <tr>
             <td>100112</td>
@@ -2018,6 +2040,7 @@
             <td><img width= "64px" src= "/images/post/story_sprite/icon_1001153.png"></td>
             <td>引導鈴</td>
             <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">20000</td>
+            <td>在牧場搖鈴會引導動物前往小屋，在小屋搖鈴時會引導動物前往牧場。<br>持續16分鐘。<br>只會影響♥3以上動物。</td>
         </tr>
     </tbody>
 </table>
@@ -2031,7 +2054,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="動物鈴上架條件">動物鈴上架條件</h4>
+<h4 id="動物鈴解鎖條件">動物鈴解鎖條件</h4>
 <table>
     <tr>
         <td rowspan="2"><img src= "/images/post/story_sprite/icon_201080021.png"></td>
