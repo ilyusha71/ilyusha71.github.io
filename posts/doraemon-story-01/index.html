@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】木工店劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,20 +529,12 @@
           }
         }
 
-        var utterances = document.getElementById('utterances');
+        var utterances = document.querySelector('iframe');
         if (utterances) {
-          utterances.querySelector('iframe').contentWindow.postMessage({
+          utterances.contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
-        }
-
-        var twitterCards = document.querySelectorAll('.twitter-timeline');
-        if (twitterCards) {
-          window.postMessage({
-            type: 'set-twitter-theme',
-            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
-          });
         }
       });
     }) : null;
@@ -1651,7 +1643,7 @@
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
     <nav class="breadcrumb hide" aria-label="breadcrumbs">
   <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
@@ -1754,11 +1746,15 @@
   </div>
 </div>
 
-      <h2 id="木工店">木工店</h2>
+      <p><img src="/images/post/story_texture2d/EventImage_2100.png" alt="木工店劇情線" /></p>
+<h2 id="木工店">木工店</h2>
+<p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
-         <td>01</td>
-         <td><img src= "/images/post/story_sprite/icon_201140020.png"></td>
+        <td>01</td>
+        <td align="center"><a href="../doraemon-story-01"><img src= "/images/post/story_sprite/icon_201140020.png">木工店</a></td>
+        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041140.png">潘特</td>
+        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041030.png">胖虎</td>
     </tr>
 </table>
 <h3 id="第1話-胖虎的幫忙">第1話 胖虎的幫忙</h3>
@@ -1784,7 +1780,7 @@
 <li>優先度：<code>4</code></li>
 <li>觸發地點：<code>青青農場</code>（<code>11500</code>）
 <ul>
-<li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（ <code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
+<li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（<code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
 </ul>
 </li>
 </ul>
@@ -1801,13 +1797,13 @@
 <li>結束時間：每日<code>13:00</code></li>
 </ul>
 </li>
-<li>天氣條件：<code>下雨天不觸發</code></li>
-<li>NPC總好感度條件</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥3</td>
+            <td>合計3♥</td>
         </tr>
     </thead>
     <tr>
@@ -1842,13 +1838,13 @@
 <li>結束時間：每日<code>13:00</code></li>
 </ul>
 </li>
-<li>天氣條件：<code>下雨天不觸發</code></li>
-<li>NPC總好感度條件</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥2</td>
+            <td>合計2♥</td>
         </tr>
     </thead>
     <tr>
@@ -1867,7 +1863,7 @@
 <li>優先度：<code>4</code></li>
 <li>觸發地點：<code>青青農場</code>（<code>11500</code>）
 <ul>
-<li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（ <code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
+<li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（<code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
 </ul>
 </li>
 </ul>
@@ -1884,13 +1880,13 @@
 <li>結束時間：每日<code>13:00</code></li>
 </ul>
 </li>
-<li>天氣條件：<code>下雨天不觸發</code></li>
-<li>NPC總好感度條件</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥5</td>
+            <td>合計5♥</td>
         </tr>
     </thead>
     <tr>
@@ -1926,12 +1922,12 @@
 <li>結束時間：每日<code>21:00</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥8</td>
+            <td>合計8♥</td>
         </tr>
     </thead>
     <tr>
@@ -1958,7 +1954,7 @@
         <td><img src= "/images/post/story_sprite/icon_1002110.png"></td>
     </tr>
 </table>
-<p><code>潘特</code>將<code>時光電視</code>交給<code>胖虎</code>保管。</p>
+<p><code>潘特</code>將<code>時光電視</code>（<code>1002110</code>）交給<code>胖虎</code>保管。</p>
 <ul>
 <li><code>大雄</code>去找<code>胖虎</code>可獲得。</li>
 <li>將<code>時光電視</code>交給<code>薇娜</code>可觸發<a href="../doraemon-story-00#%E7%AC%AC6%E8%A9%B1%E8%87%B3%E7%AC%AC9%E8%A9%B1">巨木第6話至第9話</a>劇情線。</li>
@@ -1982,12 +1978,12 @@
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥10</td>
+            <td>合計10♥</td>
         </tr>
     </thead>
     <tr>
@@ -2022,12 +2018,12 @@
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥11</td>
+            <td>合計11♥</td>
         </tr>
     </thead>
     <tr>
@@ -2069,12 +2065,12 @@
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥5</td>
+            <td>合計5♥</td>
         </tr>
     </thead>
     <tr>
@@ -2106,12 +2102,12 @@
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥12</td>
+            <td>合計12♥</td>
         </tr>
     </thead>
     <tr>
@@ -2146,12 +2142,12 @@
 <li>結束時間：每日<code>24:00</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥12</td>
+            <td>合計12♥</td>
         </tr>
     </thead>
     <tr>
@@ -2173,7 +2169,7 @@
 <li>優先度：<code>3</code></li>
 <li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
 <ul>
-<li><code>噴水池</code>前階梯（ <code>181.6</code>,<code>0</code>,<code>-131.2</code>）</li>
+<li><code>噴水池</code>前階梯（<code>181.6</code>,<code>0</code>,<code>-131.2</code>）</li>
 </ul>
 </li>
 </ul>
@@ -2190,13 +2186,13 @@
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>天氣條件：<code>下雨天不觸發</code></li>
-<li>NPC總好感度條件</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥13</td>
+            <td>合計13♥</td>
         </tr>
     </thead>
     <tr>
@@ -2234,13 +2230,13 @@
 <li>結束時間：每日<code>15:00</code></li>
 </ul>
 </li>
-<li>天氣條件：<code>下雨天不觸發</code></li>
-<li>NPC總好感度條件</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥21</td>
+            <td>合計21♥</td>
         </tr>
     </thead>
     <tr>
@@ -2272,12 +2268,12 @@
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥16</td>
+            <td>合計16♥</td>
         </tr>
     </thead>
     <tr>
@@ -2312,12 +2308,12 @@
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥16</td>
+            <td>合計16♥</td>
         </tr>
     </thead>
     <tr>
@@ -2352,12 +2348,12 @@
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC總好感度條件</li>
+<li>NPC好感度總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計♥30</td>
+            <td>合計30♥</td>
         </tr>
     </thead>
     <tr>
@@ -2965,16 +2961,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <section class="sidebar hide">
   <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="fixed">
+  <div class="toc__flexbox" data-position="absolute">
     <h6 class="toc__title" data-ani="true">目录</h6>
     
       <label class="switch" data-ani="true">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
+        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" >
         <span class="slider round"></span>
       </label>
     
   </div>
-  <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
+  <div class="toc hide" data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
     <li><a href="#木工店">木工店</a>
@@ -3131,7 +3127,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     var enableToc = JSON.parse("true");
     var toc = JSON.parse("null");
-    var hideToc = JSON.parse("false");
+    var hideToc = JSON.parse("true");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
     var tocFolding = JSON.parse("true");

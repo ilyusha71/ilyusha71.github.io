@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】88種料理出貨價格 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,20 +529,12 @@
           }
         }
 
-        var utterances = document.getElementById('utterances');
+        var utterances = document.querySelector('iframe');
         if (utterances) {
-          utterances.querySelector('iframe').contentWindow.postMessage({
+          utterances.contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
-        }
-
-        var twitterCards = document.querySelectorAll('.twitter-timeline');
-        if (twitterCards) {
-          window.postMessage({
-            type: 'set-twitter-theme',
-            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
-          });
         }
       });
     }) : null;
@@ -1203,7 +1195,7 @@
 
 
     
-<meta name="description" content="88種料理各★級的出貨價格" />
+<meta name="description" content="88種料理各品質出貨價格" />
 
 
 <meta name="keywords" content="出貨價格,料理">
@@ -1220,7 +1212,7 @@
 <meta property="og:title" content="【哆啦A夢牧場物語】88種料理出貨價格">
 <meta property="og:url" content="https://ilyusha71.github.io/posts/doraemon-story-sell-meals/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="88種料理各★級的出貨價格">
+<meta property="og:description" content="88種料理各品質出貨價格">
 
   
     <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_3300901.png">
@@ -1228,7 +1220,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】88種料理出貨價格">
-    <meta property="twitter:description" content="88種料理各★級的出貨價格">
+    <meta property="twitter:description" content="88種料理各品質出貨價格">
   
 
 <meta name="generator" content="Hugo 0.68.1" />
@@ -1270,7 +1262,7 @@
     "datePublished": "2020-04-05T20:01:03+08:00",
     "dateModified": "2020-04-05T20:01:03+08:00",
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-sell-meals/",
-    "description": "88種料理各★級的出貨價格",
+    "description": "88種料理各品質出貨價格",
     "keywords": ["出貨價格","料理"],
     "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_3300901.png",
     "author": {
@@ -1696,7 +1688,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月05日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;3&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1728,10 +1720,10 @@
   <div class="expand__content expand__content--toc">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#遊戲資源">遊戲資源</a></li>
-    <li><a href="#出貨價格資料">出貨價格資料</a>
+    <li><a href="#出貨價格資料">出貨價格資料</a></li>
+    <li><a href="#出貨價格">出貨價格</a>
       <ul>
-        <li><a href="#出貨價格">出貨價格</a></li>
+        <li><a href="#料理">料理</a></li>
       </ul>
     </li>
   </ul>
@@ -1739,19 +1731,17 @@
   </div>
 </div>
 
-      <h2 id="遊戲資源">遊戲資源</h2>
+      <h2 id="出貨價格資料">出貨價格資料</h2>
 <ul>
-<li>以下圖示儲存在Sprite資料夾下，各作物對應檔名為<code>icon_</code> + <code>mItemId</code>+<code>.png</code>，<code>mItemId</code>可透過<code>ItemData.text</code>取得。</li>
-<li>以下參數為TextAsset資料夾下<code>ItemData.text</code>的轉換的部分資料。</li>
+<li><a href="../doraemon-story-item-part1#%E7%89%A9%E5%93%81MOD%E8%B3%87%E6%96%99%E5%BA%AB">物品MOD資料庫</a></li>
 </ul>
-<h2 id="出貨價格資料">出貨價格資料</h2>
-<p>詳見 <a href="../doraemon-story-item-part1#%E7%89%A9%E5%93%81MOD%E8%B3%87%E6%96%99%E5%BA%AB">物品MOD資料庫</a></p>
-<h3 id="出貨價格">出貨價格</h3>
+<h2 id="出貨價格">出貨價格</h2>
 <ul>
+<li><a href="../doraemon-story-index/#%E5%87%BA%E8%B2%A8%E5%83%B9%E6%A0%BC">所有物品出貨價格索引</a></li>
 <li><code>品質等級</code>為1的物品，<code>出貨價格</code>為<code>基本售價</code>。</li>
 <li><code>品質等級</code>超過1的物品，<code>出貨價格</code>會根據上一品質等級的出貨價格以<code>售價倍率</code>提升並無條件進位至整數。</li>
 </ul>
-<hr />
+<h3 id="料理">料理</h3>
 <p>以<code>出貨價格</code>遞減排序：</p>
 <table>
     <thead>
@@ -1759,16 +1749,16 @@
             <td>物品ID</td>
             <td></td>
             <td>料理名稱</td>
-            <td>0.5★</td>
-            <td>1.0★</td>
-            <td>1.5★</td>
-            <td>2.0★</td>
-            <td>2.5★</td>
-            <td>3.0★</td>
-            <td>3.5★</td>
-            <td>4.0★</td>
-            <td>4.5★</td>
-            <td>5.0★</td>
+            <td>★0.5</td>
+            <td>★1.0</td>
+            <td>★1.5</td>
+            <td>★2.0</td>
+            <td>★2.5</td>
+            <td>★3.0</td>
+            <td>★3.5</td>
+            <td>★4.0</td>
+            <td>★4.5</td>
+            <td>★5.0</td>
         </tr>
     </thead>
     <tbody>
@@ -3323,7 +3313,7 @@
         </li>
         
         <li>
-          <a href="/posts/doraemon-story-sell-crops/" class="related__link">【哆啦A夢牧場物語】37種作物出貨價格</a>
+          <a href="/posts/doraemon-story-sell-crops/" class="related__link">【哆啦A夢牧場物語】36種作物出貨價格</a>
         </li>
         
     </ul>

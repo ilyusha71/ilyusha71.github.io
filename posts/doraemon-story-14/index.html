@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】貓劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,20 +529,12 @@
           }
         }
 
-        var utterances = document.getElementById('utterances');
+        var utterances = document.querySelector('iframe');
         if (utterances) {
-          utterances.querySelector('iframe').contentWindow.postMessage({
+          utterances.contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
-        }
-
-        var twitterCards = document.querySelectorAll('.twitter-timeline');
-        if (twitterCards) {
-          window.postMessage({
-            type: 'set-twitter-theme',
-            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
-          });
         }
       });
     }) : null;
@@ -1651,7 +1643,7 @@
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
     <nav class="breadcrumb hide" aria-label="breadcrumbs">
   <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
@@ -1737,11 +1729,15 @@
   </div>
 </div>
 
-      <h2 id="貓">貓</h2>
+      <p><img src="/images/post/story_texture2d/EventImage_3001.png" alt="貓劇情線" /></p>
+<h2 id="貓">貓</h2>
+<p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
          <td>14</td>
          <td><img src= "/images/post/story_sprite/icon_201140150.png"></td>
+         <td><a href="../doraemon-story-14">貓</a></td>
+         <td><img width="64px" src= "/images/post/story_sprite/icon_201042010.png"></td>
     </tr>
 </table>
 <h3 id="第1話-為了討得歡心">第1話 為了討得歡心</h3>
@@ -1781,7 +1777,7 @@
 <li>優先度：<code>3</code></li>
 <li>觸發地點：<code>青青農場</code>（<code>11500</code>）
 <ul>
-<li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（ <code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
+<li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（<code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
 </ul>
 </li>
 </ul>
@@ -2410,16 +2406,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <section class="sidebar hide">
   <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="fixed">
+  <div class="toc__flexbox" data-position="absolute">
     <h6 class="toc__title" data-ani="true">目录</h6>
     
       <label class="switch" data-ani="true">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
+        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" >
         <span class="slider round"></span>
       </label>
     
   </div>
-  <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
+  <div class="toc hide" data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
     <li><a href="#貓">貓</a>
@@ -2559,7 +2555,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     var enableToc = JSON.parse("true");
     var toc = JSON.parse("null");
-    var hideToc = JSON.parse("false");
+    var hideToc = JSON.parse("true");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
     var tocFolding = JSON.parse("true");

@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】料理店 嚼嚼 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,20 +529,12 @@
           }
         }
 
-        var utterances = document.getElementById('utterances');
+        var utterances = document.querySelector('iframe');
         if (utterances) {
-          utterances.querySelector('iframe').contentWindow.postMessage({
+          utterances.contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
-        }
-
-        var twitterCards = document.querySelectorAll('.twitter-timeline');
-        if (twitterCards) {
-          window.postMessage({
-            type: 'set-twitter-theme',
-            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
-          });
         }
       });
     }) : null;
@@ -1712,11 +1704,11 @@
 
   <li><a href="https://ilyusha71.github.io/tags/mod/" class="single__tag" title="MOD">#MOD</a></li>
 
+  <li><a href="https://ilyusha71.github.io/tags/%E4%BD%9C%E7%89%A9/" class="single__tag" title="作物">#作物</a></li>
+
   <li><a href="https://ilyusha71.github.io/tags/%E6%96%99%E7%90%86/" class="single__tag" title="料理">#料理</a></li>
 
   <li><a href="https://ilyusha71.github.io/tags/%E9%A3%9F%E8%AD%9C/" class="single__tag" title="食譜">#食譜</a></li>
-
-  <li><a href="https://ilyusha71.github.io/tags/%E4%BD%9C%E7%89%A9/" class="single__tag" title="作物">#作物</a></li>
 
 </ul>
     </div>
@@ -1910,33 +1902,33 @@
 </table>
 <h2 id="料理店商品資料">料理店商品資料</h2>
 <ul>
-<li><a href="../doraemon-story-shop-cafe-delish-recipes"><code>食譜</code></a>：89種
+<li><a href="../doraemon-story-shop-cafe-delish-recipes">食譜</a>：89種
 <ul>
-<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E6%98%A5%E5%AD%A3%E9%A3%9F%E8%AD%9C"><code>春季食譜</code></a>：15種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E5%A4%8F%E5%AD%A3%E9%A3%9F%E8%AD%9C"><code>夏季食譜</code></a>：14種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E7%A7%8B%E5%AD%A3%E9%A3%9F%E8%AD%9C"><code>秋季食譜</code></a>：14種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E5%86%AC%E5%AD%A3%E9%A3%9F%E8%AD%9C"><code>冬季食譜</code></a>：14種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E5%9B%9B%E5%AD%A3%E9%A3%9F%E8%AD%9C"><code>四季食譜</code></a>：32種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E6%98%A5%E5%AD%A3%E9%A3%9F%E8%AD%9C">春季食譜</a>：15種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E5%A4%8F%E5%AD%A3%E9%A3%9F%E8%AD%9C">夏季食譜</a>：14種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E7%A7%8B%E5%AD%A3%E9%A3%9F%E8%AD%9C">秋季食譜</a>：14種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E5%86%AC%E5%AD%A3%E9%A3%9F%E8%AD%9C">冬季食譜</a>：14種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-recipes#%E5%9B%9B%E5%AD%A3%E9%A3%9F%E8%AD%9C">四季食譜</a>：32種</li>
 </ul>
 </li>
-<li><a href="../doraemon-story-shop-cafe-delish-meals"><code>料理</code></a>：86種
+<li><a href="../doraemon-story-shop-cafe-delish-meals">料理</a>：86種
 <ul>
-<li><a href="../doraemon-story-shop-cafe-delish-meals#%E6%98%A5%E5%AD%A3%E6%96%99%E7%90%86"><code>春季料理</code></a>：22種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-meals#%E5%A4%8F%E5%AD%A3%E6%96%99%E7%90%86"><code>夏季料理</code></a>：22種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-meals#%E7%A7%8B%E5%AD%A3%E6%96%99%E7%90%86"><code>秋季料理</code></a>：21種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-meals#%E5%86%AC%E5%AD%A3%E6%96%99%E7%90%86"><code>冬季料理</code></a>：21種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-meals#%E6%98%A5%E5%AD%A3%E6%96%99%E7%90%86">春季料理</a>：22種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-meals#%E5%A4%8F%E5%AD%A3%E6%96%99%E7%90%86">夏季料理</a>：22種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-meals#%E7%A7%8B%E5%AD%A3%E6%96%99%E7%90%86">秋季料理</a>：21種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-meals#%E5%86%AC%E5%AD%A3%E6%96%99%E7%90%86">冬季料理</a>：21種</li>
 </ul>
 </li>
-<li><a href="../doraemon-story-shop-cafe-delish-produce"><code>農產品</code></a>：35種
+<li><a href="../doraemon-story-shop-cafe-delish-produce">農產品</a>：35種
 <ul>
-<li><a href="../doraemon-story-shop-cafe-delish-produce#%E6%98%A5%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>春季農產品</code></a>：7種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-produce#%E5%A4%8F%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>夏季農產品</code></a>：8種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-produce#%E7%A7%8B%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>秋季農產品</code></a>：6種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-produce#%E5%86%AC%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>冬季農產品</code></a>：3種</li>
-<li><a href="../doraemon-story-shop-cafe-delish-produce#%E5%9B%9B%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>四季農產品</code></a>：11種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-produce#%E6%98%A5%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">春季農產品</a>：7種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-produce#%E5%A4%8F%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">夏季農產品</a>：8種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-produce#%E7%A7%8B%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">秋季農產品</a>：6種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-produce#%E5%86%AC%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">冬季農產品</a>：3種</li>
+<li><a href="../doraemon-story-shop-cafe-delish-produce#%E5%9B%9B%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">四季農產品</a>：11種</li>
 </ul>
 </li>
-<li><a href="#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7"><code>調理器具</code></a>：5種</li>
+<li><a href="#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a>：5種</li>
 </ul>
 <h3 id="調理器具">調理器具</h3>
 <ul>
@@ -2221,7 +2213,7 @@
         </li>
         
         <li>
-          <a href="/posts/doraemon-story-sell-crops/" class="related__link">【哆啦A夢牧場物語】37種作物出貨價格</a>
+          <a href="/posts/doraemon-story-sell-crops/" class="related__link">【哆啦A夢牧場物語】36種作物出貨價格</a>
         </li>
         
         <li>

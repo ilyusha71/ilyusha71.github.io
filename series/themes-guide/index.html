@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Themes Guide – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,20 +529,12 @@
           }
         }
 
-        var utterances = document.getElementById('utterances');
+        var utterances = document.querySelector('iframe');
         if (utterances) {
-          utterances.querySelector('iframe').contentWindow.postMessage({
+          utterances.contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
-        }
-
-        var twitterCards = document.querySelectorAll('.twitter-timeline');
-        if (twitterCards) {
-          window.postMessage({
-            type: 'set-twitter-theme',
-            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
-          });
         }
       });
     }) : null;
@@ -1957,7 +1949,7 @@
                         MOD
                     </span>
                     <span class="taxo__num" dir="auto">
-                        6
+                        7
                     </span>
                 </a>
             </span>
@@ -2113,7 +2105,7 @@
                         作物
                     </span>
                     <span class="taxo__num" dir="auto">
-                        7
+                        8
                     </span>
                 </a>
             </span>
@@ -2126,7 +2118,7 @@
                         出貨價格
                     </span>
                     <span class="taxo__num" dir="auto">
-                        2
+                        5
                     </span>
                 </a>
             </span>
@@ -2139,7 +2131,7 @@
                         劇情
                     </span>
                     <span class="taxo__num" dir="auto">
-                        7
+                        20
                     </span>
                 </a>
             </span>
@@ -2165,7 +2157,7 @@
                         料理
                     </span>
                     <span class="taxo__num" dir="auto">
-                        4
+                        5
                     </span>
                 </a>
             </span>
@@ -2176,6 +2168,19 @@
                 <a href="/tags/%E7%84%A1%E7%B7%9A%E9%80%9A%E8%A8%8A/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         無線通訊
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/%E8%9F%B2%E9%A1%9E/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        蟲類
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2205,6 +2210,19 @@
                     </span>
                     <span class="taxo__num" dir="auto">
                         3
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/%E9%AD%9A%E9%A1%9E/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        魚類
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
                     </span>
                 </a>
             </span>
@@ -2320,7 +2338,7 @@
                         哆啦A夢
                     </span>
                     <span class="taxo__num" dir="auto">
-                        26
+                        45
                     </span>
                 </a>
             </span>
@@ -2333,7 +2351,7 @@
                         商店
                     </span>
                     <span class="taxo__num" dir="auto">
-                        7
+                        8
                     </span>
                 </a>
             </span>
@@ -2384,7 +2402,7 @@
                         哆啦A夢牧場物語
                     </span>
                     <span class="taxo__num" dir="auto">
-                        25
+                        44
                     </span>
                 </a>
             </span>

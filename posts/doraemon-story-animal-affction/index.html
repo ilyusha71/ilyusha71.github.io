@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】動物的好感度與情感度 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,20 +529,12 @@
           }
         }
 
-        var utterances = document.getElementById('utterances');
+        var utterances = document.querySelector('iframe');
         if (utterances) {
-          utterances.querySelector('iframe').contentWindow.postMessage({
+          utterances.contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
-        }
-
-        var twitterCards = document.querySelectorAll('.twitter-timeline');
-        if (twitterCards) {
-          window.postMessage({
-            type: 'set-twitter-theme',
-            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
-          });
         }
       });
     }) : null;
@@ -1765,19 +1757,19 @@
 
       <h2 id="動物的好感度與情感度">動物的好感度與情感度</h2>
 <ul>
-<li>野生動物的好感度可以參考在之前這篇<a href="../doraemon-story-likabilitydegree/">《NPC與動物與大雄的好感度》</a>。
+<li>野生動物的<code>好感度</code>可以參考在之前這篇<a href="../doraemon-story-likabilitydegree/">《NPC與動物與大雄的好感度》</a>。
 <ul>
 <li>好感度分為<code>10級</code>，以不同顏色的♥表示。</li>
 </ul>
 </li>
-<li>大雄家的動物們情感度計算與作物一樣均為線性成長。
+<li>大雄牧場動物們的<code>情感度</code>計算與<code>作物</code>一樣均為線性成長。
 <ul>
 <li>情感度分為<code>20級</code>，以半顆與整顆♥表示。</li>
 </ul>
 </li>
 </ul>
 <h3 id="情感值">😊情感值</h3>
-<p>情感值（<code>mAffectionDegree</code>）是用來度量大雄與家裡動物們的感情，上限值為1000。</p>
+<p>情感值（<code>mAffectionDegree</code>）是情感度的數值化化，上限值為1000。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1798,9 +1790,9 @@
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>情感值與情感度的轉換公式如下：<br />
+</div><p>情感值對情感度的轉換公式如下：<br />
 $$若情感值為1000，則情感度為20。$$<br />
-$$若非，情感度=\dfrac{情感值}{感情轉換率}+1$$</p>
+$$若非，情感度=\dfrac{情感值}{情感轉換率}+1$$</p>
 <h4 id="情感度量化表">情感度量化表</h4>
 <table>
     <thead>

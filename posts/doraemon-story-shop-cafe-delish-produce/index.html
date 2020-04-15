@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】料理店農產品販售資訊 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,20 +529,12 @@
           }
         }
 
-        var utterances = document.getElementById('utterances');
+        var utterances = document.querySelector('iframe');
         if (utterances) {
-          utterances.querySelector('iframe').contentWindow.postMessage({
+          utterances.contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
-        }
-
-        var twitterCards = document.querySelectorAll('.twitter-timeline');
-        if (twitterCards) {
-          window.postMessage({
-            type: 'set-twitter-theme',
-            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
-          });
         }
       });
     }) : null;
@@ -1752,11 +1744,11 @@
 <ul>
 <li><code>農產品</code>：35種
 <ul>
-<li><a href="#%E6%98%A5%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>春季農產品</code></a>：7種</li>
-<li><a href="#%E5%A4%8F%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>夏季農產品</code></a>：8種</li>
-<li><a href="#%E7%A7%8B%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>秋季農產品</code></a>：6種</li>
-<li><a href="#%E5%86%AC%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>冬季農產品</code></a>：3種</li>
-<li><a href="#%E5%9B%9B%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81"><code>四季農產品</code></a>：11種</li>
+<li><a href="#%E6%98%A5%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">春季農產品</a>：7種</li>
+<li><a href="#%E5%A4%8F%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">夏季農產品</a>：8種</li>
+<li><a href="#%E7%A7%8B%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">秋季農產品</a>：6種</li>
+<li><a href="#%E5%86%AC%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">冬季農產品</a>：3種</li>
+<li><a href="#%E5%9B%9B%E5%AD%A3%E8%BE%B2%E7%94%A2%E5%93%81">四季農產品</a>：11種</li>
 </ul>
 </li>
 </ul>

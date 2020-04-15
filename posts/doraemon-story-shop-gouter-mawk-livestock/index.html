@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】動物商店 古騰摩克 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,20 +529,12 @@
           }
         }
 
-        var utterances = document.getElementById('utterances');
+        var utterances = document.querySelector('iframe');
         if (utterances) {
-          utterances.querySelector('iframe').contentWindow.postMessage({
+          utterances.contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
-        }
-
-        var twitterCards = document.querySelectorAll('.twitter-timeline');
-        if (twitterCards) {
-          window.postMessage({
-            type: 'set-twitter-theme',
-            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
-          });
         }
       });
     }) : null;
@@ -1696,7 +1688,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月06日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;3&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1840,11 +1832,11 @@
 </ul>
 <h2 id="動物商店商品資料">動物商店商品資料</h2>
 <ul>
-<li><a href="#%E5%8B%95%E7%89%A9"><code>動物</code></a>：2種</li>
-<li><a href="#%E5%B7%A5%E5%85%B7"><code>工具</code></a>：3種</li>
-<li><a href="#%E5%8B%95%E7%89%A9%E9%A4%B5%E9%A3%9F"><code>動物餵食</code></a>：2種</li>
-<li><a href="#%E7%A8%AE%E5%AD%90"><code>種子</code></a>：2種</li>
-<li><a href="#%E5%8B%95%E7%89%A9%E9%88%B4"><code>動物鈴</code></a>：2種</li>
+<li><a href="#%E5%8B%95%E7%89%A9">動物</a>：2種</li>
+<li><a href="#%E5%B7%A5%E5%85%B7">工具</a>：3種</li>
+<li><a href="#%E5%8B%95%E7%89%A9%E9%A4%B5%E9%A3%9F">動物餵食</a>：2種</li>
+<li><a href="#%E5%8B%95%E7%89%A9%E7%A8%AE%E5%AD%90">動物種子</a>：2種</li>
+<li><a href="#%E5%8B%95%E7%89%A9%E9%88%B4">動物鈴</a>：2種</li>
 </ul>
 <h3 id="動物">動物</h3>
 <table>
@@ -2056,23 +2048,37 @@
 </ul>
 <h4 id="動物鈴解鎖條件">動物鈴解鎖條件</h4>
 <table>
+    <thead>
+        <tr>
+            <td>寬闊的動物小屋</td>
+            <td>牛鈴</td>
+            <td>羊鈴</td>
+        </tr>
+    </thead>
     <tr>
         <td rowspan="2"><img src= "/images/post/story_sprite/icon_201080021.png"></td>
         <td><img width= "64px" src= "/images/post/story_sprite/icon_1001150.png"></td>
         <td><img  width= "64px" src= "/images/post/story_sprite/icon_1001151.png"></td>
     </tr>
     <tr>
-        <td colspan="2">+ 寬闊的動物小屋<br>建完後才會在動物商店上架。</td>
+        <td colspan="2">+ <a href="../doraemon-story-shop-hammer-carpenter-shop#動物小屋升級">寬闊的動物小屋</a><br>升級完成後才會在動物商店上架。</td>
     </tr>
 </table>
 <table>
+    <thead>
+        <tr>
+            <td>巨大的動物小屋</td>
+            <td>巨大的雞小屋</td>
+            <td>引導鈴</td>
+        </tr>
+    </thead>
     <tr>
         <td rowspan="2"><img src= "/images/post/story_sprite/icon_201080022.png"></td>
         <td rowspan="2"><img src= "/images/post/story_sprite/icon_201080032.png"></td>
         <td><img  width= "64px" src= "/images/post/story_sprite/icon_1001153.png"></td>
     </tr>
     <tr>
-        <td>+ 巨大的動物小屋<br>+ 巨大的雞小屋<br>建完後才會在動物商店上架。</td>
+        <td>+ <a href="../doraemon-story-shop-hammer-carpenter-shop#動物小屋升級">巨大的動物小屋</a><br>+ <a href="../doraemon-story-shop-hammer-carpenter-shop#雞小屋升級">巨大的雞小屋</a><br>升級完成後才會在動物商店上架。</td>
     </tr>
 </table>
     </article>
