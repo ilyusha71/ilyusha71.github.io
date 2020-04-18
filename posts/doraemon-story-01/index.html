@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】木工店劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="胖虎與潘特的劇情發展，還有幻想筆！">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140020.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140020.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140020.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140020.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】木工店劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-01/",
     "description": "胖虎與潘特的劇情發展，還有幻想筆！",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140020.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140020.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1746,15 +1754,15 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_2100.png" alt="木工店劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2100.png" alt="木工店劇情線" /></p>
 <h2 id="木工店">木工店</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>01</td>
-        <td align="center"><a href="../doraemon-story-01"><img src= "/images/post/story_sprite/icon_201140020.png">木工店</a></td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041140.png">潘特</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041030.png">胖虎</td>
+        <td align="center"><a href="../doraemon-story-01"><img src= "/images/post/Season_of_Story/Sprite/icon_201140020.png">木工店</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041140.png">潘特</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041030.png">胖虎</td>
     </tr>
 </table>
 <h3 id="第1話-胖虎的幫忙">第1話 胖虎的幫忙</h3>
@@ -1778,32 +1786,32 @@
 <ul>
 <li>事件ID：<code>10003001</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>青青農場</code>（<code>11500</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E9%9D%92%E9%9D%92%E5%BB%A3%E5%A0%B4">青青廣場</a>（<code>11500</code>）
 <ul>
 <li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（<code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11500-01.png" alt="方尖碑" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11500-01.png" alt="方尖碑" /></p>
 <ul>
 <li>前置劇情：<a href="../doraemon-story-10#%E7%AC%AC2%E8%A9%B1-%E5%A3%9E%E6%8E%89%E7%9A%84%E6%89%8B%E7%92%B0">蘭奇第2話 壞掉的手環</a>（<code>10004001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>11:00</code></li>
 <li>結束時間：每日<code>13:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計3♥</td>
+            <td>合計3❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1811,82 +1819,82 @@
         <td>潘特</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060010.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060010.png"></td>
     </tr>
 </table>
 <h3 id="第3話-關於徒弟">第3話 關於徒弟</h3>
 <ul>
 <li>事件ID：<code>10003002</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）</li>
 </ul>
-<p><img src="/images/post/map/11200.png" alt="萬物鎮西" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200.png" alt="萬物鎮西" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC2%E8%A9%B1-%E5%AF%A1%E8%A8%80%E7%9A%84%E6%9C%A8%E5%8C%A0">木工店第2話 寡言的木匠</a>（<code>10003001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>11:00</code></li>
 <li>結束時間：每日<code>13:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計2♥</td>
+            <td>合計2❤️</td>
         </tr>
     </thead>
     <tr>
         <td>帕絲琪</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041060.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第4話-在哪裡">第4話 在哪裡？</h3>
 <ul>
 <li>事件ID：<code>10003003</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>青青農場</code>（<code>11500</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E9%9D%92%E9%9D%92%E5%BB%A3%E5%A0%B4">青青廣場</a>（<code>11500</code>）
 <ul>
 <li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（<code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11500-01.png" alt="方尖碑" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11500-01.png" alt="方尖碑" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC3%E8%A9%B1-%E9%97%9C%E6%96%BC%E5%BE%92%E5%BC%9F">木工店第3話 關於徒弟</a>（<code>10003002</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>11:00</code></li>
 <li>結束時間：每日<code>13:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計5♥</td>
+            <td>合計5❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1894,12 +1902,12 @@
         <td>潘特</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第5話-時光電視">第5話 時光電視</h3>
@@ -1907,27 +1915,27 @@
 <ul>
 <li>事件ID：<code>10003004</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>樵之森</code>（<code>10600</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%A8%B5%E4%B9%8B%E6%A3%AE">樵之森</a>（<code>10600</code>）</li>
 </ul>
-<p><img src="/images/post/map/10600.png" alt="樵之森" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10600.png" alt="樵之森" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC4%E8%A9%B1-%E5%9C%A8%E5%93%AA%E8%A3%A1">木工店第4話 在哪裡？</a>（<code>10003003</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>19:00</code></li>
 <li>結束時間：每日<code>21:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計8♥</td>
+            <td>合計8❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1935,12 +1943,12 @@
         <td>潘特</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
     </tr>
 </table>
 <ul>
@@ -1948,13 +1956,20 @@
 </ul>
 <h4 id="獲得時光電視">獲得時光電視</h4>
 <table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1002110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002110.png"></td>
     </tr>
 </table>
-<p><code>潘特</code>將<code>時光電視</code>（<code>1002110</code>）交給<code>胖虎</code>保管。</p>
+<p>劇情結束後，<code>潘特</code>將<code>時光電視</code>（<code>1002110</code>）交給<code>胖虎</code>保管。</p>
 <ul>
 <li><code>大雄</code>去找<code>胖虎</code>可獲得。</li>
 <li>將<code>時光電視</code>交給<code>薇娜</code>可觸發<a href="../doraemon-story-00#%E7%AC%AC6%E8%A9%B1%E8%87%B3%E7%AC%AC9%E8%A9%B1">巨木第6話至第9話</a>劇情線。</li>
@@ -1963,27 +1978,27 @@
 <ul>
 <li>事件ID：<code>20002001</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>木工店</code>（<code>20400</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%9C%A8%E5%B7%A5%E5%BA%97-%E5%92%9A%E5%90%AD%E5%99%B9">木工店 咚吭噹</a>（<code>20400</code>）</li>
 </ul>
-<p><img src="/images/post/map/20400.png" alt="木工店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20400.png" alt="木工店" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E6%99%82%E5%85%89%E9%9B%BB%E8%A6%96">木工店第5話 時光電視</a>（<code>10003004</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計10♥</td>
+            <td>合計10❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1991,39 +2006,39 @@
         <td>潘特</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第7話-溺愛子女大賽">第7話 溺愛子女大賽</h3>
 <ul>
 <li>事件ID：<code>20002002</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>木工店</code>（<code>20400</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%9C%A8%E5%B7%A5%E5%BA%97-%E5%92%9A%E5%90%AD%E5%99%B9">木工店 咚吭噹</a>（<code>20400</code>）</li>
 </ul>
-<p><img src="/images/post/map/20400.png" alt="木工店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20400.png" alt="木工店" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC6%E8%A9%B1-%E4%BB%A5%E5%89%8D%E7%9A%84%E5%BE%92%E5%BC%9F">木工店第6話 以前的徒弟</a>（<code>20002001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計11♥</td>
+            <td>合計11❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2032,82 +2047,82 @@
         <td>潘特</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041150.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041180.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041150.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041180.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第8話-木工店親子">第8話 木工店親子</h3>
 <ul>
 <li>事件ID：<code>20002003</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）
 <ul>
 <li><code>醫院</code>門口（<code>199.8</code>,<code>0</code>,<code>-193.9</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11300-02.png" alt="醫院門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300-209.png" alt="醫院門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC7%E8%A9%B1-%E6%BA%BA%E6%84%9B%E5%AD%90%E5%A5%B3%E5%A4%A7%E8%B3%BD">木工店第7話 溺愛子女大賽</a>（<code>20002002</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>12:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計5♥</td>
+            <td>合計5❤️</td>
         </tr>
     </thead>
     <tr>
         <td>席菲</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041250.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041250.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第9話-說服作戰">第9話 說服作戰</h3>
 <ul>
 <li>事件ID：<code>20002004</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>樵之森</code>（<code>10600</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%A8%B5%E4%B9%8B%E6%A3%AE">樵之森</a>（<code>10600</code>）</li>
 </ul>
-<p><img src="/images/post/map/10600.png" alt="樵之森" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10600.png" alt="樵之森" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC8%E8%A9%B1-%E6%9C%A8%E5%B7%A5%E5%BA%97%E8%A6%AA%E5%AD%90">木工店第8話 木工店親子</a>（<code>20002003</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計12♥</td>
+            <td>合計12❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2115,39 +2130,39 @@
         <td>席菲</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041250.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041250.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
     </tr>
 </table>
 <h3 id="第10話-父母心">第10話 父母心</h3>
 <ul>
 <li>事件ID：<code>20002005</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>鎮長先生家</code>（<code>20000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E9%8E%AE%E9%95%B7%E5%85%88%E7%94%9F%E7%9A%84%E5%AE%B6">鎮長先生的家</a>（<code>20000</code>）</li>
 </ul>
-<p><img src="/images/post/map/20000.png" alt="鎮長先生家" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20000.png" alt="鎮長先生家" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC9%E8%A9%B1-%E8%AA%AA%E6%9C%8D%E4%BD%9C%E6%88%B0">木工店第9話 說服作戰</a>（<code>20002004</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>21:00</code></li>
 <li>結束時間：每日<code>24:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計12♥</td>
+            <td>合計12❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2155,44 +2170,44 @@
         <td>亞緬</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
     </tr>
 </table>
 <h3 id="第11話-謠言">第11話 謠言</h3>
 <ul>
 <li>事件ID：<code>20002006</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）
 <ul>
 <li><code>噴水池</code>前階梯（<code>181.6</code>,<code>0</code>,<code>-131.2</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11300-01.png" alt="噴水池" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300-01.png" alt="噴水池" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC10%E8%A9%B1-%E7%88%B6%E6%AF%8D%E5%BF%83">木工店第10話 父母心</a>（<code>20002005</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>10:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計13♥</td>
+            <td>合計13❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2201,42 +2216,42 @@
         <td>潘特</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041080.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041170.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041170.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
     </tr>
 </table>
 <h3 id="第12話-去河邊玩大作戰">第12話 去河邊玩大作戰</h3>
 <ul>
 <li>事件ID：<code>20002007</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>樵之森</code>（<code>10600</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%A8%B5%E4%B9%8B%E6%A3%AE">樵之森</a>（<code>10600</code>）</li>
 </ul>
-<p><img src="/images/post/map/10600.png" alt="樵之森" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10600.png" alt="樵之森" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC11%E8%A9%B1-%E8%AC%A0%E8%A8%80">木工店第11話 謠言</a>（<code>20002006</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>10:00</code></li>
 <li>結束時間：每日<code>15:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計21♥</td>
+            <td>合計21❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2245,35 +2260,35 @@
         <td>席菲</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041250.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041250.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
     </tr>
 </table>
 <h3 id="第13話-那天的事">第13話 那天的事</h3>
 <ul>
 <li>事件ID：<code>20002008</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>釣具店</code>（<code>21300</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%B8%AD%E8%8F%B2%E5%B0%8F%E5%A7%90%E7%9A%84%E9%87%A3%E5%85%B7%E5%BA%97">席菲小姐的釣具店</a>（<code>21300</code>）</li>
 </ul>
-<p><img src="/images/post/map/21300.png" alt="釣具店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/21300.png" alt="釣具店" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC12%E8%A9%B1-%E5%8E%BB%E6%B2%B3%E9%82%8A%E7%8E%A9%E5%A4%A7%E4%BD%9C%E6%88%B0">木工店第12話 去河邊玩大作戰</a>（<code>20002007</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計16♥</td>
+            <td>合計16❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2281,39 +2296,39 @@
         <td>潘特</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
     </tr>
 </table>
 <h3 id="第14話-席菲的信">第14話 席菲的信</h3>
 <ul>
 <li>事件ID：<code>20002009</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>木工店</code>（<code>20400</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%9C%A8%E5%B7%A5%E5%BA%97-%E5%92%9A%E5%90%AD%E5%99%B9">木工店 咚吭噹</a>（<code>20400</code>）</li>
 </ul>
-<p><img src="/images/post/map/20400.png" alt="木工店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20400.png" alt="木工店" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC13%E8%A9%B1-%E9%82%A3%E5%A4%A9%E7%9A%84%E4%BA%8B">木工店第13話 那天的事</a>（<code>20002008</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>12:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計16♥</td>
+            <td>合計16❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2321,39 +2336,39 @@
         <td>潘特</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
     </tr>
 </table>
 <h3 id="第15話-久違的對話">第15話 久違的對話</h3>
 <ul>
 <li>事件ID：<code>20002010</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>木工店</code>（<code>20400</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%9C%A8%E5%B7%A5%E5%BA%97-%E5%92%9A%E5%90%AD%E5%99%B9">木工店 咚吭噹</a>（<code>20400</code>）</li>
 </ul>
-<p><img src="/images/post/map/20400.png" alt="木工店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20400.png" alt="木工店" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC14%E8%A9%B1-%E5%B8%AD%E8%8F%B2%E7%9A%84%E4%BF%A1">木工店第14話 席菲的信</a>（<code>20002009</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>10:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計30♥</td>
+            <td>合計30❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2362,17 +2377,17 @@
         <td>席菲</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041250.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041250.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
     </tr>
 </table>
-<p><img src="/images/post/story_texture2d/EventImage_2100.png" alt="結局" /></p>
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2100.png" alt="結局" /></p>
 
     </article>
     

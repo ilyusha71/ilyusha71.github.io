@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】秘密道具劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="秘密道具的相關劇情">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140200.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140200.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140200.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140200.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】秘密道具劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-19/",
     "description": "秘密道具的相關劇情",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140200.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140200.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1721,7 +1729,11 @@
     <li><a href="#秘密道具">秘密道具</a>
       <ul>
         <li><a href="#第1話-用門改變裝潢">第1話 用門改變裝潢！？</a></li>
-        <li><a href="#第2話-送們當禮物">第2話 送們當禮物</a></li>
+        <li><a href="#第2話-送們當禮物">第2話 送們當禮物</a>
+          <ul>
+            <li><a href="#獲得任意門">獲得任意門</a></li>
+          </ul>
+        </li>
         <li><a href="#第3話-秘密基地">第3話 秘密基地</a></li>
         <li><a href="#第4話-秘密夥伴">第4話 秘密夥伴</a>
           <ul>
@@ -1730,6 +1742,7 @@
         </li>
         <li><a href="#第5話-發明家布拉斯">第5話 發明家布拉斯！？</a>
           <ul>
+            <li><a href="#獲得發明家">獲得發明家</a></li>
             <li><a href="#解鎖工具與機器">解鎖工具與機器</a></li>
           </ul>
         </li>
@@ -1741,26 +1754,26 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_sprite/icon_1002260.png" alt="秘密道具劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Sprite/icon_1002260.png" alt="秘密道具劇情線" /></p>
 <h2 id="秘密道具">秘密道具</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>19</td>
-        <td align="center"><a href="../doraemon-story-19"><img src= "/images/post/story_sprite/icon_201140200.png">秘密道具</a></td>
+        <td align="center"><a href="../doraemon-story-19"><img src= "/images/post/Season_of_Story/Sprite/icon_201140200.png">秘密道具</a></td>
     </tr>
 </table>
 <h3 id="第1話-用門改變裝潢">第1話 用門改變裝潢！？</h3>
 <ul>
 <li>事件ID：<code>30001001</code></li>
 <li>優先度：<code>2</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）</li>
 </ul>
-<p><img src="/images/post/map/11300.png" alt="萬物鎮東" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300.png" alt="萬物鎮東" /></p>
 <ul>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
-<li>開始時間：第一年夏季1日<code>06:00</code></li>
+<li>開始時間：第1年夏季1日<code>06:00</code></li>
 <li>結束時間：每日<code>19:00</code></li>
 </ul>
 </li>
@@ -1772,23 +1785,51 @@
 <li>前置劇情：<a href="#%E7%AC%AC1%E8%A9%B1-%E7%94%A8%E9%96%80%E6%94%B9%E8%AE%8A%E8%A3%9D%E6%BD%A2">秘密道具第1話 用門改變裝潢！？</a>（<code>30001001</code>）</li>
 <li>NPC：<code>潘特</code>（<code>114</code>）
 <ul>
-<li>送禮：<code>金礦石</code>（<code>4001003</code>）</li>
+<li>送禮🎁：<code>金礦石</code>（<code>4001003</code>）</li>
 </ul>
 </li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>潘特</td>
+            <td>金礦石</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041140.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_4001003.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041140.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_4001003.png"></td>
+        <td>礦坑N層挖取、打鐵店購買</td>
     </tr>
 </table>
+<h4 id="獲得任意門">獲得任意門</h4>
+<table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041000.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002120.png"></td>
+    </tr>
+</table>
+<p><code>潘特</code>打造完成新門後，<code>亞緬</code>會把<code>任意門</code>（<code>1002120</code>）還給<code>大雄</code>。</p>
+<ul>
+<li><code>任意門</code>可在各個區域之間快速移動。</li>
+<li><code>任意門</code>每次使用後會記錄<code>進入</code>與<code>出來</code>的兩個區域。</li>
+</ul>
 <h3 id="第3話-秘密基地">第3話 秘密基地</h3>
 <ul>
 <li>事件ID：<code>30002001</code></li>
 <li>優先度：<code>2</code></li>
 <li>觸發地點：<code>濤濤海濱</code>（<code>10800</code>）</li>
 </ul>
-<p><img src="/images/post/map/10800.png" alt="濤濤海濱" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10800.png" alt="濤濤海濱" /></p>
 <ul>
 <li>前置劇情：<a href="../doraemon-story-20#%E7%AC%AC1%E8%A9%B1-%E6%B4%9E%E7%AA%9F%E7%9A%84%E5%B2%A9%E5%A3%81">洞窟第1話 洞窟的岩壁</a>（<code>20010001</code>）</li>
 </ul>
@@ -1799,22 +1840,37 @@
 <li>前置劇情：<a href="#%E7%AC%AC3%E8%A9%B1-%E7%A7%98%E5%AF%86%E5%9F%BA%E5%9C%B0">秘密道具第3話 秘密基地</a>（<code>30002001</code>）</li>
 <li>NPC：<code>肯</code>（<code>110</code>）
 <ul>
-<li>送禮：<code>旗魚</code>（<code>5000127</code>）</li>
+<li>送禮🎁：<code>旗魚</code>（<code>5000127</code>）</li>
 </ul>
 </li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>肯</td>
+            <td>旗魚</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_5000127.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_5000127.png"></td>
+        <td>濤濤海濱、濤濤海岬釣取</td>
     </tr>
 </table>
 <h4 id="獲得穿透環">獲得穿透環</h4>
 <table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041000.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1002270.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041000.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002270.png"></td>
     </tr>
 </table>
 <p>加入秘密基地後，<code>肯</code>把<code>穿透環</code>（<code>1002270</code>）送還給<code>大雄</code>。</p>
@@ -1825,24 +1881,33 @@
 <ul>
 <li>事件ID：<code>30003001</code></li>
 <li>優先度：<code>2</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
-<li>開始時間：第一年秋季1日<code>06:00</code></li>
+<li>開始時間：第1年秋季1日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
 </ul>
-<h4 id="解鎖工具與機器">解鎖工具與機器</h4>
+<h4 id="獲得發明家">獲得發明家</h4>
 <table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041150.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1002200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041160.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041150.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002200.png"></td>
     </tr>
 </table>
+<h4 id="解鎖工具與機器">解鎖工具與機器</h4>
 <p><code>斯米克</code>借用<code>發明家</code>（<code>1002200</code>）之後，工具將能再進一步升級為<code>輕輕鬆鬆系列</code>，同時也能購買<code>機器</code>。</p>
 <table>
     <thead>
@@ -1851,13 +1916,13 @@
         </tr>
     </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_1001005.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1001015.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1001025.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1001035.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1001045.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1001055.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1001065.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1001005.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1001015.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1001025.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1001035.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1001045.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1001055.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1001065.png"></td>
     </tr>
     <tr>
         <td align="center">輕輕鬆鬆<br>鋤頭</td>
@@ -1874,8 +1939,8 @@
         </tr>
     </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201080090.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201080100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201080090.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201080100.png"></td>
     </tr>
     <tr>
         <td>種子機</td>
@@ -1889,8 +1954,15 @@
 <li>必要物品：<code>馬竹</code>（<code>4001020</code>）</li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>馬竹</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_4001020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_4001020.png"></td>
+        <td>透過地底釣竿取得</td>
     </tr>
 </table>
     </article>
@@ -2122,11 +2194,11 @@
         </li>
         
         <li>
-          <a href="/posts/doraemon-story-12/" class="related__link">【哆啦A夢牧場物語】狗劇情線</a>
+          <a href="/posts/doraemon-story-11/" class="related__link">【哆啦A夢牧場物語】克魯波克魯劇情線</a>
         </li>
         
         <li>
-          <a href="/posts/doraemon-story-03/" class="related__link">【哆啦A夢牧場物語】料理店劇情線</a>
+          <a href="/posts/doraemon-story-12/" class="related__link">【哆啦A夢牧場物語】狗劇情線</a>
         </li>
         
     </ul>
@@ -2511,7 +2583,11 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#秘密道具">秘密道具</a>
       <ul>
         <li><a href="#第1話-用門改變裝潢">第1話 用門改變裝潢！？</a></li>
-        <li><a href="#第2話-送們當禮物">第2話 送們當禮物</a></li>
+        <li><a href="#第2話-送們當禮物">第2話 送們當禮物</a>
+          <ul>
+            <li><a href="#獲得任意門">獲得任意門</a></li>
+          </ul>
+        </li>
         <li><a href="#第3話-秘密基地">第3話 秘密基地</a></li>
         <li><a href="#第4話-秘密夥伴">第4話 秘密夥伴</a>
           <ul>
@@ -2520,6 +2596,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </li>
         <li><a href="#第5話-發明家布拉斯">第5話 發明家布拉斯！？</a>
           <ul>
+            <li><a href="#獲得發明家">獲得發明家</a></li>
             <li><a href="#解鎖工具與機器">解鎖工具與機器</a></li>
           </ul>
         </li>

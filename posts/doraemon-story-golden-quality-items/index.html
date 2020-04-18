@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】黃金雞蛋、黃金牛奶與黃金羊毛的取得條件 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="黃金雞蛋、黃金牛奶與黃金羊毛的取得條件">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201171503.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201171503.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201171503.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201171503.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】黃金雞蛋、黃金牛奶與黃金羊毛的取得條件">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-golden-quality-items/",
     "description": "黃金雞蛋、黃金牛奶與黃金羊毛的取得條件",
     "keywords": ["作物"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201171503.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201171503.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1721,7 +1729,12 @@
     <li>
       <ul>
         <li><a href="#黃金品質原料取得條件">黃金品質原料取得條件</a></li>
-        <li><a href="#加工農產品">加工農產品</a></li>
+        <li><a href="#加工農產品">加工農產品</a>
+          <ul>
+            <li><a href="#調理加工農產品">調理加工農產品</a></li>
+            <li><a href="#機器加工農產品">機器加工農產品</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -1730,6 +1743,37 @@
 </div>
 
       <h3 id="黃金品質原料取得條件">黃金品質原料取得條件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-C#" data-lang="C#"><span class="k">public</span> <span class="k">class</span> <span class="nc">AnimalModel</span> <span class="p">:</span> <span class="n">INullableModel</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="kt">bool</span> <span class="n">IsSpecialHarvest</span>
+    <span class="p">{</span>
+        <span class="k">get</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">IsVictory</span> <span class="p">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="n">AffectionDegreeRate</span> <span class="p">==</span> <span class="m">20</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>根據上列代碼，要收穫黃金品質的<code>雞蛋</code>、<code>牛奶</code>與<code>羊毛</code>必須滿足下列兩項條件：</p>
+<ul>
+<li>參與同類<code>動物競賽</code>獲得<code>冠軍</code>。</li>
+<li>動物<code>情感度</code>達到20，亦即♥10。</li>
+</ul>
 <table>
     <thead>
         <tr>
@@ -1739,12 +1783,12 @@
         </tr>
     </thead>
     <tr>
-        <td rowspan="2"><img width="192px" src= "/images/post/story_sprite/icon_201031140.png"></td>
+        <td rowspan="2"><img width="137px" src= "/images/post/Season_of_Story/Sprite/icon_201031140.png"></td>
         <td align="center"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><br>情感度達到♥10</td>
-        <td rowspan="2" align="center"><img width="96px" src= "/images/post/story_sprite/icon_3200102.png">黃金雞蛋</td>
+        <td rowspan="2" align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3200102.png">黃金雞蛋</td>
     </tr>
     <tr>
-        <td align="center"><img src= "/images/post/Icon_Star_Full.png">贏得養雞競賽<br>夏季14日</td>
+        <td align="center"><img src= "/images/post/Season_of_Story/Sprite/Icon_Crown_01.png">贏得養雞競賽</td>
     </tr>
         <thead>
         <tr>
@@ -1754,12 +1798,12 @@
         </tr>
     </thead>
     <tr>
-        <td rowspan="2"><img width="192px" src= "/images/post/story_sprite/icon_201031100.png"></td>
+        <td rowspan="2"><img width="137px" src= "/images/post/Season_of_Story/Sprite/icon_201031100.png"></td>
         <td align="center"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><br>情感度達到♥10</td>
-        <td rowspan="2" align="center"><img width="96px" src= "/images/post/story_sprite/icon_3200103.png">黃金牛奶</td>
+        <td rowspan="2" align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3200103.png">黃金牛奶</td>
     </tr>
     <tr>
-        <td align="center"><img src= "/images/post/Icon_Star_Full.png">贏得飼牛競賽<br>冬季16日</td>
+        <td align="center"><img src= "/images/post/Season_of_Story/Sprite/Icon_Crown_01.png">贏得飼牛競賽</td>
     </tr>
         <thead>
         <tr>
@@ -1769,16 +1813,17 @@
         </tr>
     </thead>
     <tr>
-        <td rowspan="2"><img width="192px" src= "/images/post/story_sprite/icon_201031120.png"></td>
+        <td rowspan="2"><img width="137px" src= "/images/post/Season_of_Story/Sprite/icon_201031120.png"></td>
         <td align="center"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><img  align="left" src= "/images/post/Icon_Heart_Full.png"><br>情感度達到♥10</td>
-        <td rowspan="2" align="center"><img width="96px" src= "/images/post/story_sprite/icon_4100102.png">黃金羊毛</td>
+        <td rowspan="2" align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_4100102.png">黃金羊毛</td>
     </tr>
     <tr>
-        <td align="center"><img src= "/images/post/Icon_Star_Full.png">贏得飼羊競賽<br>秋季24日</td>
+        <td align="center"><img src= "/images/post/Season_of_Story/Sprite/Icon_Crown_01.png">贏得飼羊競賽</td>
     </tr>
 </table>
 <h3 id="加工農產品">加工農產品</h3>
 <p>透過<code>雞蛋</code>、<code>牛奶</code>與<code>羊毛</code>加工的部分農產品，若改用黃金品質的原料也會產生黃金品質的農產品。</p>
+<h4 id="調理加工農產品">調理加工農產品</h4>
 <table>
     <thead>
         <tr>
@@ -1788,12 +1833,13 @@
         </tr>
     </thead>
     <tr>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_3400111.png">黃金美乃滋</td>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_9000101.png">打蛋器</td>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_3200102.png">黃金雞蛋</td>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_3400102.png">油</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3400111.png">黃金美乃滋</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_9000101.png">打蛋器</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3200102.png">黃金雞蛋</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3400102.png">油</td>
     </tr>
 </table>
+<h4 id="機器加工農產品">機器加工農產品</h4>
 <table>
     <thead>
         <tr>
@@ -1803,19 +1849,19 @@
         </tr>
     </thead>
     <tr>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_3400109.png">黃金起司</td>        
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_201080120.png">起司機</td>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_3200103.png">黃金牛奶</td>
+        <td align="center" valign="bottom"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3400109.png">黃金起司</td>        
+        <td align="center" valign="bottom"><img width="137px" src= "/images/post/Season_of_Story/Sprite/icon_201080120.png">起司機</td>
+        <td align="center" valign="bottom"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3200103.png">黃金牛奶</td>
     </tr>
     <tr>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_3400110.png">黃金優格</td>        
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_201080130.png">優格機</td>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_3200103.png">黃金牛奶</td>
+        <td align="center" valign="bottom"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3400110.png">黃金優格</td>        
+        <td align="center" valign="bottom"><img width="137px" src= "/images/post/Season_of_Story/Sprite/icon_201080130.png">優格機</td>
+        <td align="center" valign="bottom"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_3200103.png">黃金牛奶</td>
     </tr>
     <tr>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_4100103.png">黃金毛線</td>        
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_201080140.png">毛線機</td>
-        <td align="center"><img width="96px" src= "/images/post/story_sprite/icon_4100102.png">黃金羊毛</td>
+        <td align="center" valign="bottom"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_4100103.png">黃金毛線</td>        
+        <td align="center" valign="bottom"><img width="137px" src= "/images/post/Season_of_Story/Sprite/icon_201080140.png">毛線機</td>
+        <td align="center" valign="bottom"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_4100102.png">黃金羊毛</td>
     </tr>
 </table>
     </article>

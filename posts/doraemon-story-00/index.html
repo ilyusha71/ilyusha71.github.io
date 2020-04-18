@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】巨木劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="大雄與哆啦A夢等人的主線劇情發展">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140010.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140010.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140010.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140010.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】巨木劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-00/",
     "description": "大雄與哆啦A夢等人的主線劇情發展",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140010.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140010.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1688,7 +1696,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月11日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;5&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1721,27 +1729,39 @@
     <li><a href="#巨木">巨木</a>
       <ul>
         <li><a href="#第1話-自由研究和神奇種子">第1話 自由研究和神奇種子</a></li>
-        <li><a href="#第2話-暴風雨後的小鎮">第2話 暴風雨後的小鎮</a></li>
+        <li><a href="#第2話-暴風雨後的小鎮">第2話 暴風雨後的小鎮</a>
+          <ul>
+            <li><a href="#其他支線延伸劇情">其他支線延伸劇情</a></li>
+          </ul>
+        </li>
         <li><a href="#第3話-大雄的幫忙">第3話 大雄的幫忙</a>
           <ul>
             <li><a href="#重新命名牧場">重新命名牧場</a></li>
           </ul>
         </li>
         <li><a href="#第4話-女神大人的傳說">第4話 女神大人的傳說</a></li>
-        <li><a href="#第5話-邂逅女神大人">第5話 邂逅女神大人</a></li>
+        <li><a href="#第5話-邂逅女神大人">第5話 邂逅女神大人</a>
+          <ul>
+            <li><a href="#其他支線延伸劇情-1">其他支線延伸劇情</a></li>
+          </ul>
+        </li>
         <li><a href="#第6話至第9話">第6話至第9話</a>
           <ul>
-            <li><a href="#子事件給女神來來貓">子事件：給女神來來貓</a></li>
-            <li><a href="#子事件給女神幻想筆">子事件：給女神幻想筆</a></li>
-            <li><a href="#子事件給女神時光電視">子事件：給女神時光電視</a></li>
-            <li><a href="#子事件給女神呼喚精靈手環">子事件：給女神呼喚精靈手環</a></li>
+            <li><a href="#給女神來來貓">給女神來來貓</a></li>
+            <li><a href="#給女神幻想筆">給女神幻想筆</a></li>
+            <li><a href="#給女神時光電視">給女神時光電視</a></li>
+            <li><a href="#給女神呼喚精靈手環">給女神呼喚精靈手環</a></li>
           </ul>
         </li>
         <li><a href="#第6話-驟雨">第6話 驟雨</a></li>
         <li><a href="#第7話-供品">第7話 供品</a></li>
         <li><a href="#第8話-各自的自由研究">第8話 各自的自由研究</a></li>
         <li><a href="#第9話-巨木的問題">第9話 巨木的問題</a></li>
-        <li><a href="#第10話-銀白之雷">第10話 銀白之雷</a></li>
+        <li><a href="#第10話-銀白之雷">第10話 銀白之雷</a>
+          <ul>
+            <li><a href="#其他支線延伸劇情-2">其他支線延伸劇情</a></li>
+          </ul>
+        </li>
         <li><a href="#第11話-小鎮的未來">第11話 小鎮的未來</a></li>
         <li><a href="#第12話-大暴風雨與親子">第12話 大暴風雨與親子</a></li>
         <li><a href="#第13話-回到未來吧">第13話 回到未來吧</a></li>
@@ -1753,16 +1773,16 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_2800.png" alt="巨木劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2800.png" alt="巨木劇情線" /></p>
 <h2 id="巨木">巨木</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>00</td>
-        <td align="center"><a href="../doraemon-story-00"><img src= "/images/post/story_sprite/icon_201140010.png">巨木</a></td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041000.png">大雄</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041010.png">哆啦A夢</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041070.png">薇娜</td>
+        <td align="center"><a href="../doraemon-story-00"><img src= "/images/post/Season_of_Story/Sprite/icon_201140010.png">巨木</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041000.png">大雄</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041010.png">哆啦A夢</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041070.png">薇娜</td>
     </tr>
 </table>
 <h3 id="第1話-自由研究和神奇種子">第1話 自由研究和神奇種子</h3>
@@ -1771,9 +1791,9 @@
 <li>事件ID：<code>10000001</code></li>
 <li>優先度：<code>0</code></li>
 </ul>
-<p><img src="/images/post/story_texture2d/EventImage_1000.png" alt="劇情" /><br />
-<img src="/images/post/story_texture2d/EventImage_1001.png" alt="劇情" /><br />
-<img src="/images/post/story_texture2d/EventImage_1002.png" alt="劇情" /><br />
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_1000.png" alt="劇情" /><br />
+<img src="/images/post/Season_of_Story/Texture2D/EventImage_1001.png" alt="劇情" /><br />
+<img src="/images/post/Season_of_Story/Texture2D/EventImage_1002.png" alt="劇情" /><br />
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/fCLsLwLKxMU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -1785,6 +1805,16 @@
 <li>事件ID：<code>10000002</code></li>
 <li>優先度：<code>0</code></li>
 <li>前置劇情：<a href="#%E7%AC%AC1%E8%A9%B1-%E8%87%AA%E7%94%B1%E7%A0%94%E7%A9%B6%E5%92%8C%E7%A5%9E%E5%A5%87%E7%A8%AE%E5%AD%90">巨木第1話 自由研究和神奇種子</a>（<code>10000001</code>）</li>
+</ul>
+<h4 id="其他支線延伸劇情">其他支線延伸劇情</h4>
+<ul>
+<li>支線劇情<a href="../doraemon-story-06#%E7%AC%AC0%E8%A9%B1-%E8%A6%81%E9%96%8B%E5%B0%8F%E9%9B%9E%E5%95%86%E5%BA%97">小雞商店第0話 要開小雞商店？</a>（<code>20008000</code>）</li>
+<li>支線劇情<a href="../doraemon-story-07#%E7%AC%AC0%E8%A9%B1-%E8%A6%81%E9%96%8B%E5%8B%95%E7%89%A9%E5%95%86%E5%BA%97%E5%97%8E">動物商店第0話 要開動物商店嗎？</a>（<code>20007000</code>）</li>
+<li>支線劇情<a href="../doraemon-story-05#%E7%AC%AC0%E8%A9%B1-%E8%A6%81%E9%96%8B%E9%9B%9C%E8%B2%A8%E5%BA%97%E5%97%8E">雜貨店第0話 要開雜貨店嗎？</a>（<code>20006000</code>）</li>
+<li>支線劇情<a href="../doraemon-story-03#%E7%AC%AC1%E8%A9%B1-%E5%B0%8F%E5%A4%AB%E7%9A%84%E5%B9%AB%E5%BF%99">料理店第1話 小夫的幫忙</a>（<code>10001000</code>）</li>
+<li>支線劇情<a href="../doraemon-story-02#%E7%AC%AC1%E8%A9%B1-%E9%9D%9C%E9%A6%99%E7%9A%84%E5%B9%AB%E5%BF%99">醫院第1話 靜香的幫忙</a>（<code>10002000</code>）</li>
+<li>支線劇情<a href="../doraemon-story-04#%E7%AC%AC0%E8%A9%B1-%E8%A6%81%E9%96%8B%E6%89%93%E9%90%B5%E5%BA%97%E5%97%8E">打鐵店第0話 要開打鐵店嗎？</a>（<code>20005000</code>）</li>
+<li>支線劇情<a href="../doraemon-story-01#%E7%AC%AC1%E8%A9%B1-%E8%83%96%E8%99%8E%E7%9A%84%E5%B9%AB%E5%BF%99">木工店第1話 胖虎的幫忙</a>（<code>10003000</code>）</li>
 </ul>
 <h3 id="第3話-大雄的幫忙">第3話 大雄的幫忙</h3>
 <p>哆啦A夢成為鎮長的助手後，大雄開始進入蘭奇家後方的牧場開始學習經營。</p>
@@ -1799,14 +1829,14 @@
 <ul>
 <li>事件ID：<code>10000004</code></li>
 <li>優先度：<code>0</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）</li>
 </ul>
-<p><img src="/images/post/map/11200.png" alt="萬物鎮西" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200.png" alt="萬物鎮西" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC3%E8%A9%B1-%E5%A4%A7%E9%9B%84%E7%9A%84%E5%B9%AB%E5%BF%99">巨木第3話 大雄的幫忙</a>（<code>10000003</code>）</li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
-<li>開始時間：第一年春季10日<code>06:00</code></li>
+<li>開始時間：第1年春季10日<code>06:00</code></li>
 <li>結束時間：每日<code>15:00</code></li>
 </ul>
 </li>
@@ -1817,123 +1847,135 @@
 <li>事件ID：<code>10000005</code></li>
 <li>優先度：<code>0</code></li>
 </ul>
+<h4 id="其他支線延伸劇情-1">其他支線延伸劇情</h4>
+<ul>
+<li>支線劇情<a href="../doraemon-story-10/#%E7%AC%AC1%E8%A9%B1-%E8%98%AD%E5%A5%87%E7%9A%84%E6%89%8B%E7%92%B0">蘭奇第1話 蘭奇的手環</a>（<code>10004000</code>）</li>
+<li>支線劇情<a href="../doraemon-story-20#%E7%AC%AC1%E8%A9%B1-%E6%B4%9E%E7%AA%9F%E7%9A%84%E5%B2%A9%E5%A3%81">洞窟第1話 洞窟的岩壁</a>（<code>20010001</code>）</li>
+</ul>
 <h3 id="第6話至第9話">第6話至第9話</h3>
-<p>從第6話開始至第9話的4段劇情，必須交給<code>薇娜</code>下列任何一樣道具才會觸發，而每樣道具都有取得的<code>支線</code>劇情必須先完成：</p>
-<table>
-    <tr>
-        <td>來來貓</td>
-        <td>幻想筆</td>
-        <td>時光電視</td>
-        <td>呼喚精靈手環</td>
-    </tr>
-    <tr>     
-        <td><img src= "/images/post/story_sprite/icon_1002210.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1002230.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1002110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1002090.png"></td>
-    </tr>
-    <tr>               
-        <td><a href="../doraemon-story-03#第5話-來來貓">料理店第5話<br>來來貓</a></td>
-        <td><a href="../doraemon-story-02#第5話-幻想筆">醫院第5話<br>幻想筆</a></td>
-        <td><a href="../doraemon-story-01#第5話-時光電視">木工店第5話<br>時光電視</a></td>
-        <td><a href="../doraemon-story-10#第4話-呼喚精靈手環">蘭奇第4話<br>呼喚精靈手環</a></td>
-    </tr>
-</table>
-<p>交給<code>薇娜</code>其中一樣道具後就會開始第6話的劇情，依序到第9話皆是如此，交出的道具順序不會影響劇情順序。</p>
-<h4 id="子事件給女神來來貓">子事件：給女神來來貓</h4>
+<p>從第6話開始至第9話的4段劇情，必須交給<code>薇娜</code>下列任何一樣道具才會觸發，而每樣道具都有取得的<code>支線</code>劇情必須先完成才能獲得，道具交給<code>薇娜</code>的先後順序並不影響劇情走向，劇情始終依序觸發。</p>
+<h4 id="給女神來來貓">給女神來來貓</h4>
 <ul>
 <li>事件ID：<code>50000020</code></li>
 <li>優先度：<code>4</code></li>
 <li>觸發地點：<code>巨木根部</code>（<code>11700</code>）</li>
 </ul>
-<p><img src="/images/post/map/11700.png" alt="巨木根部" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11700.png" alt="巨木根部" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E9%82%82%E9%80%85%E5%A5%B3%E7%A5%9E%E5%A4%A7%E4%BA%BA">巨木第5話 邂逅女神大人</a>（<code>10000005</code>）</li>
 <li>NPC：<code>薇娜</code>（<code>107</code>）</li>
 </ul>
 <table>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041070.png"></td>
     </tr>
 </table>
 <ul>
 <li>必要物品：<code>來來貓</code>（<code>1002210</code>）</li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>來來貓</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_1002210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002210.png"></td>
+        <td><a href="../doraemon-story-03#第5話-來來貓">料理店第5話 來來貓</a></td>
     </tr>
 </table>
-<h4 id="子事件給女神幻想筆">子事件：給女神幻想筆</h4>
+<h4 id="給女神幻想筆">給女神幻想筆</h4>
 <ul>
 <li>事件ID：<code>50000021</code></li>
 <li>優先度：<code>3</code></li>
 <li>觸發地點：<code>巨木根部</code>（<code>11700</code>）</li>
 </ul>
-<p><img src="/images/post/map/11700.png" alt="巨木根部" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11700.png" alt="巨木根部" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E9%82%82%E9%80%85%E5%A5%B3%E7%A5%9E%E5%A4%A7%E4%BA%BA">巨木第5話 邂逅女神大人</a>（<code>10000005</code>）</li>
 <li>NPC：<code>薇娜</code>（<code>107</code>）</li>
 </ul>
 <table>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041070.png"></td>
     </tr>
 </table>
 <ul>
 <li>必要物品：<code>幻想筆</code>（<code>1002230</code>）</li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>幻想筆</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_1002230.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002230.png"></td>
+        <td><a href="../doraemon-story-02#第5話-幻想筆">醫院第5話 幻想筆</a></td>
     </tr>
 </table>
-<h4 id="子事件給女神時光電視">子事件：給女神時光電視</h4>
+<h4 id="給女神時光電視">給女神時光電視</h4>
 <ul>
 <li>事件ID：<code>50000022</code></li>
 <li>優先度：<code>2</code></li>
 <li>觸發地點：<code>巨木根部</code>（<code>11700</code>）</li>
 </ul>
-<p><img src="/images/post/map/11700.png" alt="巨木根部" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11700.png" alt="巨木根部" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E9%82%82%E9%80%85%E5%A5%B3%E7%A5%9E%E5%A4%A7%E4%BA%BA">巨木第5話 邂逅女神大人</a>（<code>10000005</code>）</li>
 <li>NPC：<code>薇娜</code>（<code>107</code>）</li>
 </ul>
 <table>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041070.png"></td>
     </tr>
 </table>
 <ul>
 <li>必要物品：<code>時光電視</code>（<code>1002110</code>）</li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>時光電視</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_1002110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002110.png"></td>
+        <td><a href="../doraemon-story-01#第5話-時光電視">木工店第5話 時光電視</a></td>
     </tr>
 </table>
-<h4 id="子事件給女神呼喚精靈手環">子事件：給女神呼喚精靈手環</h4>
+<h4 id="給女神呼喚精靈手環">給女神呼喚精靈手環</h4>
 <ul>
 <li>事件ID：<code>50000023</code></li>
 <li>優先度：<code>1</code></li>
 <li>觸發地點：<code>巨木根部</code>（<code>11700</code>）</li>
 </ul>
-<p><img src="/images/post/map/11700.png" alt="巨木根部" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11700.png" alt="巨木根部" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E9%82%82%E9%80%85%E5%A5%B3%E7%A5%9E%E5%A4%A7%E4%BA%BA">巨木第5話 邂逅女神大人</a>（<code>10000005</code>）</li>
 <li>NPC：<code>薇娜</code>（<code>107</code>）</li>
 </ul>
 <table>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041070.png"></td>
     </tr>
 </table>
 <ul>
 <li>必要物品：<code>呼喚精靈手環</code>（<code>1002090</code>）</li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>呼喚精靈手環</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_1002090.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002090.png"></td>
+        <td><a href="../doraemon-story-10#第4話-呼喚精靈手環">蘭奇第4話 呼喚精靈手環</a></td>
     </tr>
 </table>
 <h3 id="第6話-驟雨">第6話 驟雨</h3>
@@ -1960,20 +2002,20 @@
 <li>優先度：<code>0</code></li>
 <li>前置劇情：<a href="#%E7%AC%AC8%E8%A9%B1-%E5%90%84%E8%87%AA%E7%9A%84%E8%87%AA%E7%94%B1%E7%A0%94%E7%A9%B6">巨木第8話 各自的自由研究</a>（<code>10000008</code>）</li>
 </ul>
-<p><img src="/images/post/story_texture2d/EventImage_1010.png" alt="劇情" /><br />
-<img src="/images/post/story_texture2d/EventImage_1011.png" alt="劇情" /><br />
-<img src="/images/post/story_texture2d/EventImage_1012.png" alt="劇情" /><br />
-<img src="/images/post/story_texture2d/EventImage_1013.png" alt="劇情" /></p>
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_1010.png" alt="劇情" /><br />
+<img src="/images/post/Season_of_Story/Texture2D/EventImage_1011.png" alt="劇情" /><br />
+<img src="/images/post/Season_of_Story/Texture2D/EventImage_1012.png" alt="劇情" /><br />
+<img src="/images/post/Season_of_Story/Texture2D/EventImage_1013.png" alt="劇情" /></p>
 <h3 id="第10話-銀白之雷">第10話 銀白之雷</h3>
 <ul>
 <li>事件ID：<code>10000010</code></li>
 <li>優先度：<code>0</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）</li>
 </ul>
-<p><img src="/images/post/map/11200.png" alt="萬物鎮西" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200.png" alt="萬物鎮西" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC9%E8%A9%B1-%E5%B7%A8%E6%9C%A8%E7%9A%84%E5%95%8F%E9%A1%8C">巨木第9話 巨木的問題</a>（<code>10000009</code>）</li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>15:00</code></li>
@@ -1981,28 +2023,32 @@
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
 </ul>
+<h4 id="其他支線延伸劇情-2">其他支線延伸劇情</h4>
+<ul>
+<li>支線劇情<a href="doraemon-story-10/#%E7%AC%AC5%E8%A9%B1-%E5%A4%9C%E9%96%93%E6%BC%AB%E6%AD%A5">蘭奇第5話 夜間漫步</a>（<code>10004004</code>）</li>
+</ul>
 <h3 id="第11話-小鎮的未來">第11話 小鎮的未來</h3>
 <ul>
 <li>事件ID：<code>10000011</code></li>
 <li>優先度：<code>0</code></li>
 <li>觸發地點：<code>巨木根部</code>（<code>11700</code>）</li>
 </ul>
-<p><img src="/images/post/map/11700.png" alt="巨木根部" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11700.png" alt="巨木根部" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC10%E8%A9%B1-%E9%8A%80%E7%99%BD%E4%B9%8B%E9%9B%B7">巨木第10話 銀白之雷</a>（<code>10000010</code>）</li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>11:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計12♥</td>
+            <td>合計12❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2010,12 +2056,12 @@
         <td>帕絲琪</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041060.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第12話-大暴風雨與親子">第12話 大暴風雨與親子</h3>
@@ -2024,10 +2070,10 @@
 <li>優先度：<code>0</code></li>
 <li>觸發地點：<code>巨木根部</code>（<code>11700</code>）</li>
 </ul>
-<p><img src="/images/post/map/11700.png" alt="巨木根部" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11700.png" alt="巨木根部" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC11%E8%A9%B1-%E5%B0%8F%E9%8E%AE%E7%9A%84%E6%9C%AA%E4%BE%86">巨木第11話 小鎮的未來</a>（<code>10000011</code>）</li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>15:00</code></li>
@@ -2038,15 +2084,22 @@
 </ul>
 <table>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041070.png"></td>
     </tr>
 </table>
 <ul>
 <li>必要物品：<code>竹蜻蜓</code>（<code>1002000</code>）</li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>竹蜻蜓</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_1002000.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002000.png"></td>
+        <td><a href="../doraemon-story-11#第6話-克魯波克魯全體集合">克魯波克魯第6話 克魯波克魯全體集合！</a></td>
     </tr>
 </table>
 <h3 id="第13話-回到未來吧">第13話 回到未來吧</h3>
@@ -2659,27 +2712,39 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#巨木">巨木</a>
       <ul>
         <li><a href="#第1話-自由研究和神奇種子">第1話 自由研究和神奇種子</a></li>
-        <li><a href="#第2話-暴風雨後的小鎮">第2話 暴風雨後的小鎮</a></li>
+        <li><a href="#第2話-暴風雨後的小鎮">第2話 暴風雨後的小鎮</a>
+          <ul>
+            <li><a href="#其他支線延伸劇情">其他支線延伸劇情</a></li>
+          </ul>
+        </li>
         <li><a href="#第3話-大雄的幫忙">第3話 大雄的幫忙</a>
           <ul>
             <li><a href="#重新命名牧場">重新命名牧場</a></li>
           </ul>
         </li>
         <li><a href="#第4話-女神大人的傳說">第4話 女神大人的傳說</a></li>
-        <li><a href="#第5話-邂逅女神大人">第5話 邂逅女神大人</a></li>
+        <li><a href="#第5話-邂逅女神大人">第5話 邂逅女神大人</a>
+          <ul>
+            <li><a href="#其他支線延伸劇情-1">其他支線延伸劇情</a></li>
+          </ul>
+        </li>
         <li><a href="#第6話至第9話">第6話至第9話</a>
           <ul>
-            <li><a href="#子事件給女神來來貓">子事件：給女神來來貓</a></li>
-            <li><a href="#子事件給女神幻想筆">子事件：給女神幻想筆</a></li>
-            <li><a href="#子事件給女神時光電視">子事件：給女神時光電視</a></li>
-            <li><a href="#子事件給女神呼喚精靈手環">子事件：給女神呼喚精靈手環</a></li>
+            <li><a href="#給女神來來貓">給女神來來貓</a></li>
+            <li><a href="#給女神幻想筆">給女神幻想筆</a></li>
+            <li><a href="#給女神時光電視">給女神時光電視</a></li>
+            <li><a href="#給女神呼喚精靈手環">給女神呼喚精靈手環</a></li>
           </ul>
         </li>
         <li><a href="#第6話-驟雨">第6話 驟雨</a></li>
         <li><a href="#第7話-供品">第7話 供品</a></li>
         <li><a href="#第8話-各自的自由研究">第8話 各自的自由研究</a></li>
         <li><a href="#第9話-巨木的問題">第9話 巨木的問題</a></li>
-        <li><a href="#第10話-銀白之雷">第10話 銀白之雷</a></li>
+        <li><a href="#第10話-銀白之雷">第10話 銀白之雷</a>
+          <ul>
+            <li><a href="#其他支線延伸劇情-2">其他支線延伸劇情</a></li>
+          </ul>
+        </li>
         <li><a href="#第11話-小鎮的未來">第11話 小鎮的未來</a></li>
         <li><a href="#第12話-大暴風雨與親子">第12話 大暴風雨與親子</a></li>
         <li><a href="#第13話-回到未來吧">第13話 回到未來吧</a></li>

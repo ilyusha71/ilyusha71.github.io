@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】NPC與動物與大雄的好感度 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1685,7 +1693,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年03月25日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;1&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;2&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1711,6 +1719,15 @@
   <div class="expand__content expand__content--toc">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#好感度與情感度">好感度與情感度</a>
+      <ul>
+        <li><a href="#好感值">好感值🥰</a>
+          <ul>
+            <li><a href="#好感度量化表">好感度量化表</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#關注">關注</a></li>
     <li><a href="#好感度的獲取方式與對應積分">好感度的獲取方式與對應積分</a></li>
     <li><a href="#好感度積分">好感度積分</a>
@@ -1724,7 +1741,100 @@
   </div>
 </div>
 
-      <h2 id="關注">關注</h2>
+      <h2 id="好感度與情感度">好感度與情感度</h2>
+<ul>
+<li><a href="../doraemon-story-likabilitydegree/">好感度💝</a>分為<code>10級</code>，以不同顏色的❤️表示，主要表示NPC對大雄的好感程度。
+<ul>
+<li>好感度💝的增加主要來自<code>送禮🎁</code>。</li>
+</ul>
+</li>
+<li><a href="../doraemon-story-affectiondegree/">情感度💗</a>分為<code>20級</code>，以半顆與整顆❤️表示，主要表示牧場動物與大雄的情感程度。
+<ul>
+<li>情感度💗的增加主要來自大雄在牧場的<code>照顧</code>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="好感值">好感值🥰</h3>
+<p>好感值🥰是好感度💝的數值化，上限值為<code>10000</code>。<br />
+好感值🥰對好感度💝為<code>非線性成長</code>。</p>
+<h4 id="好感度量化表">好感度量化表</h4>
+<p>好感度💝對應的好感值🥰範圍在<code>鎮民</code>與<code>野生動物</code>之間存在差異。</p>
+<table>
+    <thead>
+        <tr>
+            <td colspan="2">好感值🥰下限</td>
+            <td rowspan="2">好感度💝</td>
+            <td rowspan="2">❤️</td>
+        </tr>        
+        <tr>
+            <td>鎮民</td>
+            <td>野生動物</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060010.png"></td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>100</td>
+            <td>2</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>200</td>
+            <td>3</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        </tr>
+        <tr>
+            <td>900</td>
+            <td>400</td>
+            <td>4</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
+        </tr>
+        <tr>
+            <td>1700</td>
+            <td>700</td>
+            <td>5</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+        </tr>
+        <tr>
+            <td>2800</td>
+            <td>1100</td>
+            <td>6</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        </tr>
+        <tr>
+            <td>4200</td>
+            <td>1700</td>
+            <td>7</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
+        </tr>
+        <tr>
+            <td>5900</td>
+            <td>2600</td>
+            <td>8</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        </tr>
+        <tr>
+            <td>7900</td>
+            <td>3800</td>
+            <td>9</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060090.png"></td>
+        </tr>
+        <tr>
+            <td>10000</td>
+            <td>5000</td>
+            <td>10</td>
+            <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        </tr>
+    </tbody>
+</table>
+<h2 id="關注">關注</h2>
 <p><a href="https://www.facebook.com/dorayakifarm/?modal=admin_todo_tour">銅鑼燒實驗牧場</a><br />
 <a href="https://docs.google.com/spreadsheets/d/1DjAbwpy9XUwY5iAoWFtHbHDwEne82c33R1dH83Qb7eY/">伊琉沙/ PC實測/哆啦A夢牧場物語</a></p>
 <p>關於好感度的計算，我從源代碼反編譯找到了。<br />

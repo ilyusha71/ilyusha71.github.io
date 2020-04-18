@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】醫院劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="靜香、瑟露娜與洛克德的劇情發展，還有幻想筆！">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140060.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140060.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140060.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140060.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】醫院劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-02/",
     "description": "靜香、瑟露娜與洛克德的劇情發展，還有幻想筆！",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140060.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140060.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1688,7 +1696,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月11日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;5&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1746,25 +1754,25 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_2000.png" alt="醫院劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2000.png" alt="醫院劇情線" /></p>
 <h2 id="醫院">醫院</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>02</td>
-        <td align="center"><a href="../doraemon-story-02"><img src= "/images/post/story_sprite/icon_201140060.png">醫院</a></td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041210.png">洛克德</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041220.png">瑟露娜</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041020.png">靜香</td>
+        <td align="center"><a href="../doraemon-story-02"><img src= "/images/post/Season_of_Story/Sprite/icon_201140060.png">醫院</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041210.png">洛克德</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041220.png">瑟露娜</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041020.png">靜香</td>
     </tr>
 </table>
 <h3 id="第1話-靜香的幫忙">第1話 靜香的幫忙</h3>
 <ul>
 <li>事件ID：<code>10002000</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="../doraemon-story-00#%E7%AC%AC2%E8%A9%B1-%E6%9A%B4%E9%A2%A8%E9%9B%A8%E5%BE%8C%E7%9A%84%E5%B0%8F%E9%8E%AE">巨木第2話 暴風雨後的小鎮</a>（<code>10000002</code>）</li>
 </ul>
@@ -1772,28 +1780,28 @@
 <ul>
 <li>事件ID：<code>10002001</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="../doraemon-story-10#%E7%AC%AC2%E8%A9%B1-%E5%A3%9E%E6%8E%89%E7%9A%84%E6%89%8B%E7%92%B0">蘭奇第2話 壞掉的手環</a>（<code>10004001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>17:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計3♥</td>
+            <td>合計3❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1801,39 +1809,39 @@
         <td>瑟露娜</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060010.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060010.png"></td>
     </tr>
 </table>
 <h3 id="第3話-戀愛的丘比特">第3話 戀愛的丘比特</h3>
 <ul>
 <li>事件ID：<code>10002002</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC2%E8%A9%B1-%E5%BF%99%E7%A2%8C%E7%9A%84%E9%9D%9C%E9%A6%99">醫院第2話 忙碌的靜香</a>（<code>10002001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>17:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計6♥</td>
+            <td>合計6❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1843,43 +1851,43 @@
         <td>菈姆</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060010.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060010.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060010.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060010.png"></td>
     </tr>
 </table>
 <h3 id="第4話-積極的醫生">第4話 積極的醫生？</h3>
 <ul>
 <li>事件ID：<code>10002003</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC3%E8%A9%B1-%E6%88%80%E6%84%9B%E7%9A%84%E4%B8%98%E6%AF%94%E7%89%B9">醫院第3話 戀愛的丘比特</a>（<code>10002002</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>17:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計5♥</td>
+            <td>合計5❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1887,44 +1895,44 @@
         <td>洛克德</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第5話-幻想筆">第5話 幻想筆</h3>
 <ul>
 <li>事件ID：<code>10002004</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）
 <ul>
 <li><code>醫院</code>門口（<code>199.79</code>,<code>0</code>,<code>-193.93</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11300-02.png" alt="醫院門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300-209.png" alt="醫院門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC4%E8%A9%B1-%E7%A9%8D%E6%A5%B5%E7%9A%84%E9%86%AB%E7%94%9F">醫院第4話 積極的醫生？</a>（<code>10002003</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>17:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計8♥</td>
+            <td>合計8❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1932,23 +1940,30 @@
         <td>瑟露娜</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
     </tr>
 </table>
 <h4 id="獲得幻想筆">獲得幻想筆</h4>
 <table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_1002230.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002230.png"></td>
     </tr>
 </table>
-<p><code>瑟露娜</code>把<code>幻想筆</code>（<code>1002230</code>）交給<code>靜香</code>保管。</p>
+<p>劇情結束後，<code>瑟露娜</code>把<code>幻想筆</code>（<code>1002230</code>）交給<code>靜香</code>保管。</p>
 <ul>
 <li><code>大雄</code>去找<code>靜香</code>可獲得。</li>
 <li>將<code>幻想筆</code>交給<code>薇娜</code>可觸發<a href="../doraemon-story-00#%E7%AC%AC6%E8%A9%B1%E8%87%B3%E7%AC%AC9%E8%A9%B1">巨木第6話至第9話</a>劇情線。</li>
@@ -1957,27 +1972,27 @@
 <ul>
 <li>事件ID：<code>20003001</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E5%B9%BB%E6%83%B3%E7%AD%86">醫院第5話 幻想筆</a>（<code>10002004</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>10:00</code></li>
 <li>結束時間：每日<code>15:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計13♥</td>
+            <td>合計13❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1986,41 +2001,41 @@
         <td>洛克德</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
     </tr>
 </table>
 <h3 id="第7話-女生聚會">第7話 女生聚會？</h3>
 <ul>
 <li>事件ID：<code>20003002</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC6%E8%A9%B1-%E5%A5%91%E6%A9%9F">醫院第6話 契機</a>（<code>20003001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>10:00</code></li>
 <li>結束時間：每日<code>15:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計22♥</td>
+            <td>合計22❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2032,47 +2047,47 @@
         <td>洛克德</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041250.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041250.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
     </tr>
 </table>
 <h3 id="第8話-約會">第8話 約會</h3>
 <ul>
 <li>事件ID：<code>20003003</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC7%E8%A9%B1-%E5%A5%B3%E7%94%9F%E8%81%9A%E6%9C%83">醫院第7話 女生聚會？</a>（<code>20003002</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計16♥</td>
+            <td>合計16❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2081,41 +2096,41 @@
         <td>洛克德</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
     </tr>
 </table>
 <h3 id="第9話-藥粉與藥錠">第9話 藥粉與藥錠</h3>
 <ul>
 <li>事件ID：<code>20003004</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC8%E8%A9%B1-%E7%B4%84%E6%9C%83">醫院第8話 約會</a>（<code>20003003</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計19♥</td>
+            <td>合計19❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2125,80 +2140,80 @@
         <td>亞緬</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第10話-偷偷地">第10話 偷偷地……</h3>
 <ul>
 <li>事件ID：<code>20003005</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC9%E8%A9%B1-%E8%97%A5%E7%B2%89%E8%88%87%E8%97%A5%E9%8C%A0">醫院第9話 藥粉與藥錠</a>（<code>20003004</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>21:00</code></li>
 <li>結束時間：每日<code>24:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計6♥</td>
+            <td>合計6❤️</td>
         </tr>
     </thead>
     <tr>
         <td>洛克德</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
     </tr>
 </table>
 <h3 id="第11話-有所隱瞞">第11話 有所隱瞞？</h3>
 <ul>
 <li>事件ID：<code>20003006</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC10%E8%A9%B1-%E5%81%B7%E5%81%B7%E5%9C%B0">醫院第10話 偷偷地……</a>（<code>20003005</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>14:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計14♥</td>
+            <td>合計14❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2206,39 +2221,39 @@
         <td>瑟露娜</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
     </tr>
 </table>
 <h3 id="第12話-為了你">第12話 為了你</h3>
 <ul>
 <li>事件ID：<code>20003007</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC11%E8%A9%B1-%E6%9C%89%E6%89%80%E9%9A%B1%E7%9E%9E">醫院第11話 有所隱瞞？</a>（<code>20003006</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>10:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計23♥</td>
+            <td>合計23❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2247,42 +2262,42 @@
         <td>瑟露娜</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
     </tr>
 </table>
 <h3 id="第13話-誠實電波">第13話 誠實電波</h3>
 <ul>
 <li>事件ID：<code>20003008</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>瑟露娜小姐家</code>（<code>21000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E7%91%9F%E9%9C%B2%E5%A8%9C%E5%B0%8F%E5%A7%90%E5%AE%B6">瑟露娜小姐家</a>（<code>21000</code>）</li>
 </ul>
-<p><img src="/images/post/map/21000.png" alt="瑟露娜小姐家" /></p>
+<p><img src="/images/post/Season_of_Story/Map/21000.png" alt="瑟露娜小姐家" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC12%E8%A9%B1-%E7%82%BA%E4%BA%86%E4%BD%A0">醫院第12話 為了你</a>（<code>20003007</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>19:00</code></li>
 <li>結束時間：每日<code>22:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計18♥</td>
+            <td>合計18❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2290,76 +2305,76 @@
         <td>瑟露娜</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060090.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060090.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060090.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060090.png"></td>
     </tr>
 </table>
 <h3 id="第14話-渴望挽回">第14話 渴望挽回</h3>
 <ul>
 <li>事件ID：<code>20003009</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC13%E8%A9%B1-%E8%AA%A0%E5%AF%A6%E9%9B%BB%E6%B3%A2">醫院第13話 誠實電波</a>（<code>20003008</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計9♥</td>
+            <td>合計9❤️</td>
         </tr>
     </thead>
     <tr>
         <td>洛克德</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060090.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060090.png"></td>
     </tr>
 </table>
 <h3 id="第15話-婚禮要在什麼時候">第15話 婚禮要在什麼時候？</h3>
 <ul>
 <li>事件ID：<code>20003011</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>洛克德醫院</code>（<code>20900</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%B4%9B%E5%85%8B%E5%BE%B7%E5%85%88%E7%94%9F%E7%9A%84%E9%86%AB%E9%99%A2">洛克德先生的醫院</a>（<code>20900</code>）</li>
 </ul>
-<p><img src="/images/post/map/20900.png" alt="洛克德醫院" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20900.png" alt="洛克德醫院" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC14%E8%A9%B1-%E6%B8%B4%E6%9C%9B%E6%8C%BD%E5%9B%9E">醫院第14話 渴望挽回</a>（<code>20003010</code>）？？？？？？
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>10:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計30♥</td>
+            <td>合計30❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2368,17 +2383,17 @@
         <td>瑟露娜</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041210.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041220.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041210.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041220.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
     </tr>
 </table>
-<p><img src="/images/post/story_texture2d/EventImage_2000.png" alt="結局" /></p>
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2000.png" alt="結局" /></p>
 
     </article>
     

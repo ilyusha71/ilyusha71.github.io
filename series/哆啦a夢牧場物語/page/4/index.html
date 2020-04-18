@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>哆啦A夢牧場物語 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1675,19 +1683,19 @@
 
     
     <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
-      <a href="https://ilyusha71.github.io/posts/doraemon-story-crop-part2/">
-        <img data-src="/images/post/story_sprite/icon_1103001.png" alt="【哆啦A夢牧場物語】肥料對作物的品質影響" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-02/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_201140060.png" alt="【哆啦A夢牧場物語】醫院劇情線" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
       </a>
     </div>
     
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-crop-part2/'> 【哆啦A夢牧場物語】肥料對作物的品質影響</a> </h5>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-02/'> 【哆啦A夢牧場物語】醫院劇情線</a> </h5>
         <h6 class="subtitle caption">
-          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月03日 </time>
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月11日 </time>
           
-          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分钟 </span>
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;5&nbsp;分钟 </span>
           
           &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
           
@@ -1696,7 +1704,7 @@
       <div>
         <div class="summary-classic__text p2">
           
-            肥料對作物的品質影響
+            靜香、瑟露娜與洛克德的劇情發展，還有幻想筆！
           
         </div>
       </div>
@@ -1715,19 +1723,19 @@
 
     
     <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
-      <a href="https://ilyusha71.github.io/posts/doraemon-story-crop-part1/">
-        <img data-src="/images/post/story_sprite/icon_301051200.png" alt="【哆啦A夢牧場物語】作物播種與收成的品質計算" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-01/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_201140020.png" alt="【哆啦A夢牧場物語】木工店劇情線" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
       </a>
     </div>
     
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-crop-part1/'> 【哆啦A夢牧場物語】作物播種與收成的品質計算</a> </h5>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-01/'> 【哆啦A夢牧場物語】木工店劇情線</a> </h5>
         <h6 class="subtitle caption">
-          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月03日 </time>
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月11日 </time>
           
-          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;4&nbsp;分钟 </span>
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;5&nbsp;分钟 </span>
           
           &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
           
@@ -1736,7 +1744,7 @@
       <div>
         <div class="summary-classic__text p2">
           
-            作物播種與收成的品質計算方法
+            胖虎與潘特的劇情發展，還有幻想筆！
           
         </div>
       </div>
@@ -1755,19 +1763,19 @@
 
     
     <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
-      <a href="https://ilyusha71.github.io/posts/doraemon-story-item-part1/">
-        <img data-src="/images/post/story_sprite/icon_301001000.png" alt="【哆啦A夢牧場物語】物品的品質" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-00/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_201140010.png" alt="【哆啦A夢牧場物語】巨木劇情線" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
       </a>
     </div>
     
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-item-part1/'> 【哆啦A夢牧場物語】物品的品質</a> </h5>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-00/'> 【哆啦A夢牧場物語】巨木劇情線</a> </h5>
         <h6 class="subtitle caption">
-          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月03日 </time>
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月11日 </time>
           
-          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分钟 </span>
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;5&nbsp;分钟 </span>
           
           &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
           
@@ -1776,7 +1784,7 @@
       <div>
         <div class="summary-classic__text p2">
           
-            物品的品質資料
+            大雄與哆啦A夢等人的主線劇情發展
           
         </div>
       </div>
@@ -1795,57 +1803,17 @@
 
     
     <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
-      <a href="https://ilyusha71.github.io/posts/doraemon-story-mod-install/">
-        <img data-src="https://mod.3dmgame.com/static/upload/game/210s.png" alt="【哆啦A夢牧場物語】MOD安裝方法" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-animal/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_201173001.png" alt="【哆啦A夢牧場物語】動物大全" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
       </a>
     </div>
     
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-mod-install/'> 【哆啦A夢牧場物語】MOD安裝方法</a> </h5>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-animal/'> 【哆啦A夢牧場物語】動物大全</a> </h5>
         <h6 class="subtitle caption">
-          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月02日 </time>
-          
-          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;4&nbsp;分钟 </span>
-          
-          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            手把手教你安裝MOD
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-      
-        
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
-      <a href="https://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/">
-        <img data-src="/images/feature-dora/icon_201100013.png" alt="【哆啦A夢牧場物語】NPC與動物與大雄的好感度" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
-      </a>
-    </div>
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/'> 【哆啦A夢牧場物語】NPC與動物與大雄的好感度</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="创建日期" dir="ltr">📅&nbsp;2020年03月25日 </time>
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月11日 </time>
           
           <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;1&nbsp;分钟 </span>
           
@@ -1856,7 +1824,367 @@
       <div>
         <div class="summary-classic__text p2">
           
-            好感度的累積方法以及各等級好感度的所需積分
+            所有關於動物的資訊索引
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-affectiondegree/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_201173001.png" alt="【哆啦A夢牧場物語】牧場動物的情感度" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-affectiondegree/'> 【哆啦A夢牧場物語】牧場動物的情感度</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月11日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;4&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            哪些因素會影響動物的情感與壓力？
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-shop-cuckoo-house-chickens/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_301080200.png" alt="【哆啦A夢牧場物語】小雞商店 咕咕之家" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-shop-cuckoo-house-chickens/'> 【哆啦A夢牧場物語】小雞商店 咕咕之家</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月06日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;3&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            小雞商店販售商品大全
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-shop-gouter-mawk-livestock/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_301120000.png" alt="【哆啦A夢牧場物語】動物商店 古騰摩克" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-shop-gouter-mawk-livestock/'> 【哆啦A夢牧場物語】動物商店 古騰摩克</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月06日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;4&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            動物商店販售商品大全
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-produce/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_3400101.png" alt="【哆啦A夢牧場物語】料理店農產品販售資訊" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-produce/'> 【哆啦A夢牧場物語】料理店農產品販售資訊</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月05日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;2&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            料理店各季節農產品販售資料
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-sell-meals/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_3300901.png" alt="【哆啦A夢牧場物語】88種料理出貨價格" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-sell-meals/'> 【哆啦A夢牧場物語】88種料理出貨價格</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月05日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;3&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            88種料理各品質出貨價格
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-meals/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_3300147.png" alt="【哆啦A夢牧場物語】料理店料理販售資訊" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-meals/'> 【哆啦A夢牧場物語】料理店料理販售資訊</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月05日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;4&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            料理店各季節料理販售資料
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-recipes/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_9200147.png" alt="【哆啦A夢牧場物語】料理店食譜販售資訊" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-recipes/'> 【哆啦A夢牧場物語】料理店食譜販售資訊</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月05日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;3&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            料理店各季節食譜販售資料
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_301230000.png" alt="【哆啦A夢牧場物語】料理店 嚼嚼" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish/'> 【哆啦A夢牧場物語】料理店 嚼嚼</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月05日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;4&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            料理店販售商品大全
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-shop-knick-knacks-gen-store/">
+        <img data-src="/images/post/Season_of_Story/Sprite/icon_301170000.png" alt="【哆啦A夢牧場物語】雜貨店 小玩意兒" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://ilyusha71.github.io/posts/doraemon-story-shop-knick-knacks-gen-store/'> 【哆啦A夢牧場物語】雜貨店 小玩意兒</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="创建日期" dir="ltr">📅&nbsp;2020年04月04日 </time>
+          
+          <span title="阅读时长" dir="ltr"> &middot; ☕&nbsp;5&nbsp;分钟 </span>
+          
+          &middot; <span title="作者" dir="ltr">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            雜貨店販售商品大全
           
         </div>
       </div>
@@ -1912,6 +2240,14 @@
         class="active"><a href="/series/%E5%93%86%E5%95%A6a%E5%A4%A2%E7%89%A7%E5%A0%B4%E7%89%A9%E8%AA%9E/page/4/">4</a></li>
       
     
+      
+      <script>
+      </script>
+      
+        <li
+        ><a href="/series/%E5%93%86%E5%95%A6a%E5%A4%A2%E7%89%A7%E5%A0%B4%E7%89%A9%E8%AA%9E/page/5/">5</a></li>
+      
+    
   </ul>
 
     </div>
@@ -1963,19 +2299,19 @@
         </li>
         
         <li class="sidebar-recent">
-            <a href="/posts/doraemon-story-shop-hammer-carpenter-shop/" class="sidebar-recent__title p1">【哆啦A夢牧場物語】木工店 咚吭噹</a>
+            <a href="/posts/doraemon-story-map-10100-mount-whistle/" class="sidebar-recent__title p1">【哆啦A夢牧場物語】冷颼颼山</a>
         </li>
         
         <li class="sidebar-recent">
-            <a href="/posts/doraemon-story-18/" class="sidebar-recent__title p1">【哆啦A夢牧場物語】松鼠劇情線</a>
+            <a href="/posts/doraemon-story-map-10300-swoosh-falls/" class="sidebar-recent__title p1">【哆啦A夢牧場物語】嘩嘩瀑布</a>
         </li>
         
         <li class="sidebar-recent">
-            <a href="/posts/doraemon-story-17/" class="sidebar-recent__title p1">【哆啦A夢牧場物語】兔子劇情線</a>
+            <a href="/posts/doraemon-story-map-10400-plash-river/" class="sidebar-recent__title p1">【哆啦A夢牧場物語】嘩啦河</a>
         </li>
         
         <li class="sidebar-recent">
-            <a href="/posts/doraemon-story-16/" class="sidebar-recent__title p1">【哆啦A夢牧場物語】猴子劇情線</a>
+            <a href="/posts/doraemon-story-map-10500-rolin-forest/" class="sidebar-recent__title p1">【哆啦A夢牧場物語】滾滾森林</a>
         </li>
         
         <hr class="hr-fade sidebar-hr" />
@@ -2336,7 +2672,7 @@
                         出貨價格
                     </span>
                     <span class="taxo__num" dir="auto">
-                        5
+                        6
                     </span>
                 </a>
             </span>
@@ -2349,7 +2685,7 @@
                         劇情
                     </span>
                     <span class="taxo__num" dir="auto">
-                        20
+                        22
                     </span>
                 </a>
             </span>
@@ -2363,6 +2699,19 @@
                     </span>
                     <span class="taxo__num" dir="auto">
                         2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/%E5%9C%B0%E5%9C%96/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        地圖
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        12
                     </span>
                 </a>
             </span>
@@ -2396,12 +2745,25 @@
         
         
             <span class="tag">
+                <a href="/tags/%E7%AF%80%E6%85%B6/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        節慶
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
                 <a href="/tags/%E8%9F%B2%E9%A1%9E/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         蟲類
                     </span>
                     <span class="taxo__num" dir="auto">
-                        1
+                        2
                     </span>
                 </a>
             </span>
@@ -2556,7 +2918,7 @@
                         哆啦A夢
                     </span>
                     <span class="taxo__num" dir="auto">
-                        45
+                        61
                     </span>
                 </a>
             </span>
@@ -2620,7 +2982,7 @@
                         哆啦A夢牧場物語
                     </span>
                     <span class="taxo__num" dir="auto">
-                        44
+                        60
                     </span>
                 </a>
             </span>

@@ -32,7 +32,7 @@
         <description>料理販售 每一季大雄第一次進料理店的時候都會更新料理店販售的料理。 每道料理都只會在特定季節販售。 料理店每季販售的料理均為5道當季料理。 當季料理</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3300147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3300147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -76,7 +76,7 @@
         <description>食譜販售 每一季大雄第一次進料理店的時候都會更新料理店販售的食譜。 料理店每季販售的食譜由當季食譜與四季食譜組成。 當季食譜與四季食譜將根據販售權</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_9200147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_9200147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -120,7 +120,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】雜貨店劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="涅萊爾、埃蒂與緹拉兒的劇情發展">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140030.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140030.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140030.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140030.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】雜貨店劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-05/",
     "description": "涅萊爾、埃蒂與緹拉兒的劇情發展",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140030.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140030.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1688,7 +1696,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月14日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;3&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1725,7 +1733,11 @@
         <li><a href="#第2話-勤勞的埃蒂小姐">第2話 勤勞的埃蒂小姐</a></li>
         <li><a href="#第3話-尋找克魯波克魯">第3話 尋找克魯波克魯</a></li>
         <li><a href="#第4話-緹拉兒的心情">第4話 緹拉兒的心情</a></li>
-        <li><a href="#第5話-涅萊爾的心情">第5話 涅萊爾的心情</a></li>
+        <li><a href="#第5話-涅萊爾的心情">第5話 涅萊爾的心情</a>
+          <ul>
+            <li><a href="#其他支線延伸劇情">其他支線延伸劇情</a></li>
+          </ul>
+        </li>
         <li><a href="#第6話-埃蒂的心情">第6話 埃蒂的心情</a></li>
         <li><a href="#第7話-兒童會議">第7話 兒童會議</a></li>
         <li><a href="#第8話-幫忙雜貨店">第8話 幫忙雜貨店</a></li>
@@ -1738,25 +1750,25 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_2600.png" alt="雜貨店劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2600.png" alt="雜貨店劇情線" /></p>
 <h2 id="雜貨店">雜貨店</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>05</td>
-        <td align="center"><a href="../doraemon-story-05"><img src= "/images/post/story_sprite/icon_201140030.png">雜貨店</a></td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041170.png">涅萊爾</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041180.png">埃蒂</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041190.png">緹拉兒</td>
+        <td align="center"><a href="../doraemon-story-05"><img src= "/images/post/Season_of_Story/Sprite/icon_201140030.png">雜貨店</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041170.png">涅萊爾</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041180.png">埃蒂</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041190.png">緹拉兒</td>
     </tr>
 </table>
 <h3 id="第0話-要開雜貨店嗎">第0話 要開雜貨店嗎？</h3>
 <ul>
 <li>事件ID：<code>20006000</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>雜貨店</code>（<code>20700</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E9%9B%9C%E8%B2%A8%E5%BA%97-%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%85%92">雜貨店 小玩意兒</a>（<code>20700</code>）</li>
 </ul>
-<p><img src="/images/post/map/20700.png" alt="雜貨店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20700.png" alt="雜貨店" /></p>
 <ul>
 <li>前置劇情：<a href="../doraemon-story-00#%E7%AC%AC2%E8%A9%B1-%E6%9A%B4%E9%A2%A8%E9%9B%A8%E5%BE%8C%E7%9A%84%E5%B0%8F%E9%8E%AE">巨木第2話 暴風雨後的小鎮</a>（<code>10000002</code>）</li>
 </ul>
@@ -1764,27 +1776,27 @@
 <ul>
 <li>事件ID：<code>20006001</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）
 <ul>
 <li><code>雜貨店</code>門口（<code>194.5</code>,<code>1.6</code>,<code>-128.2</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11300-207.png" alt="雜貨店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300-207.png" alt="雜貨店門口" /></p>
 <ul>
 <li>前置劇情：看完佈告欄引導教學（<code>81001004</code>）</li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計6♥</td>
+            <td>合計6❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1793,41 +1805,41 @@
         <td>緹拉兒</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041180.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041170.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041180.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041170.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第2話-勤勞的埃蒂小姐">第2話 勤勞的埃蒂小姐</h3>
 <ul>
 <li>事件ID：<code>20006002</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>雜貨店</code>（<code>20700</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E9%9B%9C%E8%B2%A8%E5%BA%97-%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%85%92">雜貨店 小玩意兒</a>（<code>20700</code>）</li>
 </ul>
-<p><img src="/images/post/map/20700.png" alt="雜貨店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20700.png" alt="雜貨店" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC1%E8%A9%B1-%E5%85%8B%E9%AD%AF%E6%B3%A2%E5%85%8B%E9%AD%AF%E6%98%AF">雜貨店第1話 克魯波克魯是？</a>（<code>20006001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>15:00</code></li>
 <li>結束時間：每日<code>18:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計6♥</td>
+            <td>合計6❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1835,39 +1847,39 @@
         <td>緹拉兒</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041170.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041170.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
     </tr>
 </table>
 <h3 id="第3話-尋找克魯波克魯">第3話 尋找克魯波克魯</h3>
 <ul>
 <li>事件ID：<code>20006003</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）</li>
 </ul>
-<p><img src="/images/post/map/11300.png" alt="萬物鎮東" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300.png" alt="萬物鎮東" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC2%E8%A9%B1-%E5%8B%A4%E5%8B%9E%E7%9A%84%E5%9F%83%E8%92%82%E5%B0%8F%E5%A7%90">雜貨店第2話 勤勞的埃蒂小姐</a>（<code>20006002</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>12:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計7♥</td>
+            <td>合計7❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1875,39 +1887,39 @@
         <td>緹拉兒</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041180.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041180.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
     </tr>
 </table>
 <h3 id="第4話-緹拉兒的心情">第4話 緹拉兒的心情</h3>
 <ul>
 <li>事件ID：<code>20006004</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>埃蒂小姐家</code>（<code>20800</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%9F%83%E8%92%82%E5%B0%8F%E5%A7%90%E5%AE%B6">埃蒂小姐家</a>（<code>20800</code>）</li>
 </ul>
-<p><img src="/images/post/map/20800.png" alt="埃蒂小姐家" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20800.png" alt="埃蒂小姐家" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC3%E8%A9%B1-%E5%B0%8B%E6%89%BE%E5%85%8B%E9%AD%AF%E6%B3%A2%E5%85%8B%E9%AD%AF">雜貨店第3話 尋找克魯波克魯</a>（<code>20006003</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>10:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計7♥</td>
+            <td>合計7❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1915,117 +1927,121 @@
         <td>蘭奇</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041050.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第5話-涅萊爾的心情">第5話 涅萊爾的心情</h3>
 <ul>
 <li>事件ID：<code>20006005</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）</li>
 </ul>
-<p><img src="/images/post/map/11300.png" alt="萬物鎮東" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300.png" alt="萬物鎮東" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC4%E8%A9%B1-%E7%B7%B9%E6%8B%89%E5%85%92%E7%9A%84%E5%BF%83%E6%83%85">雜貨店第4話 緹拉兒的心情</a>（<code>20006004</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>12:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計5♥</td>
+            <td>合計5❤️</td>
         </tr>
     </thead>
     <tr>
         <td>涅萊爾</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041180.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041180.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
+<h4 id="其他支線延伸劇情">其他支線延伸劇情</h4>
+<ul>
+<li>支線劇情<a href="../doraemon-story-11/#%E7%AC%AC1%E8%A9%B1-%E9%82%82%E9%80%85%E5%85%8B%E9%AD%AF%E6%B3%A2%E5%85%8B%E9%AD%AF">克魯波克魯第1話 邂逅克魯波克魯</a>（<code>10005000</code>）</li>
+</ul>
 <h3 id="第6話-埃蒂的心情">第6話 埃蒂的心情</h3>
 <ul>
 <li>事件ID：<code>20006006</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>雜貨店</code>（<code>20700</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E9%9B%9C%E8%B2%A8%E5%BA%97-%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%85%92">雜貨店 小玩意兒</a>（<code>20700</code>）</li>
 </ul>
-<p><img src="/images/post/map/20700.png" alt="雜貨店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20700.png" alt="雜貨店" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E6%B6%85%E8%90%8A%E7%88%BE%E7%9A%84%E5%BF%83%E6%83%85">雜貨店第5話 涅萊爾的心情</a>（<code>20006005</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>12:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計5♥</td>
+            <td>合計5❤️</td>
         </tr>
     </thead>
     <tr>
         <td>埃蒂</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041170.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041170.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第7話-兒童會議">第7話 兒童會議</h3>
 <ul>
 <li>事件ID：<code>20006007</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>青青農場</code>（<code>11500</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E9%9D%92%E9%9D%92%E5%BB%A3%E5%A0%B4">青青廣場</a>（<code>11500</code>）
 <ul>
 <li>往<code>萬物鎮東</code>方向的<code>方尖碑</code>附近（<code>28</code>,<code>0</code>,<code>-150.3</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11500-01.png" alt="方尖碑" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11500-01.png" alt="方尖碑" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC6%E8%A9%B1-%E5%9F%83%E8%92%82%E7%9A%84%E5%BF%83%E6%83%85">雜貨店第6話 埃蒂的心情</a>（<code>20006006</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計10♥</td>
+            <td>合計10❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2033,40 +2049,40 @@
         <td>蘭奇</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041050.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
     </tr>
 </table>
 <h3 id="第8話-幫忙雜貨店">第8話 幫忙雜貨店</h3>
 <ul>
 <li>事件ID：<code>20006008</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC7%E8%A9%B1-%E5%85%92%E7%AB%A5%E6%9C%83%E8%AD%B0">雜貨店第7話 兒童會議</a>（<code>20006007</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計12♥</td>
+            <td>合計12❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2074,44 +2090,44 @@
         <td>緹拉兒</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
     </tr>
 </table>
 <h3 id="第9話-關於傾訴">第9話 關於傾訴</h3>
 <ul>
 <li>事件ID：<code>20006009</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）
 <ul>
 <li><code>雜貨店</code>門口（<code>194.5</code>,<code>1.6</code>,<code>-128.2</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11300-207.png" alt="雜貨店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300-207.png" alt="雜貨店門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC8%E8%A9%B1-%E5%B9%AB%E5%BF%99%E9%9B%9C%E8%B2%A8%E5%BA%97">雜貨店第8話 幫忙雜貨店</a>（<code>20006008</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計25♥</td>
+            <td>合計25❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2120,46 +2136,46 @@
         <td>緹拉兒</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041180.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041170.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041180.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041170.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060090.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060090.png"></td>
     </tr>
 </table>
 <h3 id="第10話-感情好的親子">第10話 感情好的親子</h3>
 <ul>
 <li>事件ID：<code>20006010</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）
 <ul>
 <li><code>雜貨店</code>門口（<code>194.5</code>,<code>1.6</code>,<code>-128.2</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11300-207.png" alt="雜貨店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300-207.png" alt="雜貨店門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC9%E8%A9%B1-%E9%97%9C%E6%96%BC%E5%82%BE%E8%A8%B4">雜貨店第9話 關於傾訴</a>（<code>20006009</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計30♥</td>
+            <td>合計30❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2168,17 +2184,17 @@
         <td>緹拉兒</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041170.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041180.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041170.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041180.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
     </tr>
 </table>
-<p><img src="/images/post/story_texture2d/EventImage_2600.png" alt="結局" /></p>
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2600.png" alt="結局" /></p>
 
     </article>
     
@@ -2802,7 +2818,11 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#第2話-勤勞的埃蒂小姐">第2話 勤勞的埃蒂小姐</a></li>
         <li><a href="#第3話-尋找克魯波克魯">第3話 尋找克魯波克魯</a></li>
         <li><a href="#第4話-緹拉兒的心情">第4話 緹拉兒的心情</a></li>
-        <li><a href="#第5話-涅萊爾的心情">第5話 涅萊爾的心情</a></li>
+        <li><a href="#第5話-涅萊爾的心情">第5話 涅萊爾的心情</a>
+          <ul>
+            <li><a href="#其他支線延伸劇情">其他支線延伸劇情</a></li>
+          </ul>
+        </li>
         <li><a href="#第6話-埃蒂的心情">第6話 埃蒂的心情</a></li>
         <li><a href="#第7話-兒童會議">第7話 兒童會議</a></li>
         <li><a href="#第8話-幫忙雜貨店">第8話 幫忙雜貨店</a></li>

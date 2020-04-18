@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】料理店 嚼嚼 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="料理店販售商品大全">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_301230000.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_301230000.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301230000.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301230000.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】料理店 嚼嚼">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish/",
     "description": "料理店販售商品大全",
     "keywords": ["MOD","食譜","料理","作物"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_301230000.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301230000.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1885,17 +1893,17 @@
 <h3 id="主要角色">主要角色</h3>
 <table>
     <tr>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041230.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041230.png"></td>
         <td>萊斯特</td>
-        <td>托蘭的丈夫</td>
+        <td>嚼嚼餐廳廚師</td>
     </tr>
     <tr>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041240.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041240.png"></td>
         <td>托蘭</td>
         <td>萊斯特的妻子</td>
     </tr>
     <tr>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041040.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041040.png"></td>
         <td>小夫</td>
         <td>餐廳打工仔</td>
     </tr>
@@ -1948,7 +1956,7 @@
     <tbody>
         <tr>
             <td>400100</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_9000100.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_9000100.png"></td>
             <td>鍋具組</td>
             <td>9800</td>
             <td>四季</td>
@@ -1956,7 +1964,7 @@
         </tr>
         <tr>
             <td>400101</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_9000101.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_9000101.png"></td>
             <td>打蛋器</td>
             <td>2450</td>
             <td>四季</td>
@@ -1964,7 +1972,7 @@
         </tr>
         <tr>
             <td>400102</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_9000102.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_9000102.png"></td>
             <td>烤箱</td>
             <td>3850</td>
             <td>四季</td>
@@ -1972,7 +1980,7 @@
         </tr>
         <tr>
             <td>400103</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_9000103.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_9000103.png"></td>
             <td>擀麵棍</td>
             <td>2100</td>
             <td>四季</td>
@@ -1980,7 +1988,7 @@
         </tr>
         <tr>
             <td>400104</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_9000104.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_9000104.png"></td>
             <td>平底鍋</td>
             <td>6300</td>
             <td>四季</td>

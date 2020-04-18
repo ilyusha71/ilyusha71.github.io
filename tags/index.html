@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tags – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1200,9 +1208,9 @@
 <meta name="description" content="大外星人哇咔咔的頂級網站" />
 
 
-<meta name="created" content="2020-04-15T23:00:44&#43;0800">
-<meta name="modified" content="2020-04-15T23:00:44&#43;0800">
-<meta property="article:published_time" content="2020-04-15T23:00:44&#43;0800">
+<meta name="created" content="2020-04-18T19:30:12&#43;0800">
+<meta name="modified" content="2020-04-18T19:30:12&#43;0800">
+<meta property="article:published_time" content="2020-04-18T19:30:12&#43;0800">
 
 <meta name="author" content="伊琉沙 AKA 哇咔咔">
 
@@ -1870,7 +1878,7 @@
         <span class="terms__tags">
           出貨價格
         </span>
-        <span class="terms__len">(5)</span>
+        <span class="terms__len">(6)</span>
       </a>
     
     
@@ -1879,7 +1887,7 @@
         <span class="terms__tags">
           劇情
         </span>
-        <span class="terms__len">(20)</span>
+        <span class="terms__len">(22)</span>
       </a>
     
     
@@ -1889,6 +1897,15 @@
           動物
         </span>
         <span class="terms__len">(2)</span>
+      </a>
+    
+    
+    
+      <a href="/tags/%E5%9C%B0%E5%9C%96/" class="terms__item is-medium">
+        <span class="terms__tags">
+          地圖
+        </span>
+        <span class="terms__len">(12)</span>
       </a>
     
     
@@ -1911,11 +1928,20 @@
     
     
     
+      <a href="/tags/%E7%AF%80%E6%85%B6/" class="terms__item is-small">
+        <span class="terms__tags">
+          節慶
+        </span>
+        <span class="terms__len">(1)</span>
+      </a>
+    
+    
+    
       <a href="/tags/%E8%9F%B2%E9%A1%9E/" class="terms__item is-small">
         <span class="terms__tags">
           蟲類
         </span>
-        <span class="terms__len">(1)</span>
+        <span class="terms__len">(2)</span>
       </a>
     
     

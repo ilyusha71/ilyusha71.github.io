@@ -14,13 +14,53 @@
     <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
     <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 14 Apr 2020 22:07:53 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 22:01:12 +0800</lastBuildDate>
     
         <atom:link href="https://ilyusha71.github.io/tags/%E5%87%BA%E8%B2%A8%E5%83%B9%E6%A0%BC/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>【哆啦A夢牧場物語】地圖資訊</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map/</link>
+        <pubDate>Thu, 16 Apr 2020 22:01:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Thu, 16 Apr 2020 22:01:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map/</guid>
+        <description>地圖導引 地區 《哆啦A夢牧場物語》的地圖一共分為17個地區。 每個地區都有一個地區ID，作為場景的上層。 小地圖中標註了除了壁畫空間外的16個地區</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_600010&#43;png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>出貨價格</category>
+            
+          
+            
+              <category>蟲類</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>【哆啦A夢牧場物語】17種農產品出貨價格</title>
@@ -32,7 +72,7 @@
         <description>出貨價格資料 物品MOD資料庫 出貨價格 所有物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3400111.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3400111.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -72,7 +112,7 @@
         <description>出貨價格資料 物品MOD資料庫 出貨價格 所有物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_5000187.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_5000187.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -112,7 +152,7 @@
         <description>出貨價格資料 物品MOD資料庫 出貨價格 所有物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_6000100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_6000100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -152,7 +192,7 @@
         <description>出貨價格資料 物品MOD資料庫 出貨價格 所有物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3300901.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3300901.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -192,7 +232,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 出貨</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3000501.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3000501.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

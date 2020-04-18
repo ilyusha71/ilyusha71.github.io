@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】鎮長劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="亞緬的劇情發展">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140100.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140100.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140100.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140100.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】鎮長劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-09/",
     "description": "亞緬的劇情發展",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140100.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140100.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1688,7 +1696,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月15日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;3&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1722,20 +1730,20 @@
       <ul>
         <li><a href="#第1話-忙碌的孩子們">第1話 忙碌的孩子們</a></li>
         <li><a href="#第2話-被搶走了">第2話 被搶走了！</a></li>
+        <li><a href="#獎勵事件解鎖">獎勵事件解鎖</a>
+          <ul>
+            <li><a href="#獲得超人手套">獲得超人手套</a></li>
+            <li><a href="#獲得尋人手杖">獲得尋人手杖</a></li>
+            <li><a href="#獲得天氣箱">獲得天氣箱</a></li>
+            <li><a href="#獲得人類火車套裝組">獲得人類火車套裝組</a></li>
+          </ul>
+        </li>
         <li><a href="#第3話-給蘭奇的禮物">第3話 給蘭奇的禮物</a></li>
         <li><a href="#第4話-鎮長先生的工作是">第4話 鎮長先生的工作是？</a></li>
         <li><a href="#第5話-給菈姆的禮物">第5話 給菈姆的禮物</a></li>
         <li><a href="#第6話-來自過去的信">第6話 來自過去的信</a></li>
         <li><a href="#第7話-屬於孩子們的日子">第7話 屬於孩子們的日子</a></li>
-        <li><a href="#第8話-最後的秘密道具">第8話 最後的秘密道具</a>
-          <ul>
-            <li><a href="#子事件">子事件：</a></li>
-            <li><a href="#子事件-1">子事件：</a></li>
-            <li><a href="#子事件-2">子事件：</a></li>
-            <li><a href="#子事件-3">子事件：</a></li>
-            <li><a href="#子事件-4">子事件：</a></li>
-          </ul>
-        </li>
+        <li><a href="#第8話-最後的秘密道具">第8話 最後的秘密道具</a></li>
       </ul>
     </li>
   </ul>
@@ -1743,42 +1751,42 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_2500.png" alt="鎮長劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2500.png" alt="鎮長劇情線" /></p>
 <h2 id="鎮長">鎮長</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>09</td>
-        <td align="center"><a href="../doraemon-story-09"><img src= "/images/post/story_sprite/icon_201140100.png">鎮長</a></td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041200.png">亞緬</td>
+        <td align="center"><a href="../doraemon-story-09"><img src= "/images/post/Season_of_Story/Sprite/icon_201140100.png">鎮長</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041200.png">亞緬</td>
     </tr>
 </table>
 <h3 id="第1話-忙碌的孩子們">第1話 忙碌的孩子們</h3>
 <ul>
 <li>事件ID：<code>20004001</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）</li>
 </ul>
-<p><img src="/images/post/map/11200.png" alt="萬物鎮西" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200.png" alt="萬物鎮西" /></p>
 <ul>
 <li>前置劇情：看完佈告欄引導教學（<code>81001004</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>10:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計6♥</td>
+            <td>合計6❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1787,83 +1795,208 @@
         <td>菈姆</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041190.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第2話-被搶走了">第2話 被搶走了！</h3>
 <ul>
 <li>事件ID：<code>20004002</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）
 <ul>
 <li><code>鎮長家</code>門口（<code>213.1</code>,<code>3.3</code>,<code>-131.9</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11300-05.png" alt="鎮長家門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300-05.png" alt="鎮長家門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC1%E8%A9%B1-%E5%BF%99%E7%A2%8C%E7%9A%84%E5%AD%A9%E5%AD%90%E5%80%91">鎮長第1話 忙碌的孩子們</a>（<code>20004001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計3♥</td>
+            <td>合計3❤️</td>
         </tr>
     </thead>
     <tr>
         <td>亞緬</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
     </tr>
 </table>
+<h3 id="獎勵事件解鎖">獎勵事件解鎖</h3>
+<ul>
+<li><code>EventManager.UpdateActiveRewardEvent()</code></li>
+<li>前置劇情：<a href="#%E7%AC%AC2%E8%A9%B1-%E8%A2%AB%E6%90%B6%E8%B5%B0%E4%BA%86">鎮長第2話 被搶走了</a>（<code>20004002</code>）</li>
+<li>在第2話中，亞緬要求大雄專心在牧場收穫更多的作物就會歸還道具。</li>
+</ul>
+<h4 id="獲得超人手套">獲得超人手套</h4>
+<ul>
+<li>事件ID：<code>20014001</code></li>
+<li>優先度：<code>2</code></li>
+<li>獎勵條件：作物圖鑑解鎖<code>3種</code></li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041000.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002130.png"></td>
+    </tr>
+</table>
+<p>達成條件后的翌日，<code>亞緬</code>會到家門口將<code>超人手套</code>（<code>1002130</code>）還給<code>大雄</code>。</p>
+<ul>
+<li><code>超人手套</code>不會佔用物品空間。</li>
+<li>擁有<code>超人手套</code>後播種可蓄力到九格。</li>
+<li>取得<code>超人手套</code>後可前往<code>冷颼颼山</code>解救<a href="../doraemon-story-12#%E7%AC%AC2%E8%A9%B1-%E5%B9%AB%E5%8A%A9%E5%B0%8F%E7%8B%97%E5%90%A7">小狗</a>。</li>
+</ul>
+<h4 id="獲得尋人手杖">獲得尋人手杖</h4>
+<ul>
+<li>事件ID：<code>20014002</code></li>
+<li>優先度：<code>2</code></li>
+<li>獎勵條件：作物圖鑑解鎖<code>6種</code></li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041010.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002030.png"></td>
+    </tr>
+</table>
+<p>達成條件后的翌日，<code>亞緬</code>會到家門口告知大雄<code>尋人手杖</code>（<code>1002030</code>）已經交給<code>哆啦A夢</code>。</p>
+<ul>
+<li><code>尋人手杖</code>屬於工具物品，佔用1格空間。</li>
+<li><code>尋人手杖</code>必須放在背包才可使用，使用時需指定一名NPC。</li>
+</ul>
+<h4 id="獲得天氣箱">獲得天氣箱</h4>
+<ul>
+<li>事件ID：<code>20014003</code></li>
+<li>優先度：<code>2</code></li>
+<li>獎勵條件：作物圖鑑解鎖<code>12種</code></li>
+</ul>
+<p>達成條件后的翌日，<code>亞緬</code>會到家門口說明想要歸還<code>天氣箱</code>，但大雄目前的房子不夠大要等大雄的家擴建為<code>巨大的家</code>再來。</p>
+<ul>
+<li>事件ID：<code>20014006</code></li>
+<li>優先度：<code>2</code></li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
+</ul>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
+<ul>
+<li>前置劇情：
+<ul>
+<li><mark>未知</mark>（<code>50000060</code>）</li>
+<li><a href="../doraemon-story-1/#%E5%B7%A8%E5%A4%A7%E7%9A%84%E5%AE%B6%E6%93%B4%E5%BB%BA%E5%AE%8C%E6%88%90">巨大的家擴建完成</a>（<code>10120201</code>）</li>
+</ul>
+</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041000.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002190.png"></td>
+    </tr>
+</table>
+<p>巨大的家擴建完成的當天，<code>亞緬</code>會到家門口將<code>天氣箱</code>還給<code>大雄</code>。</p>
+<ul>
+<li><code>天氣箱</code>會安裝在<code>冰箱</code>旁邊。</li>
+<li><code>哆啦A夢</code>聽說拿回天氣箱後會來解說天氣箱的使用。</li>
+<li>大雄再去找哆啦A夢可以獲得<code>雨天卡</code>。</li>
+<li><code>天氣箱</code>是<a href="#%E7%AC%AC8%E8%A9%B1-%E6%9C%80%E5%BE%8C%E7%9A%84%E7%A7%98%E5%AF%86%E9%81%93%E5%85%B7">鎮長第8話 最後的秘密道具</a>的必要物品。</li>
+</ul>
+<h4 id="獲得人類火車套裝組">獲得人類火車套裝組</h4>
+<ul>
+<li>事件ID：<code>20014004</code></li>
+<li>優先度：<code>2</code></li>
+<li>獎勵條件：作物圖鑑解鎖<code>18種</code></li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <td>持有者</td>
+            <td>保管者</td>
+            <td>秘密道具</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041010.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002010.png"></td>
+    </tr>
+</table>
+<p>達成條件后的翌日，<code>亞緬</code>會到家門口告知大雄<code>人類火車套裝組</code>（<code>1002010</code>）已經交給<code>哆啦A夢</code>。</p>
+<ul>
+<li><code>人類火車套裝組</code>屬於工具物品，佔用1格空間。</li>
+<li><code>人類火車套裝組</code>必須放在背包才可使用。</li>
+<li>使用後，大雄僅能在地圖進行加速移動，不能進行其他動作。</li>
+</ul>
 <h3 id="第3話-給蘭奇的禮物">第3話 給蘭奇的禮物</h3>
 <ul>
 <li>事件ID：<code>20004003</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）</li>
 </ul>
-<p><img src="/images/post/map/11200.png" alt="萬物鎮西" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200.png" alt="萬物鎮西" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC2%E8%A9%B1-%E8%A2%AB%E6%90%B6%E8%B5%B0%E4%BA%86">鎮長第2話 被搶走了！</a>（<code>20004002</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計8♥</td>
+            <td>合計8❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1871,43 +2004,43 @@
         <td>亞緬</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第4話-鎮長先生的工作是">第4話 鎮長先生的工作是？</h3>
 <ul>
 <li>事件ID：<code>20004004</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮東</code>（<code>11300</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E6%9D%B1">萬物鎮東</a>（<code>11300</code>）
 <ul>
 <li><code>鎮長家</code>門口（<code>213.1</code>,<code>3.3</code>,<code>-131.9</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11300-05.png" alt="鎮長家門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11300-05.png" alt="鎮長家門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC3%E8%A9%B1-%E7%B5%A6%E8%98%AD%E5%A5%87%E7%9A%84%E7%A6%AE%E7%89%A9">鎮長第3話 給蘭奇的禮物</a>（<code>20004003</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計8♥</td>
+            <td>合計8❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1915,39 +2048,39 @@
         <td>亞緬</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041010.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041010.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第5話-給菈姆的禮物">第5話 給菈姆的禮物</h3>
 <ul>
 <li>事件ID：<code>20004005</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）</li>
 </ul>
-<p><img src="/images/post/map/11200.png" alt="萬物鎮西" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200.png" alt="萬物鎮西" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC4%E8%A9%B1-%E9%8E%AE%E9%95%B7%E5%85%88%E7%94%9F%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%98%AF">鎮長第4話 鎮長先生的工作是？</a>（<code>20004004</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計10♥</td>
+            <td>合計10❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1955,176 +2088,145 @@
         <td>亞緬</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
     </tr>
 </table>
 <h3 id="第6話-來自過去的信">第6話 來自過去的信</h3>
 <ul>
 <li>事件ID：<code>20004006</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E7%B5%A6%E8%8F%88%E5%A7%86%E7%9A%84%E7%A6%AE%E7%89%A9">鎮長第5話 給菈姆的禮物</a>（<code>20004005</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計10♥</td>
+            <td>合計11❤️</td>
         </tr>
     </thead>
     <tr>
-        <td>菈姆</td>
         <td>亞緬</td>
+        <td>帕絲琪</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041060.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
     </tr>
 </table>
 <h3 id="第7話-屬於孩子們的日子">第7話 屬於孩子們的日子</h3>
 <ul>
-<li>事件ID：<code>20004006</code></li>
+<li>事件ID：<code>20004007</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
-<li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E7%B5%A6%E8%8F%88%E5%A7%86%E7%9A%84%E7%A6%AE%E7%89%A9">鎮長第5話 給菈姆的禮物</a>（<code>20004005</code>）
+<li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E4%BE%86%E8%87%AA%E9%81%8E%E5%8E%BB%E7%9A%84%E4%BF%A1">鎮長第6話 來自過去的信</a>（<code>20004006</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計10♥</td>
+            <td>合計9❤️</td>
         </tr>
     </thead>
     <tr>
-        <td>菈姆</td>
         <td>亞緬</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060090.png"></td>
     </tr>
 </table>
 <h3 id="第8話-最後的秘密道具">第8話 最後的秘密道具</h3>
 <ul>
-<li>事件ID：<code>20004006</code></li>
+<li>事件ID：<code>20004007</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
-<li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E7%B5%A6%E8%8F%88%E5%A7%86%E7%9A%84%E7%A6%AE%E7%89%A9">鎮長第5話 給菈姆的禮物</a>（<code>20004005</code>）
+<li>前置劇情：
 <ul>
-<li>間隔天數：<code>2天</code></li>
+<li><a href="#%E7%AC%AC7%E8%A9%B1-%E5%B1%AC%E6%96%BC%E5%AD%A9%E5%AD%90%E5%80%91%E7%9A%84%E6%97%A5%E5%AD%90">鎮長第7話 屬於孩子們的日子</a>（<code>20004007</code>）</li>
+<li><a href="#%E7%8D%B2%E5%BE%97%E4%BA%BA%E9%A1%9E%E7%81%AB%E8%BB%8A%E5%A5%97%E8%A3%9D%E7%B5%84">獲得人類火車套裝組 </a>（<code>20014004</code>）</li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計10♥</td>
+            <td>合計10❤️</td>
         </tr>
     </thead>
     <tr>
-        <td>菈姆</td>
         <td>亞緬</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041200.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
     </tr>
 </table>
 <ul>
-<li>必要物品：<code>天氣</code>（<code>1002190</code>）</li>
+<li>必要物品：<code>天氣箱</code>（<code>1002190</code>）</li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>天氣箱</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_1002190.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002190.png"></td>
+        <td><a href="../doraemon-story-09#獲得天氣箱">鎮長第2話 獎勵事件：獲得天氣箱</a></td>
     </tr>
 </table>
-<h4 id="子事件">子事件：</h4>
-<ul>
-<li>事件ID：<code>20014001</code></li>
-<li>優先度：<code>2</code></li>
-</ul>
-<h4 id="子事件-1">子事件：</h4>
-<ul>
-<li>事件ID：<code>20014002</code></li>
-<li>優先度：<code>2</code></li>
-</ul>
-<h4 id="子事件-2">子事件：</h4>
-<ul>
-<li>事件ID：<code>20014003</code></li>
-<li>優先度：<code>2</code></li>
-</ul>
-<h4 id="子事件-3">子事件：</h4>
-<ul>
-<li>事件ID：<code>20014004</code></li>
-<li>優先度：<code>2</code></li>
-</ul>
-<h4 id="子事件-4">子事件：</h4>
-<ul>
-<li>事件ID：<code>20014006</code></li>
-<li>優先度：<code>2</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
-<li>前置劇情：
-<ul>
-<li><a href="#"></a>（<code>50000060</code>）</li>
-<li><a href="#"></a>（<code>10120201</code>）</li>
-</ul>
-</li>
-</ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
-<p><img src="/images/post/story_texture2d/EventImage_2500.png" alt="結局" /></p>
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2500.png" alt="結局" /></p>
 
     </article>
     
@@ -2745,20 +2847,20 @@ document.addEventListener('DOMContentLoaded', function () {
       <ul>
         <li><a href="#第1話-忙碌的孩子們">第1話 忙碌的孩子們</a></li>
         <li><a href="#第2話-被搶走了">第2話 被搶走了！</a></li>
+        <li><a href="#獎勵事件解鎖">獎勵事件解鎖</a>
+          <ul>
+            <li><a href="#獲得超人手套">獲得超人手套</a></li>
+            <li><a href="#獲得尋人手杖">獲得尋人手杖</a></li>
+            <li><a href="#獲得天氣箱">獲得天氣箱</a></li>
+            <li><a href="#獲得人類火車套裝組">獲得人類火車套裝組</a></li>
+          </ul>
+        </li>
         <li><a href="#第3話-給蘭奇的禮物">第3話 給蘭奇的禮物</a></li>
         <li><a href="#第4話-鎮長先生的工作是">第4話 鎮長先生的工作是？</a></li>
         <li><a href="#第5話-給菈姆的禮物">第5話 給菈姆的禮物</a></li>
         <li><a href="#第6話-來自過去的信">第6話 來自過去的信</a></li>
         <li><a href="#第7話-屬於孩子們的日子">第7話 屬於孩子們的日子</a></li>
-        <li><a href="#第8話-最後的秘密道具">第8話 最後的秘密道具</a>
-          <ul>
-            <li><a href="#子事件">子事件：</a></li>
-            <li><a href="#子事件-1">子事件：</a></li>
-            <li><a href="#子事件-2">子事件：</a></li>
-            <li><a href="#子事件-3">子事件：</a></li>
-            <li><a href="#子事件-4">子事件：</a></li>
-          </ul>
-        </li>
+        <li><a href="#第8話-最後的秘密道具">第8話 最後的秘密道具</a></li>
       </ul>
     </li>
   </ul>

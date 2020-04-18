@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Archive – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1655,6 +1663,61 @@
     
     
     
+    <span class="archive__key" data-ani="true">2020</span>
+    <ul class="archive__ul" data-dir="ltr">
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
+            <span class="archive__date">03-27</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/hc12-development/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">HC12遠距無線通訊模組開發記錄 Part.1</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
+            <span class="archive__date">03-25</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">【哆啦A夢牧場物語】NPC與動物與大雄的好感度</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">gallery</span>
+            <span class="archive__date">03-24</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/gallery/doraemonp-park-spotlight/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">哆啦A夢公園名場面</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
+            <span class="archive__date">03-24</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/google-font-setting/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">在網站中使用Google Fonts</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
+            <span class="archive__date">01-25</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/shortcodes/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Shortcodes</a>        
+      </li>
+      
+    </ul>
+    
     <span class="archive__key" data-ani="true">2019</span>
     <ul class="archive__ul" data-dir="ltr">
       
@@ -1662,40 +1725,80 @@
         <span class="archive__meta" data-ani="true">
           
             <span class="archive__type">posts</span>
-            <span class="archive__date">11-15</span>
+            <span class="archive__date">12-20</span>
           
         </span>
-        <a href="https://ilyusha71.github.io/posts/test-katex/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Katex support</a>        
+        <a href="https://ilyusha71.github.io/posts/markdown-syntax/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Markdown Syntax Guide</a>        
       </li>
       
       <li class="archive__li" data-dir="ltr">
         <span class="archive__meta" data-ani="true">
           
             <span class="archive__type">posts</span>
-            <span class="archive__date">11-14</span>
+            <span class="archive__date">12-19</span>
           
         </span>
-        <a href="https://ilyusha71.github.io/posts/test-flowchart/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Flowchart support</a>        
+        <a href="https://ilyusha71.github.io/posts/rich-content/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Rich Content</a>        
       </li>
       
       <li class="archive__li" data-dir="ltr">
         <span class="archive__meta" data-ani="true">
           
-            <span class="archive__type">gallery</span>
-            <span class="archive__date">10-31</span>
+            <span class="archive__type">posts</span>
+            <span class="archive__date">12-18</span>
           
         </span>
-        <a href="https://ilyusha71.github.io/gallery/photo/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Photo</a>        
+        <a href="https://ilyusha71.github.io/posts/syntax-highlight/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Syntax highlighting</a>        
       </li>
       
       <li class="archive__li" data-dir="ltr">
         <span class="archive__meta" data-ani="true">
           
-            <span class="archive__type">gallery</span>
-            <span class="archive__date">10-31</span>
+            <span class="archive__type">posts</span>
+            <span class="archive__date">12-17</span>
           
         </span>
-        <a href="https://ilyusha71.github.io/gallery/cartoon/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Cartoon</a>        
+        <a href="https://ilyusha71.github.io/posts/math-typesetting/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Math Typesetting</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
+            <span class="archive__date">12-16</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/emoji-support/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Emoji Support</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
+            <span class="archive__date">11-18</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/test-viz/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Viz support</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
+            <span class="archive__date">11-18</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/test-wavedrom/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">Wavedrom support</a>        
+      </li>
+      
+      <li class="archive__li" data-dir="ltr">
+        <span class="archive__meta" data-ani="true">
+          
+            <span class="archive__type">posts</span>
+            <span class="archive__date">11-18</span>
+          
+        </span>
+        <a href="https://ilyusha71.github.io/posts/test-js-sequence-diagrams/" class="archive__title" data-title-wrap="wrap" data-dir="ltr">JS Sequence Diagram support</a>        
       </li>
       
     </ul>
@@ -1759,6 +1862,14 @@
       
         <li
         class="active"><a href="/archive/page/6/">6</a></li>
+      
+    
+      
+      <script>
+      </script>
+      
+        <li
+        ><a href="/archive/page/7/">7</a></li>
       
     
   </ul>

@@ -29,12 +29,556 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sat, 03 Sep 2112 23:59:59 +0900</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-index/</guid>
-        <description>持續更新中 劇情線 00 巨木 大雄 哆啦A夢 薇娜 01 木工店 潘特 胖虎 02 醫院 洛克德 瑟露娜 靜香 03 料理店 萊斯特 托蘭 靜香 04 打鐵店 斯米克 布拉斯 05 雜貨店 涅萊爾 埃蒂 緹拉</description>
+        <description>持續更新中 地圖 冷颼颼山頂 巨木根部 採礦場 入口 冷颼颼山 嘩嘩瀑布 萬物鎮西 萬物鎮東 嘩啦河 樵之森 大雄牧場 青青廣場 滾滾森林 滴答湖 洞窟 濤濤海濱 濤濤海岬 壁畫</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301010600.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301010600.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】冷颼颼山</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10100-mount-whistle/</link>
+        <pubDate>Sat, 18 Apr 2020 19:30:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 19:30:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10100-mount-whistle/</guid>
+        <description>冷颼颼山 Mount Whistle 地區ID 地圖ID 地名ID 30 10100 1510100000 鏗鏘石橋 嘎吱橋 Rieselnde Klippe 旅者斷崖</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】嘩嘩瀑布</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10300-swoosh-falls/</link>
+        <pubDate>Sat, 18 Apr 2020 19:29:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 19:29:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10300-swoosh-falls/</guid>
+        <description>嘩嘩瀑布 Swoosh Falls 地區ID 地圖ID 地名ID 32 10300 1510300000 大化石 樹根小徑 嘩嘩深潭</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10300.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】嘩啦河</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10400-plash-river/</link>
+        <pubDate>Sat, 18 Apr 2020 19:28:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 19:28:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10400-plash-river/</guid>
+        <description>嘩啦河 Plash River 地區ID 地圖ID 地名ID 20 10400 1510400000 丸太橋 初始石群</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10400.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】滾滾森林</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10500-rolin-forest/</link>
+        <pubDate>Sat, 18 Apr 2020 19:27:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 19:27:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10500-rolin-forest/</guid>
+        <description>滾滾森林 Rolin Forest 地區ID 地圖ID 地名ID 21 10500 1510500000 滾滾石 滾滾大樹樁 滾滾沼澤 克魯波克魯 克魯波克魯家 地圖ID：21400</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10500.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】滴答湖</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10700-lake-drench/</link>
+        <pubDate>Sat, 18 Apr 2020 19:26:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 19:26:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10700-lake-drench/</guid>
+        <description>滴答湖 地區ID 地圖ID 地名ID 23 10700 1510700000 白石遺跡</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10700.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】大雄牧場</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10000-nobita-farm/</link>
+        <pubDate>Sat, 18 Apr 2020 19:00:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 19:00:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10000-nobita-farm/</guid>
+        <description>大雄牧場 地區ID 地圖ID 地名ID 10 10000 1510000000 牧場建築 大雄家 建築 建築ID 建築等級 簡陋的家 12000 Lv.0 寬闊的家 12010 Lv.1 巨大的家 12020 Lv.2 場景 地圖ID 大雄家 12000 動物小屋 建築</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】濤濤海岬</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10900-zazan-cape/</link>
+        <pubDate>Sat, 18 Apr 2020 13:28:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 13:28:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10900-zazan-cape/</guid>
+        <description>濤濤海岬 Zazan Cape 地區ID 地圖ID 地名ID 51 10900 1510900000 釣具店 席菲小姐的釣具店 建築 建築ID 建築等級 席菲小姐的釣具店 21300 Lv.0 住戶 席菲 場景 地圖ID 席菲小姐的釣具店</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10900.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】濤濤海濱</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10800-zazan-beach/</link>
+        <pubDate>Sat, 18 Apr 2020 12:28:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 12:28:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10800-zazan-beach/</guid>
+        <description>濤濤海濱 Zazan Beach 地區ID 地圖ID 地名ID 50 10800 1510800000</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10800.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】樵之森</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-10600-lumberjack-forest/</link>
+        <pubDate>Sat, 18 Apr 2020 11:28:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 18 Apr 2020 11:28:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-10600-lumberjack-forest/</guid>
+        <description>樵之森 Lumberjack Forest 地區ID 地圖ID 地名ID 22 10600 1510600000 木工店 木工店 咚吭噹 建築 建築ID 建築等級 木工店 20400 Lv.0 住戶 潘特 胖虎 場景 地圖ID 木工店 咚吭噹 20400 1F 餐廳 1F 臥室 1F</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/10600.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】萬物鎮東</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-11300-east-natura/</link>
+        <pubDate>Fri, 17 Apr 2020 23:14:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 17 Apr 2020 23:14:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-11300-east-natura/</guid>
+        <description>萬物鎮東 East Natura 地區ID 地圖ID 地名ID 62 11300 1511300000 鎮長家 鎮長先生的家 建築 建築ID 建築等級 鎮長先生的家 20000 Lv.0 住戶 亞緬 哆啦A夢 場景 地圖ID 鎮長先生的家 20000 1F</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/11300.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】青青廣場</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-11500-harappa-square/</link>
+        <pubDate>Fri, 17 Apr 2020 23:14:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 17 Apr 2020 23:14:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-11500-harappa-square/</guid>
+        <description>青青廣場 Harappa Square 地區ID 地圖ID 地名ID 62 11300 1511300000</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/11500.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】萬物鎮西</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map-11200-west-natura/</link>
+        <pubDate>Fri, 17 Apr 2020 22:28:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 17 Apr 2020 22:28:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map-11200-west-natura/</guid>
+        <description>萬物鎮西 West Natura 地區ID 地圖ID 地名ID 61 11200 1511200000 蘭奇家 蘭奇家 建築 建築ID 建築等級 蘭奇家 20100 Lv.0 住戶 蘭奇 帕絲琪 場景 地圖ID 蘭奇家 20100 1F 餐廳 1F 帕絲琪臥室 2F</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Scene/11200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>地圖</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】節慶活動資訊</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-festivals/</link>
+        <pubDate>Fri, 17 Apr 2020 17:09:56 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 17 Apr 2020 17:09:56 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-festivals/</guid>
+        <description>時間線事件 春季活動 感恩季 節慶 禮物 事件ID：dsf4sd6fg4sd65f4sd65f4sd 優先度：90 觸發地點：青青廣場（11500） 觸發時</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201150150.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>節慶</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】地圖資訊</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-map/</link>
+        <pubDate>Thu, 16 Apr 2020 22:01:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Thu, 16 Apr 2020 22:01:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-map/</guid>
+        <description>地圖導引 地區 《哆啦A夢牧場物語》的地圖一共分為17個地區。 每個地區都有一個地區ID，作為場景的上層。 小地圖中標註了除了壁畫空間外的16個地區</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_600010&#43;png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>出貨價格</category>
+            
+          
+            
+              <category>蟲類</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】事件線</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-1/</link>
+        <pubDate>Thu, 16 Apr 2020 09:45:33 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Thu, 16 Apr 2020 09:45:33 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-1/</guid>
+        <description>以下為整理中的事件，整理完成會歸檔 如果電話亭能查詢的事件請參考劇情線。 引導教學事件 釣魚教學 事件ID：81100001 觸發地點：大雄牧場（10</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301010600.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>劇情</category>
+            
+          
         
         
           
@@ -59,10 +603,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 23:00:44 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-hammer-carpenter-shop/</guid>
-        <description>木工店商品資料 建築：11種 大雄的家升級：2種 動物小屋升級：2種 雞小屋升級：2種 牧場擴建：5種 材料：種 裝飾：種 建築 木工店進行建築的升級或擴建過</description>
+        <description>最後更新：2020/04/16 木工店MOD資料庫 工藝商品模板類：CraftShopItemDataModel，商店上架的商品實例。 商品ID：</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301140100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301140100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -99,10 +643,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 18:18:30 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-18/</guid>
-        <description>松鼠 全劇情線索引 18 松鼠 第1話</description>
+        <description>松鼠 全劇情線索引 18 松鼠 第1話 事件ID：40007001 優先度：3 觸發地點：萬物鎮西（11200） 觸發時間條件📆 開始時間： 每年春季1日 每日12</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140190.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140190.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -135,10 +679,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 18:17:30 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-17/</guid>
-        <description>兔子 全劇情線索引 17 兔子 第1話</description>
+        <description>兔子 全劇情線索引 17 兔子 第1話 事件ID：40006001 優先度：3 觸發地點：巨木根部（11700） 觸發時間條件📆 開始時間：每日10:00 結束時</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140180.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140180.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -171,10 +715,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 18:16:30 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-16/</guid>
-        <description>猴子 全劇情線索引 16 猴子 第1話 寄養小馬！ 第2話 小馬與我 第3話 把小馬還來！ 第4話 小馬回來了</description>
+        <description>猴子 全劇情線索引 16 猴子 第1話 事件ID：40004001 優先度：3 觸發地點：大雄牧場（10000） 觸發時間條件📆 開始時間： 每年春季1日 每日06</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140170.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140170.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -207,10 +751,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 18:15:30 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-15/</guid>
-        <description>熊 全劇情線索引 15 熊 第1話 採集蘋果 第2話 溫柔的熊</description>
+        <description>熊 全劇情線索引 15 熊 第1話 採集蘋果 事件ID：40005001 優先度：3 觸發地點：大雄牧場（10000） 觸發時間條件📆 開始時間： 每年春季1日 每日</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140160.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140160.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -243,10 +787,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 18:13:30 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-13/</guid>
-        <description>馬 全劇情線索引 13 馬 狂草尼馬 第1話 寄養小馬！ 第2話 小馬與我 第3話 把小馬還來！ 第4話 小馬回來了</description>
+        <description>馬 全劇情線索引 13 馬 狂草尼馬 第1話 寄養小馬！ 事件ID：40001001 優先度：3 觸發地點：萬物鎮西（11200） 前置劇情：馬小屋建造完成（10</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140140.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140140.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -282,7 +826,7 @@
         <description>鎮長 全劇情線索引 09 鎮長 亞緬 第1話 忙碌的孩子們 事件ID：20004001 優先度：3 觸發地點：萬物鎮西（11200） 前置劇情：看完佈告欄引導教學</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -315,10 +859,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 15:09:26 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-golden-quality-items/</guid>
-        <description>黃金品質原料取得條件 動物 條件 黃金物品 情感度達到♥10 黃金雞蛋 贏得養雞競賽 夏季14日 動物 條件 黃金物品 情感度達到♥10 黃金牛奶 贏得飼牛競賽 冬季1</description>
+        <description>黃金品質原料取得條件 1 2 3 4 5 6 7 8 9 10 public class AnimalModel : INullableModel { private bool IsSpecialHarvest { get { return this.IsVictory &amp;amp;&amp;amp; this.AffectionDegreeRate == 20; } } } 根據上列代碼，要收穫黃金品質的雞蛋、牛奶與羊毛必須滿足下列</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -351,10 +895,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 11:06:22 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-08/</guid>
-        <description>釣具店 全劇情線索引 08 釣具店 席菲 第0話 要開釣具店嗎？ 事件ID：20009000 優先度：4 觸發地點：釣具店（21300） 前置劇情：巨木第2話 暴風</description>
+        <description>釣具店 全劇情線索引 08 釣具店 席菲 第0話 要開釣具店嗎？ 事件ID：20009000 優先度：4 觸發地點：席菲小姐的釣具店（21300） 前置劇情：巨木</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140090.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140090.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -390,7 +934,7 @@
         <description>出貨價格資料 物品MOD資料庫 出貨價格 所有物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3400111.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3400111.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -430,7 +974,7 @@
         <description>出貨價格資料 物品MOD資料庫 出貨價格 所有物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_5000187.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_5000187.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -470,7 +1014,7 @@
         <description>出貨價格資料 物品MOD資料庫 出貨價格 所有物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_6000100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_6000100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -507,10 +1051,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Tue, 14 Apr 2020 22:00:42 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-07/</guid>
-        <description>動物商店 全劇情線索引 07 動物商店 布魯 優 菈姆 第0話 要開動物商店嗎？ 事件ID：20007000 優先度：4 觸發地點：動物商店（20500） 前置劇情：</description>
+        <description>動物商店 全劇情線索引 07 動物商店 布魯 優 菈姆 第0話 要開動物商店嗎？ 事件ID：20007000 優先度：4 觸發地點：動物商店 古騰摩克（20500） 前</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140080.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140080.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -543,10 +1087,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Tue, 14 Apr 2020 21:53:29 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-06/</guid>
-        <description>小雞商店 全劇情線索引 06 小雞商店 赫蓮 奇克 肯 第0話 要開小雞商店？ 事件ID：20008000 優先度：4 觸發地點：小雞商店（20200） 前置劇情：巨</description>
+        <description>小雞商店 全劇情線索引 06 小雞商店 赫蓮 奇克 肯 第0話 要開小雞商店？ 事件ID：20008000 優先度：4 觸發地點：小雞商店 咕咕之家（20200） 前置</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140070.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140070.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -579,10 +1123,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Tue, 14 Apr 2020 19:55:22 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-05/</guid>
-        <description>雜貨店 全劇情線索引 05 雜貨店 涅萊爾 埃蒂 緹拉兒 第0話 要開雜貨店嗎？ 事件ID：20006000 優先度：4 觸發地點：雜貨店（20700） 前置劇情：巨</description>
+        <description>雜貨店 全劇情線索引 05 雜貨店 涅萊爾 埃蒂 緹拉兒 第0話 要開雜貨店嗎？ 事件ID：20006000 優先度：4 觸發地點：雜貨店 小玩意兒（20700） 前置</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140030.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140030.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -618,7 +1162,7 @@
         <description>洞窟 全劇情線索引 20 洞窟 第1話 洞窟的岩壁 事件ID：20010001 優先度：3 觸發地點：洞窟（11800） 前置劇情：巨木第5話 邂逅女神大人（10</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140210.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140210.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -651,10 +1195,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Tue, 14 Apr 2020 02:29:07 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-19/</guid>
-        <description>秘密道具 全劇情線索引 19 秘密道具 第1話 用門改變裝潢！？ 事件ID：30001001 優先度：2 觸發地點：萬物鎮東（11300） 觸發時間條件 開始時間</description>
+        <description>秘密道具 全劇情線索引 19 秘密道具 第1話 用門改變裝潢！？ 事件ID：30001001 優先度：2 觸發地點：萬物鎮東（11300） 觸發時間條件📆 開始時</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -687,10 +1231,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 13 Apr 2020 23:40:52 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-04/</guid>
-        <description>打鐵店 全劇情線索引 04 打鐵店 斯米克 布拉斯 第0話 要開打鐵店嗎？ 事件ID：20005000 優先度：4 觸發地點：打鐵店（21100） 前置劇情：巨木第</description>
+        <description>打鐵店 全劇情線索引 04 打鐵店 斯米克 布拉斯 第0話 要開打鐵店嗎？ 事件ID：20005000 優先度：4 觸發地點：打鐵店 鏗鏘鐺（21100） 前置劇情：</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140050.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140050.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -726,7 +1270,7 @@
         <description>蘭奇 全劇情線索引 10 蘭奇 第1話 蘭奇的手環 事件ID：10004000 優先度：4 觸發地點：萬物鎮西（11200） 前置劇情：巨木第5話 邂逅女神大人（</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140110.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140110.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -762,7 +1306,43 @@
         <description>貓 全劇情線索引 14 貓 第1話 為了討得歡心 事件ID：40002001 優先度：3 觸發地點：萬物鎮東（11300） 鎮長家門口（212.4,3.42,-</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140150.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140150.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>劇情</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】克魯波克魯劇情線</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-11/</link>
+        <pubDate>Sat, 11 Apr 2020 23:58:37 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 11 Apr 2020 23:58:37 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-11/</guid>
+        <description>克魯波克魯 全劇情線索引 11 克魯波克魯 婭卡 羅伊茲米 多羅米 琪倫 奇薩拉姆 第1話 邂逅克魯波克魯 事件ID：10005000 優先度：4 觸發地點：滾滾森林（</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140120.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -795,10 +1375,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sat, 11 Apr 2020 23:58:37 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-12/</guid>
-        <description>狗 全劇情線索引 12 狗 第1話 大岩石與小狗 事件ID：40003001 優先度：3 觸發地點：冷颼颼山（10100） 觸發時間條件 開始時間：第一年春季17</description>
+        <description>狗 全劇情線索引 12 狗 第1話 大岩石與小狗 事件ID：40003001 優先度：3 觸發地點：冷颼颼山（10100） 觸發時間條件📆 開始時間：第1年春季1</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140130.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140130.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -831,10 +1411,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sat, 11 Apr 2020 23:49:02 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-03/</guid>
-        <description>料理店 全劇情線索引 03 料理店 萊斯特 托蘭 靜香 第1話 小夫的幫忙 事件ID：10001000 優先度：4 觸發地點：料理店（21200） 前置劇情：巨木第2</description>
+        <description>料理店 全劇情線索引 03 料理店 萊斯特 托蘭 靜香 第1話 小夫的幫忙 事件ID：10001000 優先度：4 觸發地點：料理店 嚼嚼（21200） 前置劇情：巨木</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140040.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140040.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -867,10 +1447,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sat, 11 Apr 2020 23:45:07 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-02/</guid>
-        <description>醫院 全劇情線索引 02 醫院 洛克德 瑟露娜 靜香 第1話 靜香的幫忙 事件ID：10002000 優先度：4 觸發地點：洛克德醫院（20900） 前置劇情：巨木第</description>
+        <description>醫院 全劇情線索引 02 醫院 洛克德 瑟露娜 靜香 第1話 靜香的幫忙 事件ID：10002000 優先度：4 觸發地點：洛克德先生的醫院（20900） 前置劇情：</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140060.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140060.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -906,7 +1486,7 @@
         <description>木工店 全劇情線索引 01 木工店 潘特 胖虎 第1話 胖虎的幫忙 事件ID：10003000 優先度：4 前置劇情： 巨木第2話 暴風雨後的小鎮（10000002）</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140020.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140020.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -942,7 +1522,7 @@
         <description>巨木 全劇情線索引 00 巨木 大雄 哆啦A夢 薇娜 第1話 自由研究和神奇種子 大雄在空地上撿到巨木種子並將其種在後山上，在後山上突然的暴風雨將哆啦A夢、大雄</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201140010.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140010.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -978,7 +1558,7 @@
         <description>關注 銅鑼燒實驗牧場 伊琉沙/ PC實測/哆啦A夢牧場物語 動物的分類 在哆啦A夢牧場物語中，動物可以按照下列方式進行分類： 大雄家的動物們 寵物 家畜 野生</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201173001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201173001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1005,16 +1585,16 @@
       </item>
       
       <item>
-        <title>【哆啦A夢牧場物語】動物的好感度與情感度</title>
-        <link>https://ilyusha71.github.io/posts/doraemon-story-animal-affction/</link>
+        <title>【哆啦A夢牧場物語】牧場動物的情感度</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-affectiondegree/</link>
         <pubDate>Sat, 11 Apr 2020 14:26:33 +0800</pubDate>
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sat, 11 Apr 2020 14:26:33 +0800</atom:modified>
-        <guid>https://ilyusha71.github.io/posts/doraemon-story-animal-affction/</guid>
-        <description>動物的好感度與情感度 野生動物的好感度可以參考在之前這篇《NPC與動物與大雄的好感度》。 好感度分為10級，以不同顏色的♥表示。 大雄牧場動物們的</description>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-affectiondegree/</guid>
+        <description>好感度與情感度 好感度💝分為10級，以不同顏色的❤️表示，主要表示NPC對大雄的好感程度。 好感度💝的增加主要來自送禮🎁。 情感度💗分為20級，以</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201173001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201173001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1050,7 +1630,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301080200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301080200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1090,7 +1670,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301120000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301120000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1130,7 +1710,7 @@
         <description>農產品販售 每一季大雄第一次進料理店的時候都會更新料理店販售的農產品。 料理店每季販售的農產品由當季農產品與四季農產品組成。 當季農產品與四季農產</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3400101.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3400101.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1170,7 +1750,7 @@
         <description>出貨價格資料 物品MOD資料庫 出貨價格 所有物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3300901.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3300901.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1210,7 +1790,7 @@
         <description>料理販售 每一季大雄第一次進料理店的時候都會更新料理店販售的料理。 每道料理都只會在特定季節販售。 料理店每季販售的料理均為5道當季料理。 當季料理</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3300147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3300147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1254,7 +1834,7 @@
         <description>食譜販售 每一季大雄第一次進料理店的時候都會更新料理店販售的食譜。 料理店每季販售的食譜由當季食譜與四季食譜組成。 當季食譜與四季食譜將根據販售權</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_9200147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_9200147.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1298,7 +1878,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1350,7 +1930,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1394,7 +1974,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 出貨</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3000501.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3000501.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1434,7 +2014,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 遊戲</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1470,7 +2050,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 作物</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/Crop_90110405.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/Crop_90110405.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1506,7 +2086,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 肥料</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_1103001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_1103001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1542,7 +2122,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 作物</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301051200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301051200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1582,7 +2162,7 @@
         <description>物品MOD資料庫 物品資料檔：ItemData.text 物品資料類：CItemData，讀取TextAsset的物品二進制資料ItemData</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301001000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301001000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -1645,7 +2225,7 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 25 Mar 2020 23:52:31 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-likabilitydegree/</guid>
-        <description>關注 銅鑼燒實驗牧場 伊琉沙/ PC實測/哆啦A夢牧場物語 關於好感度的計算，我從源代碼反編譯找到了。 結果跟之前自己實機測試結果一致。 只是程式碼的所</description>
+        <description>好感度與情感度 好感度💝分為10級，以不同顏色的❤️表示，主要表示NPC對大雄的好感程度。 好感度💝的增加主要來自送禮🎁。 情感度💗分為20級，以</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/feature-dora/icon_201100013.png" medium="image"><media:title type="html">featured image</media:title></media:content>

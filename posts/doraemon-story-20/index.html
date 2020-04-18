@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】洞窟劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="洞窟的劇情發展">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140210.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140210.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140210.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140210.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】洞窟劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-20/",
     "description": "洞窟的劇情發展",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140210.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140210.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1731,13 +1739,13 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_2300.png" alt="洞窟劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2300.png" alt="洞窟劇情線" /></p>
 <h2 id="洞窟">洞窟</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>20</td>
-        <td align="center"><a href="../doraemon-story-20"><img src= "/images/post/story_sprite/icon_201140210.png">洞窟</a></td>
+        <td align="center"><a href="../doraemon-story-20"><img src= "/images/post/Season_of_Story/Sprite/icon_201140210.png">洞窟</a></td>
     </tr>
 </table>
 <h3 id="第1話-洞窟的岩壁">第1話 洞窟的岩壁</h3>
@@ -1746,15 +1754,15 @@
 <li>優先度：<code>3</code></li>
 <li>觸發地點：<code>洞窟</code>（<code>11800</code>）</li>
 </ul>
-<p><img src="/images/post/map/11800.png" alt="洞窟" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11800.png" alt="洞窟" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E9%82%82%E9%80%85%E5%A5%B3%E7%A5%9E%E5%A4%A7%E4%BA%BA">巨木第5話 邂逅女神大人</a>（<code>10000005</code>）</li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計8♥</td>
+            <td>合計8❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1764,16 +1772,16 @@
         <td>小夫</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041010.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041010.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041040.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第2話-壁畫房間">第2話 壁畫房間</h3>
@@ -1782,14 +1790,21 @@
 <li>優先度：<code>3</code></li>
 <li>觸發地點：<code>洞窟</code>（<code>11800</code>）</li>
 </ul>
-<p><img src="/images/post/map/11800.png" alt="洞窟" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11800.png" alt="洞窟" /></p>
 <ul>
-<li>前置劇情：<a href="../doraemon-story-20#%E7%AC%AC1%E8%A9%B1-%E6%B4%9E%E7%AA%9F%E7%9A%84%E5%B2%A9%E5%A3%81">洞窟第1話 洞窟的岩壁</a>（<code>20010001</code>）</li>
+<li>前置劇情：<a href="#%E7%AC%AC1%E8%A9%B1-%E6%B4%9E%E7%AA%9F%E7%9A%84%E5%B2%A9%E5%A3%81">洞窟第1話 洞窟的岩壁</a>（<code>20010001</code>）</li>
 <li>必要物品：<code>穿透環</code>（<code>1002270</code>）</li>
 </ul>
 <table>
+    <thead>
+        <tr>
+            <td>穿透環</td>
+            <td>取得途徑</td>
+        </tr>
+    </thead>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_1002270.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_1002270.png"></td>
+        <td><a href="../doraemon-story-19#第4話-秘密夥伴">秘密道具第4話 秘密夥伴</a></td>
     </tr>
 </table>
 <h3 id="第3話-女神大人的寶箱">第3話 女神大人的寶箱？</h3>
@@ -2028,7 +2043,7 @@
         </li>
         
         <li>
-          <a href="/posts/doraemon-story-12/" class="related__link">【哆啦A夢牧場物語】狗劇情線</a>
+          <a href="/posts/doraemon-story-11/" class="related__link">【哆啦A夢牧場物語】克魯波克魯劇情線</a>
         </li>
         
     </ul>

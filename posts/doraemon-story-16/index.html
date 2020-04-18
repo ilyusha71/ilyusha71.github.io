@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】猴子劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="猴子的劇情發展">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140170.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140170.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140170.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140170.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】猴子劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-16/",
     "description": "猴子的劇情發展",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140170.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140170.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1720,10 +1728,8 @@
   <ul>
     <li><a href="#猴子">猴子</a>
       <ul>
-        <li><a href="#第1話-寄養小馬">第1話 寄養小馬！</a></li>
-        <li><a href="#第2話-小馬與我">第2話 小馬與我</a></li>
-        <li><a href="#第3話-把小馬還來">第3話 把小馬還來！</a></li>
-        <li><a href="#第4話-小馬回來了">第4話 小馬回來了</a></li>
+        <li><a href="#第1話">第1話</a></li>
+        <li><a href="#第2話">第2話</a></li>
       </ul>
     </li>
   </ul>
@@ -1731,21 +1737,98 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_3003.png" alt="猴子劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_3003.png" alt="猴子劇情線" /></p>
 <h2 id="猴子">猴子</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>16</td>
-        <td align="center"><a href="../doraemon-story-16"><img src= "/images/post/story_sprite/icon_201140170.png">猴子</a></td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201046000.png"></td>
+        <td align="center"><a href="../doraemon-story-16"><img src= "/images/post/Season_of_Story/Sprite/icon_201140170.png">猴子</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201046000.png"></td>
     </tr>
 </table>
-<h3 id="第1話-寄養小馬">第1話 寄養小馬！</h3>
-<h3 id="第2話-小馬與我">第2話 小馬與我</h3>
-<h3 id="第3話-把小馬還來">第3話 把小馬還來！</h3>
-<h3 id="第4話-小馬回來了">第4話 小馬回來了</h3>
-<p><img src="/images/post/story_texture2d/EventImage_3003.png" alt="結局" /></p>
+<h3 id="第1話">第1話</h3>
+<ul>
+<li>事件ID：<code>40004001</code></li>
+<li>優先度：<code>3</code></li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
+</ul>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
+<ul>
+<li>觸發時間條件📆
+<ul>
+<li>開始時間：
+<ul>
+<li>每年<code>春季1日</code></li>
+<li>每日<code>06:00</code></li>
+</ul>
+</li>
+<li>結束時間：
+<ul>
+<li>每年<code>秋季30日</code></li>
+<li>每日<code>12:00</code></li>
+</ul>
+</li>
+<li><mark>冬季猴子會冬眠</mark></li>
+</ul>
+</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度💝條件：<code>靜香</code>（<code>102</code>）</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <td align="center">靜香</td>
+            <td align="center">好感度</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+    </tr>
+</table>
+<h3 id="第2話">第2話</h3>
+<ul>
+<li>事件ID：<code>40004002</code></li>
+<li>優先度：<code>3</code></li>
+<li>觸發地點：<code>滴答湖</code>（<code>10700</code>）</li>
+</ul>
+<p><img src="/images/post/Season_of_Story/Map/10700.png" alt="滴答湖" /></p>
+<ul>
+<li>前置劇情：<a href="#%E7%AC%AC1%E8%A9%B1-">猴子第1話 </a>（<code>40004001</code>）</li>
+<li>觸發時間條件📆
+<ul>
+<li>開始時間：
+<ul>
+<li>每年<code>春季1日</code></li>
+<li>每日<code>06:00</code></li>
+</ul>
+</li>
+<li>結束時間：
+<ul>
+<li>每年<code>秋季30日</code></li>
+<li>每日<code>16:00</code></li>
+</ul>
+</li>
+<li><mark>冬季猴子會冬眠</mark></li>
+</ul>
+</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度💝條件：<code>猴子</code>（<code>604</code>）</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <td align="center">猴子</td>
+            <td align="center">好感度💝</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201046040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+    </tr>
+</table>
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_3003.png" alt="結局" /></p>
 
     </article>
     
@@ -2364,10 +2447,8 @@ document.addEventListener('DOMContentLoaded', function () {
   <ul>
     <li><a href="#猴子">猴子</a>
       <ul>
-        <li><a href="#第1話-寄養小馬">第1話 寄養小馬！</a></li>
-        <li><a href="#第2話-小馬與我">第2話 小馬與我</a></li>
-        <li><a href="#第3話-把小馬還來">第3話 把小馬還來！</a></li>
-        <li><a href="#第4話-小馬回來了">第4話 小馬回來了</a></li>
+        <li><a href="#第1話">第1話</a></li>
+        <li><a href="#第2話">第2話</a></li>
       </ul>
     </li>
   </ul>

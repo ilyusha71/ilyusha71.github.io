@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】動物商店劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="布魯、優與菈姆的劇情發展">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140080.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140080.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140080.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140080.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】動物商店劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-07/",
     "description": "布魯、優與菈姆的劇情發展",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140080.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140080.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1738,25 +1746,25 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_2700.png" alt="動物商店劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2700.png" alt="動物商店劇情線" /></p>
 <h2 id="動物商店">動物商店</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>07</td>
-        <td align="center"><a href="../doraemon-story-07"><img src= "/images/post/story_sprite/icon_201140080.png">動物商店</a></td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041110.png">布魯</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041120.png">優</td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201041130.png">菈姆</td>
+        <td align="center"><a href="../doraemon-story-07"><img src= "/images/post/Season_of_Story/Sprite/icon_201140080.png">動物商店</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041110.png">布魯</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041120.png">優</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041130.png">菈姆</td>
     </tr>
 </table>
 <h3 id="第0話-要開動物商店嗎">第0話 要開動物商店嗎？</h3>
 <ul>
 <li>事件ID：<code>20007000</code></li>
 <li>優先度：<code>4</code></li>
-<li>觸發地點：<code>動物商店</code>（<code>20500</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%8B%95%E7%89%A9%E5%95%86%E5%BA%97-%E5%8F%A4%E9%A8%B0%E6%91%A9%E5%85%8B">動物商店 古騰摩克</a>（<code>20500</code>）</li>
 </ul>
-<p><img src="/images/post/map/20500.png" alt="動物商店" /></p>
+<p><img src="/images/post/Season_of_Story/Map/20500.png" alt="動物商店" /></p>
 <ul>
 <li>前置劇情：<a href="../doraemon-story-00#%E7%AC%AC2%E8%A9%B1-%E6%9A%B4%E9%A2%A8%E9%9B%A8%E5%BE%8C%E7%9A%84%E5%B0%8F%E9%8E%AE">巨木第2話 暴風雨後的小鎮</a>（<code>10000002</code>）</li>
 </ul>
@@ -1764,28 +1772,28 @@
 <ul>
 <li>事件ID：<code>20007001</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）
 <ul>
 <li><code>動物商店</code>門口（<code>197.7</code>,<code>0</code>,<code>-12.1</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11200-205.png" alt="動物商店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200-205.png" alt="動物商店門口" /></p>
 <ul>
 <li>前置劇情：看完佈告欄引導教學（<code>81001004</code>）</li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計6♥</td>
+            <td>合計6❤️</td>
         </tr>
     </thead>
     <tr>
@@ -1794,88 +1802,88 @@
         <td>優</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041120.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060020.png"></td>
     </tr>
 </table>
 <h3 id="第2話-和動物聊聊">第2話 和動物聊聊</h3>
 <ul>
 <li>事件ID：<code>20007002</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）
 <ul>
 <li><code>動物商店</code>門口（<code>197.7</code>,<code>0</code>,<code>-12.1</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11200-205.png" alt="動物商店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200-205.png" alt="動物商店門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC1%E8%A9%B1-%E8%8F%88%E5%A7%86%E8%A2%AB%E8%A5%B2%E6%93%8A%E4%BA%86">動物商店第1話 菈姆被襲擊了！？</a>（<code>20007001</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計3♥</td>
+            <td>合計3❤️</td>
         </tr>
     </thead>
     <tr>
         <td>菈姆</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
     </tr>
 </table>
 <h3 id="第3話-牛奶沒了">第3話 牛奶沒了！</h3>
 <ul>
 <li>事件ID：<code>20007003</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）
 <ul>
 <li><code>動物商店</code>門口（<code>197.7</code>,<code>0</code>,<code>-12.1</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11200-205.png" alt="動物商店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200-205.png" alt="動物商店門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC2%E8%A9%B1-%E5%92%8C%E5%8B%95%E7%89%A9%E8%81%8A%E8%81%8A">動物商店第2話 和動物聊聊</a>（<code>20007002</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計10♥</td>
+            <td>合計10❤️</td>
         </tr>
     </thead>
     <tr>        
@@ -1884,42 +1892,42 @@
         <td>菈姆</td>
     </tr>
     <tr>        
-        <td><img src= "/images/post/story_sprite/icon_201041110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041120.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060030.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
     </tr>
 </table>
 <h3 id="第4話-菈姆的動物語講座">第4話 菈姆的動物語講座</h3>
 <ul>
 <li>事件ID：<code>20007004</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC3%E8%A9%B1-%E7%89%9B%E5%A5%B6%E6%B2%92%E4%BA%86">動物商店第3話 牛奶沒了！</a>（<code>20007003</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>12:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計13♥</td>
+            <td>合計13❤️</td>
         </tr>
     </thead>
     <tr>        
@@ -1928,87 +1936,87 @@
         <td>菈姆</td>
     </tr>
     <tr>        
-        <td><img src= "/images/post/story_sprite/icon_201041110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041120.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060040.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060040.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第5話-迷路的小羊">第5話 迷路的小羊</h3>
 <ul>
 <li>事件ID：<code>20007005</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）
 <ul>
 <li><code>動物商店</code>門口（<code>197.7</code>,<code>0</code>,<code>-12.1</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11200-205.png" alt="動物商店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200-205.png" alt="動物商店門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC4%E8%A9%B1-%E8%8F%88%E5%A7%86%E7%9A%84%E5%8B%95%E7%89%A9%E8%AA%9E%E8%AC%9B%E5%BA%A7">動物商店第4話 菈姆的動物語講座</a>（<code>20007004</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>06:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計6♥</td>
+            <td>合計6❤️</td>
         </tr>
     </thead>
     <tr>        
         <td>菈姆</td>
     </tr>
     <tr>        
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
     </tr>
 </table>
 <h3 id="第6話-菈姆的擔憂">第6話 菈姆的擔憂</h3>
 <ul>
 <li>事件ID：<code>20007006</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）
 <ul>
 <li><code>動物商店</code>門口（<code>197.7</code>,<code>0</code>,<code>-12.1</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11200-205.png" alt="動物商店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200-205.png" alt="動物商店門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC5%E8%A9%B1-%E8%BF%B7%E8%B7%AF%E7%9A%84%E5%B0%8F%E7%BE%8A">動物商店第5話 迷路的小羊</a>（<code>20007005</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>18:00</code></li>
 <li>結束時間：每日<code>20:00</code></li>
 </ul>
 </li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計10♥</td>
+            <td>合計10❤️</td>
         </tr>
     </thead>
     <tr>
@@ -2016,21 +2024,21 @@
         <td>優</td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201041110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041120.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
     </tr>
 </table>
 <h3 id="第7話-失蹤的菈姆">第7話 失蹤的菈姆</h3>
 <ul>
 <li>事件ID：<code>20007007</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
 <li>前置劇情：
 <ul>
@@ -2038,19 +2046,19 @@
 <li><a href="#"></a>（<code>30001002</code>）</li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>16:00</code></li>
 <li>結束時間：每日<code>19:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計19♥</td>
+            <td>合計19❤️</td>
         </tr>
     </thead>
     <tr>        
@@ -2059,42 +2067,42 @@
         <td>菈姆</td>
     </tr>
     <tr>        
-        <td><img src= "/images/post/story_sprite/icon_201041110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041120.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060050.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060050.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
     </tr>
 </table>
 <h3 id="第8話-羊群">第8話 羊群</h3>
 <ul>
 <li>事件ID：<code>20007008</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC7%E8%A9%B1-%E5%A4%B1%E8%B9%A4%E7%9A%84%E8%8F%88%E5%A7%86">動物商店第7話 失蹤的菈姆</a>（<code>20007007</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>12:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計22♥</td>
+            <td>合計22❤️</td>
         </tr>
     </thead>
     <tr>        
@@ -2103,42 +2111,42 @@
         <td>菈姆</td>
     </tr>
     <tr>        
-        <td><img src= "/images/post/story_sprite/icon_201041110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041120.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060070.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060070.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
     </tr>
 </table>
 <h3 id="第9話-往羊群的方向">第9話 往羊群的方向</h3>
 <ul>
 <li>事件ID：<code>20007009</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>大雄牧場</code>（<code>10000</code>）</li>
+<li>觸發地點：<a href="../doraemon-story-map#%E5%A4%A7%E9%9B%84%E7%89%A7%E5%A0%B4">大雄牧場</a>（<code>10000</code>）</li>
 </ul>
-<p><img src="/images/post/map/10000.png" alt="大雄牧場" /></p>
+<p><img src="/images/post/Season_of_Story/Map/10000.png" alt="大雄牧場" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC8%E8%A9%B1-%E7%BE%8A%E7%BE%A4">動物商店第8話 羊群</a>（<code>20007008</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>12:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計25♥</td>
+            <td>合計25❤️</td>
         </tr>
     </thead>
     <tr>        
@@ -2147,46 +2155,46 @@
         <td>菈姆</td>
     </tr>
     <tr>        
-        <td><img src= "/images/post/story_sprite/icon_201041110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041120.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060080.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060090.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060080.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060090.png"></td>
     </tr>
 </table>
 <h3 id="第10話-大家都在喔">第10話 大家都在喔</h3>
 <ul>
 <li>事件ID：<code>20007010</code></li>
 <li>優先度：<code>3</code></li>
-<li>觸發地點：<code>萬物鎮西</code>（<code>11200</code>）
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）
 <ul>
 <li><code>動物商店</code>門口（<code>197.7</code>,<code>0</code>,<code>-12.1</code>）</li>
 </ul>
 </li>
 </ul>
-<p><img src="/images/post/map/11200-205.png" alt="動物商店門口" /></p>
+<p><img src="/images/post/Season_of_Story/Map/11200-205.png" alt="動物商店門口" /></p>
 <ul>
 <li>前置劇情：<a href="#%E7%AC%AC9%E8%A9%B1-%E5%BE%80%E7%BE%8A%E7%BE%A4%E7%9A%84%E6%96%B9%E5%90%91">動物商店第9話 往羊群的方向</a>（<code>20007009</code>）
 <ul>
 <li>間隔天數：<code>2天</code></li>
 </ul>
 </li>
-<li>觸發時間條件
+<li>觸發時間條件📆
 <ul>
 <li>開始時間：每日<code>12:00</code></li>
 <li>結束時間：每日<code>16:00</code></li>
 </ul>
 </li>
 <li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
-<li>NPC好感度總和條件</li>
+<li>NPC好感度💝總和條件</li>
 </ul>
 <table>
     <thead>
         <tr>
-            <td>合計30♥</td>
+            <td>合計30❤️</td>
         </tr>
     </thead>
     <tr>        
@@ -2195,17 +2203,17 @@
         <td>菈姆</td>
     </tr>
     <tr>        
-        <td><img src= "/images/post/story_sprite/icon_201041110.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041120.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201041130.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
     </tr>
     <tr>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
-        <td><img src= "/images/post/story_sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060100.png"></td>
     </tr>
 </table>
-<p><img src="/images/post/story_texture2d/EventImage_2700.png" alt="結局" /></p>
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_2700.png" alt="結局" /></p>
 
     </article>
     

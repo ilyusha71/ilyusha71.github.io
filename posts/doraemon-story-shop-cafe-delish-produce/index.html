@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】料理店農產品販售資訊 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="料理店各季節農產品販售資料">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_3400101.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_3400101.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3400101.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3400101.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】料理店農產品販售資訊">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-shop-cafe-delish-produce/",
     "description": "料理店各季節農產品販售資料",
     "keywords": ["農產品"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_3400101.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3400101.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1767,7 +1775,7 @@
     <tbody>
         <tr>
             <td>300100</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000100.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000100.png"></td>
             <td>蕪菁</td>
             <td>180</td>
             <td>春季</td>
@@ -1775,7 +1783,7 @@
         </tr>
         <tr>
             <td>300101</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000101.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000101.png"></td>
             <td>馬鈴薯</td>
             <td>340</td>
             <td>春季</td>
@@ -1783,7 +1791,7 @@
         </tr>
         <tr>
             <td>300102</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000102.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000102.png"></td>
             <td>高麗菜</td>
             <td>660</td>
             <td>春季</td>
@@ -1791,7 +1799,7 @@
         </tr>
         <tr>
             <td>300103</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000103.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000103.png"></td>
             <td>小黃瓜</td>
             <td>190</td>
             <td>春季</td>
@@ -1799,7 +1807,7 @@
         </tr>
         <tr>
             <td>300104</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000104.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000104.png"></td>
             <td>草莓</td>
             <td>380</td>
             <td>春季</td>
@@ -1807,7 +1815,7 @@
         </tr>
         <tr>
             <td>300105</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000105.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000105.png"></td>
             <td>白花椰菜</td>
             <td>580</td>
             <td>春季</td>
@@ -1815,7 +1823,7 @@
         </tr>
         <tr>
             <td>300106</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000106.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000106.png"></td>
             <td>豌豆</td>
             <td>210</td>
             <td>春季</td>
@@ -1838,7 +1846,7 @@
     <tbody>
         <tr>
             <td>300107</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000200.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000200.png"></td>
             <td>玉米</td>
             <td>350</td>
             <td>夏季</td>
@@ -1846,7 +1854,7 @@
         </tr>
         <tr>
             <td>300108</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000201.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000201.png"></td>
             <td>洋蔥</td>
             <td>220</td>
             <td>夏季</td>
@@ -1854,7 +1862,7 @@
         </tr>
         <tr>
             <td>300109</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000202.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000202.png"></td>
             <td>南瓜</td>
             <td>140</td>
             <td>夏季</td>
@@ -1862,7 +1870,7 @@
         </tr>
         <tr>
             <td>300110</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000203.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000203.png"></td>
             <td>西瓜</td>
             <td>270</td>
             <td>夏季</td>
@@ -1870,7 +1878,7 @@
         </tr>
         <tr>
             <td>300111</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000204.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000204.png"></td>
             <td>番茄</td>
             <td>290</td>
             <td>夏季</td>
@@ -1878,7 +1886,7 @@
         </tr>
         <tr>
             <td>300112</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000205.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000205.png"></td>
             <td>哈密瓜</td>
             <td>1060</td>
             <td>夏季</td>
@@ -1886,7 +1894,7 @@
         </tr>
         <tr>
             <td>300113</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000206.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000206.png"></td>
             <td>鳳梨</td>
             <td>400</td>
             <td>夏季</td>
@@ -1894,7 +1902,7 @@
         </tr>
         <tr>
             <td>300114</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000207.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000207.png"></td>
             <td>甜椒</td>
             <td>210</td>
             <td>夏季</td>
@@ -1917,7 +1925,7 @@
     <tbody>
         <tr>
             <td>300115</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000300.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000300.png"></td>
             <td>牛蒡</td>
             <td>380</td>
             <td>秋季</td>
@@ -1925,7 +1933,7 @@
         </tr>
         <tr>
             <td>300116</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000301.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000301.png"></td>
             <td>胡蘿蔔</td>
             <td>580</td>
             <td>秋季</td>
@@ -1933,7 +1941,7 @@
         </tr>
         <tr>
             <td>300117</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000302.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000302.png"></td>
             <td>地瓜</td>
             <td>100</td>
             <td>秋季</td>
@@ -1941,7 +1949,7 @@
         </tr>
         <tr>
             <td>300118</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000303.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000303.png"></td>
             <td>菠菜</td>
             <td>180</td>
             <td>秋季</td>
@@ -1949,7 +1957,7 @@
         </tr>
         <tr>
             <td>300119</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000304.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000304.png"></td>
             <td>茄子</td>
             <td>510</td>
             <td>秋季</td>
@@ -1957,7 +1965,7 @@
         </tr>
         <tr>
             <td>300120</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000305.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000305.png"></td>
             <td>青椒</td>
             <td>220</td>
             <td>秋季</td>
@@ -1980,7 +1988,7 @@
     <tbody>
         <tr>
             <td>300121</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000400.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000400.png"></td>
             <td>白蘿蔔</td>
             <td>140</td>
             <td>冬季</td>
@@ -1988,7 +1996,7 @@
         </tr>
         <tr>
             <td>300122</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000401.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000401.png"></td>
             <td>白菜</td>
             <td>580</td>
             <td>冬季</td>
@@ -1996,7 +2004,7 @@
         </tr>
         <tr>
             <td>300123</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000402.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000402.png"></td>
             <td>花椰菜</td>
             <td>140</td>
             <td>冬季</td>
@@ -2019,7 +2027,7 @@
     <tbody>
         <tr>
             <td>300124</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3000501.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3000501.png"></td>
             <td>小麥</td>
             <td>80</td>
             <td>四季</td>
@@ -2027,7 +2035,7 @@
         </tr>
         <tr>
             <td>300125</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400112.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400112.png"></td>
             <td>麵包</td>
             <td>200</td>
             <td>四季</td>
@@ -2035,7 +2043,7 @@
         </tr>
         <tr>
             <td>300126</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400100.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400100.png"></td>
             <td>香辛料</td>
             <td>150</td>
             <td>四季</td>
@@ -2043,7 +2051,7 @@
         </tr>
         <tr>
             <td>300127</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400101.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400101.png"></td>
             <td>紅豆餡</td>
             <td>150</td>
             <td>四季</td>
@@ -2051,7 +2059,7 @@
         </tr>
         <tr>
             <td>300128</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400102.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400102.png"></td>
             <td>油</td>
             <td>100</td>
             <td>四季</td>
@@ -2059,7 +2067,7 @@
         </tr>
         <tr>
             <td>300129</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400103.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400103.png"></td>
             <td>起士</td>
             <td>250</td>
             <td>四季</td>
@@ -2067,7 +2075,7 @@
         </tr>
         <tr>
             <td>300130</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400104.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400104.png"></td>
             <td>優格</td>
             <td>300</td>
             <td>四季</td>
@@ -2075,7 +2083,7 @@
         </tr>
         <tr>
             <td>300131</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400105.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400105.png"></td>
             <td>麵粉</td>
             <td>200</td>
             <td>四季</td>
@@ -2083,7 +2091,7 @@
         </tr>
         <tr>
             <td>300132</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400106.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400106.png"></td>
             <td>飯糰</td>
             <td>150</td>
             <td>四季</td>
@@ -2091,7 +2099,7 @@
         </tr>
         <tr>
             <td>300133</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400107.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400107.png"></td>
             <td>美乃滋</td>
             <td>200</td>
             <td>四季</td>
@@ -2099,7 +2107,7 @@
         </tr>
         <tr>
             <td>300134</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_3400108.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_3400108.png"></td>
             <td>奶油</td>
             <td>200</td>
             <td>四季</td>

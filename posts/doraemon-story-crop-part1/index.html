@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】作物播種與收成的品質計算 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="作物播種與收成的品質計算方法">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_301051200.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_301051200.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301051200.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301051200.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】作物播種與收成的品質計算">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-crop-part1/",
     "description": "作物播種與收成的品質計算方法",
     "keywords": ["MOD","作物"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_301051200.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301051200.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1849,64 +1857,78 @@ $$作物品質分=（種子品質等級-2）\times{作物品質轉換率}$$<br /
 $$作物品質轉換率=\dfrac {最大品質分}{最大品質等級}=\dfrac {500}{10}=50$$</p>
 <h3 id="播種品質轉換量化表">播種品質轉換量化表</h3>
 <table>
-<thead>
-<tr>
-<th align="center"><strong>種子品質★</strong></th>
-<th align="center"><strong>★0.5</strong></th>
-<th align="center"><strong>★1</strong></th>
-<th align="center"><strong>★1.5</strong></th>
-<th align="center"><strong>★2</strong></th>
-<th align="center"><strong>★2.5</strong></th>
-<th align="center"><strong>★3</strong></th>
-<th align="center"><strong>★3.5</strong></th>
-<th align="center"><strong>★4</strong></th>
-<th align="center"><strong>★4.5</strong></th>
-<th align="center"><strong>★5</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">種子品質等級</td>
-<td align="center">1</td>
-<td align="center">2</td>
-<td align="center">3</td>
-<td align="center">4</td>
-<td align="center">5</td>
-<td align="center">6</td>
-<td align="center">7</td>
-<td align="center">8</td>
-<td align="center">9</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="center">作物品質分</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">50</td>
-<td align="center">100</td>
-<td align="center">150</td>
-<td align="center">200</td>
-<td align="center">250</td>
-<td align="center">300</td>
-<td align="center">350</td>
-<td align="center">400</td>
-</tr>
-<tr>
-<td align="center">作物品質★</td>
-<td align="center">★0.5</td>
-<td align="center">★0.5</td>
-<td align="center">★1</td>
-<td align="center">★1.5</td>
-<td align="center">★2</td>
-<td align="center">★2.5</td>
-<td align="center">★3</td>
-<td align="center">★3.5</td>
-<td align="center">★4</td>
-<td align="center">★4.5</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <td>種子品質⭐️</td>
+            <td>種子品質等級</td>
+            <td>作物品質分</td>
+            <td>作物品質⭐️</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>⭐️0.5</td>
+            <td>1</td>
+            <td>0</td>
+            <td>⭐️0.5</td>
+        </tr>
+        <tr>
+            <td>⭐️1</td>
+            <td>2</td>
+            <td>0</td>
+            <td>⭐️0.5</td>
+        </tr>
+        <tr>
+            <td>⭐️1.5</td>
+            <td>3</td>
+            <td>50</td>
+            <td>⭐️1</td>
+        </tr>
+        <tr>
+            <td>⭐️2</td>
+            <td>4</td>
+            <td>100</td>
+            <td>⭐️1.5</td>
+        </tr>
+        <tr>
+            <td>⭐️2.5</td>
+            <td>5</td>
+            <td>150</td>
+            <td>⭐️2</td>
+        </tr>
+        <tr>
+            <td>⭐️3</td>
+            <td>6</td>
+            <td>200</td>
+            <td>⭐️2.5</td>
+        </tr>
+        <tr>
+            <td>⭐️3.5</td>
+            <td>7</td>
+            <td>250</td>
+            <td>⭐️3</td>
+        </tr>
+        <tr>
+            <td>⭐️4</td>
+            <td>8</td>
+            <td>300</td>
+            <td>⭐️3.5</td>
+        </tr>
+        <tr>
+            <td>⭐️4.5</td>
+            <td>9</td>
+            <td>350</td>
+            <td>⭐️4</td>
+        </tr>
+        <tr>
+            <td>⭐️5</td>
+            <td>10</td>
+            <td>400</td>
+            <td>⭐️4.5</td>
+        </tr>
+    </tbody>
 </table>
-<p>所以<code>種子</code>播種後品質就會直接先降1級，相當於品質★降0.5★。</p>
+<p>所以<code>種子</code>播種後品質就會直接先降1級，相當於品質⭐️降0.5⭐️。</p>
 <h3 id="作物收成品質轉換公式">作物收成品質轉換公式</h3>
 <p>作物的品質等級（<code>CropModel.Quality</code>）讀取子：</p>
 <div class="highlight"><div class="chroma">
@@ -1933,51 +1955,77 @@ $$作物品質轉換率=\dfrac {最大品質分}{最大品質等級}=\dfrac {500
 $$作物品質等級=\dfrac{作物品質分}{作物品質轉換率}+1$$</p>
 <h3 id="收成品質轉換量化表">收成品質轉換量化表</h3>
 <table>
-<thead>
-<tr>
-<th align="center"><strong>作物品質分</strong></th>
-<th align="center"><strong>1~49</strong></th>
-<th align="center"><strong>50~99</strong></th>
-<th align="center"><strong>100~149</strong></th>
-<th align="center"><strong>150~199</strong></th>
-<th align="center"><strong>200~249</strong></th>
-<th align="center"><strong>250~299</strong></th>
-<th align="center"><strong>300~349</strong></th>
-<th align="center"><strong>350~399</strong></th>
-<th align="center"><strong>400~449</strong></th>
-<th align="center"><strong>450~500</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">作物品質等級</td>
-<td align="center">1</td>
-<td align="center">2</td>
-<td align="center">3</td>
-<td align="center">4</td>
-<td align="center">5</td>
-<td align="center">6</td>
-<td align="center">7</td>
-<td align="center">8</td>
-<td align="center">9</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="center">作物品質★</td>
-<td align="center">★0.5</td>
-<td align="center">★1</td>
-<td align="center">★1.5</td>
-<td align="center">★2</td>
-<td align="center">★2.5</td>
-<td align="center">★3</td>
-<td align="center">★3.5</td>
-<td align="center">★4</td>
-<td align="center">★4.5</td>
-<td align="center">★5</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <td>品質分下限</td>
+            <td>品質等級</td>
+            <td>品質⭐️</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>⭐️0.5</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Half.png"></td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>2</td>
+            <td>⭐️1.0</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"></td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>3</td>
+            <td>⭐️1.5</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Half.png"></td>
+        </tr>
+        <tr>
+            <td>150</td>
+            <td>4</td>
+            <td>⭐️2.0</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"></td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>5</td>
+            <td>⭐️2.5</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Half.png"></td>
+        </tr>
+        <tr>
+            <td>250</td>
+            <td>6</td>
+            <td>⭐️3.0</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"></td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>7</td>
+            <td>⭐️3.5</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Half.png"></td>
+        </tr>
+        <tr>
+            <td>350</td>
+            <td>8</td>
+            <td>⭐️4.0</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"></td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>9</td>
+            <td>⭐️4.5</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Half.png"></td>
+        </tr>
+        <tr>
+            <td>450</td>
+            <td>10</td>
+            <td>⭐️5.0</td>
+            <td><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"><img align="left" width="36px" src= "/images/post/Icon_Star_Full.png"></td>
+        </tr>
+    </tbody>
 </table>
-
     </article>
     
     <script>

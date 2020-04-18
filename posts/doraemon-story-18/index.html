@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】松鼠劇情線 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="松鼠的劇情發展">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140190.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201140190.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140190.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140190.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】松鼠劇情線">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-18/",
     "description": "松鼠的劇情發展",
     "keywords": ["劇情"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201140190.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201140190.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1721,6 +1729,7 @@
     <li><a href="#松鼠">松鼠</a>
       <ul>
         <li><a href="#第1話">第1話</a></li>
+        <li><a href="#第2話">第2話</a></li>
       </ul>
     </li>
   </ul>
@@ -1728,18 +1737,98 @@
   </div>
 </div>
 
-      <p><img src="/images/post/story_texture2d/EventImage_3006.png" alt="松鼠劇情線" /></p>
+      <p><img src="/images/post/Season_of_Story/Texture2D/EventImage_3006.png" alt="松鼠劇情線" /></p>
 <h2 id="松鼠">松鼠</h2>
 <p><a href="../doraemon-story-index/#%E5%8A%87%E6%83%85%E7%B7%9A">全劇情線索引</a></p>
 <table>
     <tr>
         <td>18</td>
-        <td align="center"><a href="../doraemon-story-18"><img src= "/images/post/story_sprite/icon_201140190.png">松鼠</a></td>
-        <td align="center"><img width="72px" src= "/images/post/story_sprite/icon_201046030.png"></td>
+        <td align="center"><a href="../doraemon-story-18"><img src= "/images/post/Season_of_Story/Sprite/icon_201140190.png">松鼠</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201046030.png"></td>
     </tr>
 </table>
 <h3 id="第1話">第1話</h3>
-<p><img src="/images/post/story_texture2d/EventImage_3006.png" alt="結局" /></p>
+<ul>
+<li>事件ID：<code>40007001</code></li>
+<li>優先度：<code>3</code></li>
+<li>觸發地點：<a href="../doraemon-story-map#%E8%90%AC%E7%89%A9%E9%8E%AE%E8%A5%BF">萬物鎮西</a>（<code>11200</code>）</li>
+</ul>
+<p><img src="/images/post/Season_of_Story/Map/11200.png" alt="萬物鎮西" /></p>
+<ul>
+<li>觸發時間條件📆
+<ul>
+<li>開始時間：
+<ul>
+<li>每年<code>春季1日</code></li>
+<li>每日<code>12:00</code></li>
+</ul>
+</li>
+<li>結束時間：
+<ul>
+<li>每年<code>秋季30日</code></li>
+<li>每日<code>12:00</code></li>
+</ul>
+</li>
+<li><mark>冬季松鼠會冬眠</mark></li>
+</ul>
+</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度💝條件：<code>胖虎</code>（<code>103</code>）</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <td align="center">胖虎</td>
+            <td align="center">好感度</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060030.png"></td>
+    </tr>
+</table>
+<h3 id="第2話">第2話</h3>
+<ul>
+<li>事件ID：<code>40007002</code></li>
+<li>優先度：<code>3</code></li>
+<li>觸發地點：<a href="../doraemon-story-map#%E6%A8%B5%E4%B9%8B%E6%A3%AE">樵之森</a>（<code>10600</code>）</li>
+</ul>
+<p><img src="/images/post/Season_of_Story/Map/10600.png" alt="樵之森" /></p>
+<ul>
+<li>前置劇情：<a href="#%E7%AC%AC1%E8%A9%B1-">松鼠第1話 </a>（<code>40007001</code>）</li>
+<li>觸發時間條件📆
+<ul>
+<li>開始時間：
+<ul>
+<li>每年<code>春季1日</code></li>
+<li>每日<code>12:00</code></li>
+</ul>
+</li>
+<li>結束時間：
+<ul>
+<li>每年<code>秋季30日</code></li>
+<li>每日<code>16:00</code></li>
+</ul>
+</li>
+<li><mark>冬季松鼠會冬眠</mark></li>
+</ul>
+</li>
+<li>天氣條件：<code>遇上暴風雨、下雨、下雪不觸發</code></li>
+<li>NPC好感度💝條件：<code>松鼠</code>（<code>603</code>）</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <td align="center">松鼠</td>
+            <td align="center">好感度💝</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201046030.png"></td>
+        <td><img src= "/images/post/Season_of_Story/Sprite/icon_201060060.png"></td>
+    </tr>
+</table>
+<p><img src="/images/post/Season_of_Story/Texture2D/EventImage_3006.png" alt="結局" /></p>
 
     </article>
     
@@ -2359,6 +2448,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#松鼠">松鼠</a>
       <ul>
         <li><a href="#第1話">第1話</a></li>
+        <li><a href="#第2話">第2話</a></li>
       </ul>
     </li>
   </ul>

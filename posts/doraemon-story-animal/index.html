@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】動物大全 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="所有關於動物的資訊索引">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201173001.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_201173001.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201173001.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201173001.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】動物大全">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-animal/",
     "description": "所有關於動物的資訊索引",
     "keywords": ["動物"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_201173001.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201173001.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1765,30 +1773,30 @@
     </thead>
     <tr>
         <td>100</td>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031170.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031170.png"></td>
         <td>狗</td>
         <td>1.5</td>
         <td>銅鑼汪（自定義名字）<br>大雄救回來的小狗</td>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041200.png"></td>
-        <td><img height= "128px" src= "/images/post/story_sprite/icon_201173002.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041200.png"></td>
+        <td><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201173002.png"></td>
     </tr>
     <tr>
         <td>101</td>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031160.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031160.png"></td>
         <td>馬</td>
         <td>1.8</td>
         <td>狂草尼馬（自定義名字）<br>大雄收養的小馬</td>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041130.png"></td>
-        <td><img height= "128px" src= "/images/post/story_sprite/icon_201173000.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
+        <td><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201173000.png"></td>
     </tr>
     <tr>
         <td>102</td>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031180.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031180.png"></td>
         <td>貓</td>
         <td>1.5</td>
         <td>咪咪<br>經常來大雄牧場的貓</td>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041010.png"></td>
-        <td><img height= "128px" src= "/images/post/story_sprite/icon_201173001.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041010.png"></td>
+        <td><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201173001.png"></td>
     </tr>
 </table>
 <h4 id="家畜">家畜</h4>
@@ -1802,35 +1810,35 @@
         </tr>
     </thead>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031100.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031100.png"></td>
         <td>牛</td>
         <td>動物商店購買</td>
-        <td rowspan="2"><img height= "128px" src= "/images/post/story_sprite/icon_201174001.png"></td>
+        <td rowspan="2"><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201174001.png"></td>
     </tr>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031110.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031110.png"></td>
         <td>小牛崽兒</td>
         <td>經由牛種子使牛懷孕誕生</td>
     </tr>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031120.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031120.png"></td>
         <td>羊</td>
         <td>動物商店購買</td>
-        <td rowspan="2"><img height= "128px" src= "/images/post/story_sprite/icon_201174101.png"></td>
+        <td rowspan="2"><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201174101.png"></td>
     </tr>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031130.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031130.png"></td>
         <td>小羊崽兒</td>
         <td>經由羊種子使羊懷孕誕生</td>
     </tr>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031140.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031140.png"></td>
         <td>雞</td>
         <td>小雞商店購買</td>
-        <td rowspan="2"><img height= "128px" src= "/images/post/story_sprite/icon_201174201.png"></td>
+        <td rowspan="2"><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201174201.png"></td>
     </tr>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031150.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031150.png"></td>
         <td>小雞崽兒</td>
         <td>雞蛋孵化</td>
     </tr>
@@ -1847,32 +1855,32 @@
         </tr>
     </thead>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031210.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031210.png"></td>
         <td>熊</td>
         <td>滾滾森林</td>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041040.png"></td>
-        <td><img height= "128px" src= "/images/post/story_sprite/icon_201173004.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041040.png"></td>
+        <td><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201173004.png"></td>
     </tr>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031220.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031220.png"></td>
         <td>兔子</td>
         <td>巨木根部</td>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041070.png"></td>
-        <td><img height= "128px" src= "/images/post/story_sprite/icon_201173005.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041070.png"></td>
+        <td><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201173005.png"></td>
     </tr>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031190.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031190.png"></td>
         <td>松鼠</td>
         <td>樵之森</td>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041030.png"></td>
-        <td><img height= "128px" src= "/images/post/story_sprite/icon_201173006.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041030.png"></td>
+        <td><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201173006.png"></td>
     </tr>
     <tr>
-        <td><img width= "128px" src= "/images/post/story_sprite/icon_201031200.png"></td>
+        <td><img width= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201031200.png"></td>
         <td>小猴子</td>
         <td>滴答湖</td>
-        <td><img width= "100px" src= "/images/post/story_sprite/icon_201041020.png"></td>
-        <td><img height= "128px" src= "/images/post/story_sprite/icon_201173003.png"></td>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041020.png"></td>
+        <td><img height= "128px" src= "/images/post/Season_of_Story/Sprite/icon_201173003.png"></td>
     </tr>
 </table>
     </article>
@@ -2092,7 +2100,7 @@
     <ul class="related-ul">
         
         <li>
-          <a href="/posts/doraemon-story-animal-affction/" class="related__link">【哆啦A夢牧場物語】動物的好感度與情感度</a>
+          <a href="/posts/doraemon-story-affectiondegree/" class="related__link">【哆啦A夢牧場物語】牧場動物的情感度</a>
         </li>
         
     </ul>
@@ -2102,11 +2110,11 @@
 <nav class="pagination-single">
   
     
-      <a href="https://ilyusha71.github.io/posts/doraemon-story-animal-affction/" class="pagination-single__left">
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-affectiondegree/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">【哆啦A夢牧場物語】動物的好感度與情感度</div>      
+        <div class="pagination-single__left-title">【哆啦A夢牧場物語】牧場動物的情感度</div>      
       </a>
     
     <div class="grow"></div>

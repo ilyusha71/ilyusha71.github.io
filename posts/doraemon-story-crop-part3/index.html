@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】作物的成長過程與相關計算 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="作物的成長過程與相關計算">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/Crop_90110405.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/Crop_90110405.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/Crop_90110405.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/Crop_90110405.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】作物的成長過程與相關計算">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-crop-part3/",
     "description": "作物的成長過程與相關計算",
     "keywords": ["作物"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/Crop_90110405.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/Crop_90110405.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1887,12 +1895,12 @@
         <td>第6階段</td>
     </tr>
 　<tr>
-    　<td><img src= "/images/post/story_sprite/Crop_90110400.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90110401.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90110402.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90110403.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90110404.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90110405.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90110400.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90110401.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90110402.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90110403.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90110404.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90110405.png"></td>
 　</tr>
 　<tr>
         <td>2天</td>
@@ -1937,12 +1945,12 @@
         <td>第6階段</td>
     </tr>
 　<tr>
-    　<td><img src= "/images/post/story_sprite/Crop_90120600.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90120601.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90120602.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90120603.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90120604.png"></td>
-    　<td><img src= "/images/post/story_sprite/Crop_90120605.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90120600.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90120601.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90120602.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90120603.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90120604.png"></td>
+    　<td><img src= "/images/post/Season_of_Story/Sprite/Crop_90120605.png"></td>
 　</tr>
 　<tr>
         <td>1天</td>

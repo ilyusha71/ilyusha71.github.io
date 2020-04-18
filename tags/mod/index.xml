@@ -29,10 +29,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 23:00:44 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-hammer-carpenter-shop/</guid>
-        <description>木工店商品資料 建築：11種 大雄的家升級：2種 動物小屋升級：2種 雞小屋升級：2種 牧場擴建：5種 材料：種 裝飾：種 建築 木工店進行建築的升級或擴建過</description>
+        <description>最後更新：2020/04/16 木工店MOD資料庫 工藝商品模板類：CraftShopItemDataModel，商店上架的商品實例。 商品ID：</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301140100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301140100.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -72,7 +72,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301080200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301080200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -112,7 +112,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301120000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301120000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -152,7 +152,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -204,7 +204,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -248,7 +248,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 作物</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301051200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301051200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -288,7 +288,7 @@
         <description>物品MOD資料庫 物品資料檔：ItemData.text 物品資料類：CItemData，讀取TextAsset的物品二進制資料ItemData</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301001000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301001000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

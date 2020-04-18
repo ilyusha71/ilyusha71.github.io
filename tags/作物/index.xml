@@ -29,10 +29,10 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 15:09:26 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-golden-quality-items/</guid>
-        <description>黃金品質原料取得條件 動物 條件 黃金物品 情感度達到♥10 黃金雞蛋 贏得養雞競賽 夏季14日 動物 條件 黃金物品 情感度達到♥10 黃金牛奶 贏得飼牛競賽 冬季1</description>
+        <description>黃金品質原料取得條件 1 2 3 4 5 6 7 8 9 10 public class AnimalModel : INullableModel { private bool IsSpecialHarvest { get { return this.IsVictory &amp;amp;&amp;amp; this.AffectionDegreeRate == 20; } } } 根據上列代碼，要收穫黃金品質的雞蛋、牛奶與羊毛必須滿足下列</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -68,7 +68,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301230000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -120,7 +120,7 @@
         <description>遊戲資源 以下圖示儲存在Sprite資料夾下，對應檔名為icon_ + mItemId+.png，mItemId可透過ItemData.text取</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301170000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -164,7 +164,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 出貨</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_3000501.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_3000501.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -204,7 +204,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 遊戲</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -240,7 +240,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 作物</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/Crop_90110405.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/Crop_90110405.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -276,7 +276,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 肥料</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_1103001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_1103001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -312,7 +312,7 @@
         <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 作物</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/story_sprite/icon_301051200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301051200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

@@ -2,7 +2,7 @@
 <html lang="zh" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>【哆啦A夢牧場物語】動物商店 古騰摩克 – 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1215,8 +1223,8 @@
 <meta property="og:description" content="動物商店販售商品大全">
 
   
-    <meta property="og:image" content="https://ilyusha71.github.io/images/post/story_sprite/icon_301120000.png">
-    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/story_sprite/icon_301120000.png">
+    <meta property="og:image" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301120000.png">
+    <meta property="og:image:url" content="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301120000.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab">
     <meta property="twitter:title" content="【哆啦A夢牧場物語】動物商店 古騰摩克">
@@ -1264,7 +1272,7 @@
     "url" : "https://ilyusha71.github.io/posts/doraemon-story-shop-gouter-mawk-livestock/",
     "description": "動物商店販售商品大全",
     "keywords": ["MOD"],
-    "image" : "https://ilyusha71.github.io/images/post/story_sprite/icon_301120000.png",
+    "image" : "https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301120000.png",
     "author": {
       "@type": "Person",
       "name": "伊琉沙 AKA 哇咔咔"
@@ -1722,6 +1730,12 @@
     <li><a href="#動物商店mod資料庫">動物商店MOD資料庫</a>
       <ul>
         <li><a href="#調用狀態">調用狀態</a></li>
+        <li><a href="#販售條件">販售條件</a></li>
+      </ul>
+    </li>
+    <li><a href="#動物商店">動物商店</a>
+      <ul>
+        <li><a href="#主要角色">主要角色</a></li>
       </ul>
     </li>
     <li><a href="#動物商店商品資料">動物商店商品資料</a>
@@ -1806,11 +1820,6 @@
 <li>是否需要庫存空間：<code>IsNeedToEmptyInventory</code></li>
 </ul>
 </li>
-<li>物品定義類：<code>Item</code>
-<ul>
-<li>動物鈴能否販售的方法：<code>CanSaleBell(int item_id)</code></li>
-</ul>
-</li>
 <li>吸引搖鈴指令類：<code>RingTheAttractBellCommand</code></li>
 <li>引導搖鈴指令類：<code>RingTheLeadBellCommand</code></li>
 </ul>
@@ -1830,6 +1839,50 @@
 </ol>
 </li>
 </ul>
+<h3 id="販售條件">販售條件</h3>
+<ul>
+<li>物品定義類：<code>Item</code>
+<ul>
+<li>動物鈴販售解鎖：<code>CanSaleBell(int item_id)</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="動物商店">動物商店</h2>
+<ul>
+<li>營業時間
+<ul>
+<li>星期日：9點~12點，13點~16點</li>
+<li>星期一：9點~12點，13點~16點</li>
+<li>星期二：9點~12點，13點~16點</li>
+<li>星期四：9點~12點，13點~16點</li>
+<li>星期六：9點~12點，13點~16點</li>
+</ul>
+</li>
+<li>公休日
+<ul>
+<li>星期三</li>
+<li>星期五</li>
+</ul>
+</li>
+</ul>
+<h3 id="主要角色">主要角色</h3>
+<table>
+    <tr>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041110.png"></td>
+        <td>布魯</td>
+        <td>菈姆的爺爺</td>
+    </tr>
+    <tr>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041120.png"></td>
+        <td>優</td>
+        <td>菈姆的奶奶</td>
+    </tr>
+    <tr>
+        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041130.png"></td>
+        <td>菈姆</td>
+        <td>布魯的孫女</td>
+    </tr>
+</table>
 <h2 id="動物商店商品資料">動物商店商品資料</h2>
 <ul>
 <li><a href="#%E5%8B%95%E7%89%A9">動物</a>：2種</li>
@@ -1847,28 +1900,22 @@
             <td></td>
             <td>動物名稱</td>
             <td>販售價格</td>
-            <td></td>
-            <td>動物名稱</td>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>900100</td>
             <td>110</td>
-            <td><img width= "96px" src= "/images/post/story_sprite/icon_201031110.png"></td>
-            <td>小牛崽兒</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">6000</td>
-            <td><img width= "96px" src= "/images/post/story_sprite/icon_201031100.png"></td>
+            <td><img width= "96px" src= "/images/post/Season_of_Story/Sprite/icon_201031100.png"></td>
             <td>牛</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">6000</td>
         </tr>
         <tr>
             <td>900101</td>
             <td>112</td>
-            <td><img width= "96px" src= "/images/post/story_sprite/icon_201031130.png"></td>
-            <td>小羊崽兒</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">4000</td>
-            <td><img width= "96px" src= "/images/post/story_sprite/icon_201031120.png"></td>
+            <td><img width= "96px" src= "/images/post/Season_of_Story/Sprite/icon_201031120.png"></td>
             <td>羊</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">4000</td>
         </tr>
     </tbody>
 </table>
@@ -1888,25 +1935,25 @@
         <tr>
             <td>100100</td>
             <td>1001110</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1001110.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001110.png"></td>
             <td>刷子</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">500</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">500</td>
             <td>用來幫牛、羊與馬刷背</td>
         </tr>
         <tr>
             <td>100101</td>
             <td>1001120</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1001120.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001120.png"></td>
             <td>擠乳器</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">1000</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">1000</td>
             <td>用來幫成牛擠奶，可以獲得牛奶</td>
         </tr>
         <tr>
             <td>100102</td>
             <td>1001130</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1001130.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001130.png"></td>
             <td>剃毛刀</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">1000</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">1000</td>
             <td>用來幫成羊剪毛，可以獲得羊毛</td>
         </tr>
     </tbody>
@@ -1936,16 +1983,16 @@
         <tr>
             <td>100103</td>
             <td>1101000</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1101000.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1101000.png"></td>
             <td>乾草</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">10</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">10</td>
         </tr>
         <tr>
             <td>100106</td>
             <td>1101050</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1101050.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1101050.png"></td>
             <td>動物用點心</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">20</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">20</td>
         </tr>
     </tbody>
 </table>
@@ -1968,22 +2015,28 @@
             <td></td>
             <td>商品名稱</td>
             <td>販售價格</td>
+            <td></td>
+            <td>幼崽名稱</td>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>100107</td>
             <td>1101030</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1101030.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1101030.png"></td>
             <td>牛種子</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">3000</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">3000</td>
+            <td><img width= "96px" src= "/images/post/Season_of_Story/Sprite/icon_201031110.png"></td>
+            <td>小牛崽兒</td>
         </tr>
         <tr>
             <td>100108</td>
             <td>1101040</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1101040.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1101040.png"></td>
             <td>羊種子</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">2000</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">2000</td>
+            <td><img width= "96px" src= "/images/post/Season_of_Story/Sprite/icon_201031130.png"></td>
+            <td>小羊崽兒</td>
         </tr>
     </tbody>
 </table>
@@ -2013,25 +2066,25 @@
         <tr>
             <td>100109</td>
             <td>1001150</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1001150.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001150.png"></td>
             <td>牛鈴</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">5000</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">5000</td>
             <td>搖鈴後，牛會往大雄的位置移動。<br>持續8分鐘。</td>
         </tr>
         <tr>
             <td>100110</td>
             <td>1001151</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1001151.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001151.png"></td>
             <td>羊鈴</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">5000</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">5000</td>
             <td>搖鈴後，羊會往大雄的位置移動。<br>持續8分鐘。</td>
         </tr>
         <tr>
             <td>100112</td>
             <td>1001153</td>
-            <td><img width= "64px" src= "/images/post/story_sprite/icon_1001153.png"></td>
+            <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001153.png"></td>
             <td>引導鈴</td>
-            <td><img align="left" src= "/images/post/story_sprite/Icon_Money_01.png">20000</td>
+            <td><img align="left" src= "/images/post/Season_of_Story/Sprite/Icon_Money_01.png">20000</td>
             <td>在牧場搖鈴會引導動物前往小屋，在小屋搖鈴時會引導動物前往牧場。<br>持續16分鐘。<br>只會影響♥3以上動物。</td>
         </tr>
     </tbody>
@@ -2056,12 +2109,12 @@
         </tr>
     </thead>
     <tr>
-        <td rowspan="2"><img src= "/images/post/story_sprite/icon_201080021.png"></td>
-        <td><img width= "64px" src= "/images/post/story_sprite/icon_1001150.png"></td>
-        <td><img  width= "64px" src= "/images/post/story_sprite/icon_1001151.png"></td>
+        <td rowspan="2"><img src= "/images/post/Season_of_Story/Sprite/icon_201080021.png"></td>
+        <td><img width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001150.png"></td>
+        <td><img  width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001151.png"></td>
     </tr>
     <tr>
-        <td colspan="2">+ <a href="../doraemon-story-shop-hammer-carpenter-shop#動物小屋升級">寬闊的動物小屋</a><br>升級完成後才會在動物商店上架。</td>
+        <td colspan="2">+ <a href="../doraemon-story-shop-hammer-carpenter-shop#擴建動物小屋">寬闊的動物小屋</a><br>擴建完成後才會在動物商店上架。</td>
     </tr>
 </table>
 <table>
@@ -2073,12 +2126,12 @@
         </tr>
     </thead>
     <tr>
-        <td rowspan="2"><img src= "/images/post/story_sprite/icon_201080022.png"></td>
-        <td rowspan="2"><img src= "/images/post/story_sprite/icon_201080032.png"></td>
-        <td><img  width= "64px" src= "/images/post/story_sprite/icon_1001153.png"></td>
+        <td rowspan="2"><img src= "/images/post/Season_of_Story/Sprite/icon_201080022.png"></td>
+        <td rowspan="2"><img src= "/images/post/Season_of_Story/Sprite/icon_201080032.png"></td>
+        <td><img  width= "64px" src= "/images/post/Season_of_Story/Sprite/icon_1001153.png"></td>
     </tr>
     <tr>
-        <td>+ <a href="../doraemon-story-shop-hammer-carpenter-shop#動物小屋升級">巨大的動物小屋</a><br>+ <a href="../doraemon-story-shop-hammer-carpenter-shop#雞小屋升級">巨大的雞小屋</a><br>升級完成後才會在動物商店上架。</td>
+        <td>+ <a href="../doraemon-story-shop-hammer-carpenter-shop#擴建動物小屋">巨大的動物小屋</a><br>+ <a href="../doraemon-story-shop-hammer-carpenter-shop#擴建雞小屋">巨大的雞小屋</a><br>擴建完成後才會在動物商店上架。</td>
     </tr>
 </table>
     </article>
