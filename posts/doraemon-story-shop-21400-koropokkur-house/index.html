@@ -1741,6 +1741,7 @@
         <li><a href="#商店模板">商店模板</a></li>
         <li><a href="#商店資料">商店資料</a></li>
         <li><a href="#商品模板">商品模板</a></li>
+        <li><a href="#mod">MOD</a></li>
       </ul>
     </li>
   </ul>
@@ -1777,15 +1778,15 @@
 <h2 id="mod資料庫">MOD資料庫</h2>
 <h3 id="調用方法">調用方法</h3>
 <ul>
-<li>增加<a href="../doraemon-story-shop-21400-koropokkur-house">克魯波克魯商店</a>響應方法：<code>FarmWorkState.AddFishingTackleShopResponse(ResponseModel, NpcModel) : void @0600135C</code>
+<li>增加<a href="../doraemon-story-shop-21400-koropokkur-house">克魯波克魯商店</a>響應方法：<code>FarmWorkState.AddKorobokkurShopResponse(ResponseModel, NpcModel, int) : void @0600135A</code>
 <ul>
-<li>取得<a href="../doraemon-story-shop-21400-koropokkur-house/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">克魯波克魯商品</a>資料：<code>FarmWorkState.GetFishingTackleShopItemDatas() : ShopItemDataModel[] @0600135D</code></li>
+<li>取得<a href="../doraemon-story-shop-21400-koropokkur-house/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">克魯波克魯商店商品</a>資料：<code>FarmWorkState.GetKorobokkurShopItemDatas() : ShopItemDataModel[] @0600135B</code></li>
 </ul>
 </li>
 </ul>
 <h3 id="商店功能集成介面">商店功能集成介面</h3>
 <ul>
-<li>取得<a href="../doraemon-story-shop-21400-koropokkur-house/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">克魯波克魯商店</a>資料：<code>ShopMasterCollection.GetAllFishingTackleShopDatas() : ShopMasterModel[] @06002BEC</code></li>
+<li>取得<a href="../doraemon-story-shop-21400-koropokkur-house/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">克魯波克魯商店</a>資料：</li>
 </ul>
 <h3 id="商店模板">商店模板</h3>
 <ul>
@@ -1797,7 +1798,7 @@
 </ul>
 <h3 id="商店資料">商店資料</h3>
 <ul>
-<li><a href="../doraemon-story-shop-21400-koropokkur-house/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">克魯波克魯商店</a>資料類：<code>CFishingTackleShopData</code></li>
+<li><a href="../doraemon-story-shop-21400-koropokkur-house/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">克魯波克魯商店</a>資料類：</li>
 </ul>
 <h3 id="商品模板">商品模板</h3>
 <ul>
@@ -1807,6 +1808,31 @@
 </ul>
 </li>
 </ul>
+<h3 id="mod">MOD</h3>
+<p>FarmWorkState.AddBlackSmithResponse(ResponseModel, NpcModel) : void @06001354<br />
+FarmWorkState.AddCattleAndSheepShopResponse(ResponseModel, NpcModel, Transform) : void @0600134E<br />
+FarmWorkState.AddChickenShopResponse(ResponseModel, NpcModel, Transform) : void @0600134D<br />
+FarmWorkState.AddCookingShopResponse(ResponseModel, NpcModel) : void @06001358<br />
+FarmWorkState.AddCraftShopResponse(ResponseModel, NpcModel) : void @0600134F<br />
+FarmWorkState.AddFishingTackleShopResponse(ResponseModel, NpcModel) : void @0600135C<br />
+FarmWorkState.AddHospitalShopResponse(ResponseModel, NpcModel) : void @0600135E<br />
+FarmWorkState.AddKorobokkurShopResponse(ResponseModel, NpcModel, int) : void @0600135A<br />
+FarmWorkState.AddVarietyShopResponse(ResponseModel, NpcModel) : void @0600134A</p>
+<p>FarmWorkState.ConvertAnimalShopItemDatas(ShopMasterModel[]) : ShopItemDataModel[] @06001348<br />
+FarmWorkState.GetBuildingShopItemDatas() : CraftShopItemDataModel[] @06001350<br />
+FarmWorkState.GetCookingToolShopItemDatas() : ShopItemDataModel[] @06001359<br />
+FarmWorkState.GetFishingTackleShopItemDatas() : ShopItemDataModel[] @0600135D<br />
+FarmWorkState.GetFurnitureShopItemDatas(bool) : CraftShopItemDataModel[] @06001351<br />
+FarmWorkState.GetHospitalShopItemDatas() : ShopItemDataModel[] @0600135F<br />
+FarmWorkState.GetKorobokkurShopItemDatas() : ShopItemDataModel[] @0600135B<br />
+FarmWorkState.GetMakerShopItemDatas() : CraftShopItemDataModel[] @06001357<br />
+FarmWorkState.GetMaterialShopItemDatas() : ShopItemDataModel[] @06001352<br />
+FarmWorkState.GetMineralShopItemDatas() : ShopItemDataModel[] @06001356<br />
+FarmWorkState.GetUpgradeToolShopItemDatas() : CraftShopItemDataModel[] @06001355<br />
+FarmWorkState.GetVarietyShopItemDatas(int) : ShopItemDataModel[] @0600134B</p>
+<p>FarmModel.GetRestaurantShopCookingRecipeItems() : ShopItemDataModel[] @06002E1B<br />
+FarmModel.GetRestaurantShopCropItems() : ShopItemDataModel[] @06002E1D<br />
+FarmModel.GetRestaurantShopDishItems() : ShopItemDataModel[] @06002E1C</p>
 
     </article>
     
@@ -2060,8 +2086,8 @@
     
     <div class="grow"></div>
     
-      <a href="https://ilyusha71.github.io/posts/doraemon-story-index/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">【哆啦A夢牧場物語】攻略全資料索引</div>
+      <a href="https://ilyusha71.github.io/posts/doraemon-story-map-30000-mine-entrance/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">採礦場</div>
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
         </div>

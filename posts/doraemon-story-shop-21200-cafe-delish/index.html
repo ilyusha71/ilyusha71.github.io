@@ -1696,7 +1696,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月05日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;3&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1734,7 +1734,8 @@
   <ul>
     <li><a href="#料理店-嚼嚼餐廳">料理店 嚼嚼餐廳</a>
       <ul>
-        <li><a href="#主要角色">主要角色</a></li>
+        <li><a href="#地理">地理</a></li>
+        <li><a href="#劇情發展">劇情發展</a></li>
         <li><a href="#營業時間">營業時間</a></li>
       </ul>
     </li>
@@ -1743,11 +1744,25 @@
         <li><a href="#調理器具">調理器具</a></li>
       </ul>
     </li>
-    <li><a href="#料理店mod資料庫">料理店MOD資料庫</a>
+    <li><a href="#mod資料庫">MOD資料庫</a>
       <ul>
+        <li><a href="#調用方法">調用方法</a>
+          <ul>
+            <li><a href="#取得料理店抽選的商店資料">取得料理店抽選的商店資料</a></li>
+          </ul>
+        </li>
+        <li><a href="#商店集成介面">商店集成介面</a>
+          <ul>
+            <li><a href="#取得特定季節食譜的商店資料">取得特定季節食譜的商店資料</a></li>
+            <li><a href="#取得特定季節料理的商店資料">取得特定季節料理的商店資料</a></li>
+            <li><a href="#取得特定季節農產品的商店資料">取得特定季節農產品的商店資料</a></li>
+            <li><a href="#取得料理店的商店資料">取得料理店的商店資料</a></li>
+            <li><a href="#取得調理器具的所有資料">取得調理器具的所有資料</a></li>
+          </ul>
+        </li>
         <li><a href="#商店模板">商店模板</a></li>
         <li><a href="#商品模板">商品模板</a></li>
-        <li><a href="#調用狀態">調用狀態</a></li>
+        <li><a href="#商店資料">商店資料</a></li>
       </ul>
     </li>
   </ul>
@@ -1755,25 +1770,28 @@
   </div>
 </div>
 
-      <p><mark>最後更新：2020/04/18</mark></p>
+      <p><mark>最後更新：2020/04/20</mark></p>
 <h2 id="料理店-嚼嚼餐廳">料理店 嚼嚼餐廳</h2>
 <ul>
 <li>Cafe Delish</li>
 </ul>
+<h3 id="地理">地理</h3>
+<ul>
+<li><a href="../doraemon-story-map-11300-east-natura">萬物鎮東</a>
+<ul>
+<li><a href="../doraemon-story-map-11300-east-natura/#%E6%96%99%E7%90%86%E5%BA%97">料理店</a></li>
+</ul>
+</li>
+</ul>
 <p><img src="/images/post/Season_of_Story/Map/21200.png" alt="料理店位置" /></p>
-<h3 id="主要角色">主要角色</h3>
+<h3 id="劇情發展">劇情發展</h3>
 <table>
-    <thead>
-        <tr>
-            <td>萊斯特</td>
-            <td>托蘭</td>
-            <td>小夫</td>
-        </tr>
-    </thead>
     <tr>
-        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041230.png"></td>
-        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041240.png"></td>
-        <td><img width= "100px" src= "/images/post/Season_of_Story/Sprite/icon_201041040.png"></td>
+        <td>03</td>
+        <td align="center"><a href="../doraemon-story-03"><img src= "/images/post/Season_of_Story/Sprite/icon_201140040.png">料理店</a></td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041230.png">萊斯特</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041240.png">托蘭</td>
+        <td align="center"><img width="72px" src= "/images/post/Season_of_Story/Sprite/icon_201041040.png">小夫</td>
     </tr>
 </table>
 <h3 id="營業時間">營業時間</h3>
@@ -1911,124 +1929,114 @@
         </tr>
     </tbody>
 </table>
-<h2 id="料理店mod資料庫">料理店MOD資料庫</h2>
+<h2 id="mod資料庫">MOD資料庫</h2>
+<h3 id="調用方法">調用方法</h3>
 <ul>
-<li>料理店資料檔：<code>RestaurantShopData.text</code></li>
-<li>料理店資料類：<code>CRestaurantShopData</code>
+<li>增加<a href="../doraemon-story-shop-21200-cafe-delish">料理店</a>商店介面的響應方法：<br><code>FarmWorkState.AddCookingShopResponse(ResponseModel, NpcModel) : void @06001358</code>
 <ul>
-<li>料理店資料結構：<code>SRestaurantShopData</code>
+<li>更新<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">料理店</a>商店資料：<br><code>FarmModel.UpdateRestaurantShopData(TimeModel) : void @06002E1A</code>
 <ul>
-<li>商品ID：<code>mId</code></li>
-<li>物品ID：<code>mItemId</code></li>
-<li>價格：<code>mPrice</code></li>
-<li>季節：<code>mSeason</code>
+<li>更新商店資料：<br><code>RestaurantShopDataModel.UpdateShopDatas(TimeModel) : void @060032AE</code>
 <ul>
-<li>料理店販售的食譜、料理、農產品會因季節變化而改變。</li>
+<li>更新<a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a>商品資料：<br><code>RestaurantShopDataModel.UpdateCookingRecipeShopItemDatas(bool, int) : void @060032B0</code>
+<ul>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E7%89%B9%E5%AE%9A%E5%AD%A3%E7%AF%80%E9%A3%9F%E8%AD%9C%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得特定季節食譜的商店資料</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E6%96%99%E7%90%86%E5%BA%97%E6%8A%BD%E9%81%B8%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得料理店抽選的商店資料</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E6%96%99%E7%90%86%E5%BA%97%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得料理店的商店資料</a></li>
 </ul>
 </li>
-<li>權重：<code>mWeight</code>
+<li>更新<a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a>商品資料：<br><code>RestaurantShopDataModel.UpdateDishShopItemDatas(bool, int) : void @060032B1</code>
 <ul>
-<li>影響商品上架的機率。</li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E7%89%B9%E5%AE%9A%E5%AD%A3%E7%AF%80%E6%96%99%E7%90%86%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得特定季節料理的商店資料</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E6%96%99%E7%90%86%E5%BA%97%E6%8A%BD%E9%81%B8%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得料理店抽選的商店資料</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E6%96%99%E7%90%86%E5%BA%97%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得料理店的商店資料</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-</li>
-<li>商店功能集成介面：<code>ShopMasterCollection</code>
+<li>更新<a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a>商品資料：<br><code>RestaurantShopDataModel.UpdateCropShopItemDatas(bool, int) : void @060032B2</code>
 <ul>
-<li>商店模版設定：<code>Setup()</code></li>
-<li>取得料理店當季食譜的資料：<code>GetGroupedBySeasonCookingRecipeShopDatas(int season)</code></li>
-<li>取得料理店當季料理的資料：<code>GetGroupedBySeasonDishShopDatas(int season)</code></li>
-<li>取得料理店當季作物的資料：<code>GetGroupedBySeasonCropShopDatas(int season)</code></li>
-<li>取得料理店所有調理器具的資料：<code>GetAllCookingToolShopDatas()</code></li>
-<li>取得料理店的資料：<code>GetRestaurantShopData(int id)</code></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E7%89%B9%E5%AE%9A%E5%AD%A3%E7%AF%80%E8%BE%B2%E7%94%A2%E5%93%81%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得特定季節農產品的商店資料</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E6%96%99%E7%90%86%E5%BA%97%E6%8A%BD%E9%81%B8%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得料理店抽選的商店資料</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E6%96%99%E7%90%86%E5%BA%97%E7%9A%84%E5%95%86%E5%BA%97%E8%B3%87%E6%96%99">取得料理店的商店資料</a></li>
 </ul>
 </li>
-<li>料理店主模板類：<code>RestaurantShopMasterModel</code>，此類專用於<code>食譜販售</code>、<code>料理販售</code>與<code>農產品販售</code>。
+</ul>
+</li>
+</ul>
+</li>
+<li>取得料理店<a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a>商品資料：<br><code>FarmModel.GetRestaurantShopCookingRecipeItems() : ShopItemDataModel[] @06002E1B</code></li>
+<li>取得料理店<a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a>商品資料：<br><code>FarmModel.GetRestaurantShopDishItems() : ShopItemDataModel[] @06002E1C</code></li>
+<li>取得料理店<a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a>商品資料：<br><code>FarmModel.GetRestaurantShopCropItems() : ShopItemDataModel[] @06002E1D</code></li>
+<li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a>商品資料：<br><code>FarmWorkState.GetCookingToolShopItemDatas() : ShopItemDataModel[] @06001359</code>
 <ul>
-<li>商品ID：<code>Id</code> = <code>CRestaurantShopData.SChickenShopData.mId</code></li>
-<li>物品ID：<code>ItemId</code> = <code>CRestaurantShopData.SChickenShopData.mItemId</code></li>
-<li>販售價格：<code>Price</code> = <code>CRestaurantShopData.SChickenShopData.mPrice</code></li>
-<li>販售季節：<code>Season</code> = <code>CRestaurantShopData.SChickenShopData.mSeason</code></li>
-<li>販售權重：<code>Weight</code> = <code>CRestaurantShopData.SChickenShopData.mWeight</code></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E5%8F%96%E5%BE%97%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7%E7%9A%84%E6%89%80%E6%9C%89%E8%B3%87%E6%96%99">取得調理器具的所有資料</a></li>
 </ul>
 </li>
-<li>料理店模板類：<code>RestaurantShopDataModel</code>
+</ul>
+</li>
+</ul>
+<h4 id="取得料理店抽選的商店資料">取得料理店抽選的商店資料</h4>
 <ul>
-<li>食譜資料：<code>CookingRecipeShopItems</code>，商店上架的食譜實例。</li>
-<li>料理資料：<code>DishShopItems</code>，商店上架的料理實例。</li>
-<li>農產品資料：<code>CropShopItems</code>，商店上架的農產品實例。</li>
-<li>上架抽選方法：<code>GetLotteryRestaurantShopMasterDatas</code></li>
-<li>食譜上架方法：<code>UpdateCookingRecipeShopItemDatas(bool is_refresh_data, int season)</code></li>
-<li>料理上架方法：<code>UpdateDishShopItemDatas(bool is_refresh_data, int season)</code></li>
-<li>農產品上架方法：<code>UpdateCropShopItemDatas(bool is_refresh_data, int season)</code></li>
+<li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">料理店</a><code>抽選</code>的商店資料：<br><code>RestaurantShopDataModel.GetLotteryRestaurantShopMasterDatas(RestaurantShopMasterModel[], int) : RestaurantShopMasterModel[] @060032B3</code></li>
 </ul>
-</li>
+<h3 id="商店集成介面">商店集成介面</h3>
+<h4 id="取得特定季節食譜的商店資料">取得特定季節食譜的商店資料</h4>
+<ul>
+<li>取得<code>特定季節</code><a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a>的商店資料：<br><code>ShopMasterCollection.GetGroupedBySeasonCookingRecipeShopDatas(int) : RestaurantShopMasterModel[] @06002BE4</code></li>
+</ul>
+<h4 id="取得特定季節料理的商店資料">取得特定季節料理的商店資料</h4>
+<ul>
+<li>取得<code>特定季節</code><a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a>的商店資料：<br><code>ShopMasterCollection.GetGroupedBySeasonDishShopDatas(int) : RestaurantShopMasterModel[] @06002BE5</code></li>
+</ul>
+<h4 id="取得特定季節農產品的商店資料">取得特定季節農產品的商店資料</h4>
+<ul>
+<li>取得<code>特定季節</code><a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a>的商店資料：<br><code>ShopMasterCollection.GetGroupedBySeasonCropShopDatas(int) : RestaurantShopMasterModel[] @06002BE6</code></li>
+</ul>
+<h4 id="取得料理店的商店資料">取得料理店的商店資料</h4>
+<ul>
+<li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">料理店</a>的商店資料：<br><code>ShopMasterCollection.GetRestaurantShopData(int) : RestaurantShopMasterModel @06002BE8</code></li>
+</ul>
+<h4 id="取得調理器具的所有資料">取得調理器具的所有資料</h4>
+<ul>
+<li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a>的所有資料：<br><code>ShopMasterCollection.GetAllCookingToolShopDatas() : RestaurantShopMasterModel[] @06002BE7</code></li>
 </ul>
 <h3 id="商店模板">商店模板</h3>
 <ul>
-<li>商店主模板類：<code>ShopMasterModel</code>，<a href="doraemon-story-shop-21200-cafe-delish#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具商店</a>。
+<li>料理店商店資料模板類：<code>RestaurantShopDataModel</code>
 <ul>
-<li>商品ID：<code>Id</code> = <code>CRestaurantShopData.SChickenShopData.mId</code></li>
-<li>物品ID：<code>ItemId</code> = <code>CRestaurantShopData.SChickenShopData.mItemId</code></li>
-<li>販售價格：<code>Price</code> = <code>CRestaurantShopData.SChickenShopData.mPrice</code></li>
-<li>販售季節：<code>Season</code> = <code>CRestaurantShopData.SChickenShopData.mSeason</code></li>
-<li>DLC索引：<code>DLCIndex</code> = -1</li>
-<li>事件ID：<code>EventId</code> = -1</li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a></li>
+</ul>
+</li>
+<li>料理店商店主模板類：<code>RestaurantShopMasterModel</code>
+<ul>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a></li>
 </ul>
 </li>
 </ul>
 <h3 id="商品模板">商品模板</h3>
 <ul>
-<li>商品模板類：<code>ShopItemDataModel</code>，商店上架的商品實例。
+<li>商品模板類：<code>ShopItemDataModel</code>
 <ul>
-<li>商品ID：<code>Id</code> = <code>ShopMasterModel.Id</code></li>
-<li>物品ID：<code>ItemId</code> = <code>ShopMasterModel.ItemId</code></li>
-<li>商品名稱：<code>Name</code> = <code>ItemModel.Name</code></li>
-<li>商品描述：<code>Description</code> = <code>ItemModel.Description</code></li>
-<li>商品價格：<code>Price</code> = <code>ShopMasterModel.Price</code></li>
-<li>圖集ID：<code>AtlasId</code> = <code>ItemMasterModel.AtlasId</code></li>
-<li>圖片ID：<code>SpriteId</code> = <code>ItemModel.Id</code></li>
-<li>是否為物品模板：<code>IsItemModel</code></li>
-<li>是否為單一物品：<code>IsSingleItem</code></li>
-<li>只能購買一次：<code>CanBuyOnce</code></li>
-<li>是否需要庫存空間：<code>IsNeedToEmptyInventory</code></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a></li>
 </ul>
 </li>
 </ul>
-<h3 id="調用狀態">調用狀態</h3>
+<h3 id="商店資料">商店資料</h3>
 <ul>
-<li>牧場工作狀態：<code>FarmWorkState</code>
-<ol>
-<li><code>BeginCallback(ICommandHolderObject collided_obj, ICommand stacked_command)</code></li>
-<li><code>CreateWorkResponse()</code></li>
-<li><code>AddCookingShopResponse(ResponseModel root, NpcModel npc)</code>
+<li>料理店商店資料類：<code>CRestaurantShopData</code>
 <ul>
-<li><code>FarmModel.UpdateRestaurantShopData(TimeModel time)</code>
-<ul>
-<li><code>RestaurantShopDataModel.UpdateShopDatas(TimeModel time)</code></li>
-<li>食譜：<code>RestaurantShopDataModel.UpdateCookingRecipeShopItemDatas(bool is_refresh_data, int season)</code>
-<ul>
-<li><code>ShopMasterCollection.GetGroupedBySeasonCookingRecipeShopDatas(int season)</code></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a></li>
+<li><a href="../doraemon-story-shop-21200-cafe-delish/#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a></li>
 </ul>
-</li>
-<li>料理：<code>RestaurantShopDataModel.UpdateDishShopItemDatas(bool is_refresh_data, int season)</code>
-<ul>
-<li><code>ShopMasterCollection.GetGroupedBySeasonDishShopDatas(int season)</code></li>
-</ul>
-</li>
-<li>農產品：<code>RestaurantShopDataModel.UpdateCropShopItemDatas(bool is_refresh_data, int season)</code>
-<ul>
-<li><code>ShopMasterCollection.GetGroupedBySeasonCropShopDatas(int season)</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>GetCookingToolShopItemDatas()</code></li>
-</ul>
-</li>
-</ol>
 </li>
 </ul>
 
@@ -2285,7 +2293,7 @@
     <div class="grow"></div>
     
       <a href="https://ilyusha71.github.io/posts/doraemon-story-shop-21200-cafe-delish-recipes/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">【哆啦A夢牧場物語】料理店食譜販售資訊</div>
+        <div class="pagination-single__right-title">食譜販售資訊</div>
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
         </div>
