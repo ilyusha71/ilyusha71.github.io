@@ -1756,8 +1756,8 @@
             <li><a href="#取得特定季節食譜的商店資料">取得特定季節食譜的商店資料</a></li>
             <li><a href="#取得特定季節料理的商店資料">取得特定季節料理的商店資料</a></li>
             <li><a href="#取得特定季節農產品的商店資料">取得特定季節農產品的商店資料</a></li>
-            <li><a href="#取得料理店的商店資料">取得料理店的商店資料</a></li>
             <li><a href="#取得調理器具的所有資料">取得調理器具的所有資料</a></li>
+            <li><a href="#取得料理店的商店資料">取得料理店的商店資料</a></li>
           </ul>
         </li>
         <li><a href="#商店模板">商店模板</a></li>
@@ -1979,6 +1979,9 @@
 <li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">料理店</a><code>抽選</code>的商店資料：<br><code>RestaurantShopDataModel.GetLotteryRestaurantShopMasterDatas(RestaurantShopMasterModel[], int) : RestaurantShopMasterModel[] @060032B3</code></li>
 </ul>
 <h3 id="商店集成介面">商店集成介面</h3>
+<ul>
+<li><code>ShopMasterCollection.Setup() : void @06002BF0</code></li>
+</ul>
 <h4 id="取得特定季節食譜的商店資料">取得特定季節食譜的商店資料</h4>
 <ul>
 <li>取得<code>特定季節</code><a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a>的商店資料：<br><code>ShopMasterCollection.GetGroupedBySeasonCookingRecipeShopDatas(int) : RestaurantShopMasterModel[] @06002BE4</code></li>
@@ -1991,13 +1994,13 @@
 <ul>
 <li>取得<code>特定季節</code><a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a>的商店資料：<br><code>ShopMasterCollection.GetGroupedBySeasonCropShopDatas(int) : RestaurantShopMasterModel[] @06002BE6</code></li>
 </ul>
-<h4 id="取得料理店的商店資料">取得料理店的商店資料</h4>
-<ul>
-<li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">料理店</a>的商店資料：<br><code>ShopMasterCollection.GetRestaurantShopData(int) : RestaurantShopMasterModel @06002BE8</code></li>
-</ul>
 <h4 id="取得調理器具的所有資料">取得調理器具的所有資料</h4>
 <ul>
 <li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a>的所有資料：<br><code>ShopMasterCollection.GetAllCookingToolShopDatas() : RestaurantShopMasterModel[] @06002BE7</code></li>
+</ul>
+<h4 id="取得料理店的商店資料">取得料理店的商店資料</h4>
+<ul>
+<li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">料理店</a>的商店資料：<br><code>ShopMasterCollection.GetRestaurantShopData(int) : RestaurantShopMasterModel @06002BE8</code></li>
 </ul>
 <h3 id="商店模板">商店模板</h3>
 <ul>
