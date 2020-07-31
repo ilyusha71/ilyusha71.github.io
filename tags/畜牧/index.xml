@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>畜牧 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
+    <link>https://ilyusha71.github.io/tags/%E7%95%9C%E7%89%A7/</link>
+    <description>Recent content in 畜牧 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 03 May 2020 22:06:12 +0800</lastBuildDate>
+    
+        <atom:link href="https://ilyusha71.github.io/tags/%E7%95%9C%E7%89%A7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>畜牧工具</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-tool-livestock/</link>
+        <pubDate>Sun, 03 May 2020 22:06:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sun, 03 May 2020 22:06:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-tool-livestock/</guid>
+        <description>最後更新：2020/05/03 刷子 刷子 刷子可以在動物商店購買。 刷子的主要用途為刷毛。 刷毛 可以刷毛的動物 牛 小牛崽子 羊 小羊崽子 馬 刷毛可使用的對象</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_1001153.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>工具</category>
+            
+          
+            
+              <category>畜牧</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>【哆啦A夢牧場物語】黃金雞蛋、黃金牛奶與黃金羊毛的取得條件</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-golden-quality-items/</link>
+        <pubDate>Wed, 15 Apr 2020 15:09:26 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Wed, 15 Apr 2020 15:09:26 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-golden-quality-items/</guid>
+        <description>黃金品質原料取得條件 1 2 3 4 5 6 7 8 9 10 public class AnimalModel : INullableModel { private bool IsSpecialHarvest { get { return this.IsVictory &amp;amp;&amp;amp; this.AffectionDegreeRate == 20; } } } 根據上列代碼，要收穫黃金品質的雞蛋、牛奶與羊毛必須滿足下列</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201171503.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>畜牧</category>
+            
+          
+            
+              <category>農產品</category>
+            
+          
+            
+              <category>作物</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>小雞商店 咕咕之家</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-20200-cuckoo-house-chickens/</link>
+        <pubDate>Mon, 06 Apr 2020 23:27:02 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Mon, 06 Apr 2020 23:27:02 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-20200-cuckoo-house-chickens/</guid>
+        <description>最後更新：2020/04/27 小雞商店 咕咕之家 Chicken Shop / Cuckoo House Chickens 地理 萬物鎮西 小雞商店 劇情發展 06 小雞商店 赫連 奇克 肯 營業時間 營業時間 白天 星期日 9點~1</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/20200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>商店</category>
+            
+          
+            
+              <category>動物</category>
+            
+          
+            
+              <category>畜牧</category>
+            
+          
+            
+              <category>工具</category>
+            
+          
+            
+              <category>MOD</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>動物商店 古騰摩克</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shop-20500-gouter-mawk-livestock/</link>
+        <pubDate>Mon, 06 Apr 2020 23:25:25 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Mon, 06 Apr 2020 23:25:25 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-20500-gouter-mawk-livestock/</guid>
+        <description>最後更新：2020/04/27 動物商店 古騰摩克 Cattle Shop / Gouter Mawk Livestock 地理 萬物鎮西 動物商店 劇情發展 07 動物商店 布魯 優 菈姆 營業時間 營業時間 上午 下午 星期日 9點</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/20500.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>商店</category>
+            
+          
+            
+              <category>動物</category>
+            
+          
+            
+              <category>畜牧</category>
+            
+          
+            
+              <category>工具</category>
+            
+          
+            
+              <category>MOD</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

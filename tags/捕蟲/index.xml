@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>捕蟲 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
+    <link>https://ilyusha71.github.io/tags/%E6%8D%95%E8%9F%B2/</link>
+    <description>Recent content in 捕蟲 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 26 Apr 2020 22:06:12 +0800</lastBuildDate>
+    
+        <atom:link href="https://ilyusha71.github.io/tags/%E6%8D%95%E8%9F%B2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>44種蟲類尺寸大小</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-size-bugs/</link>
+        <pubDate>Sun, 26 Apr 2020 22:06:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sun, 26 Apr 2020 22:06:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-size-bugs/</guid>
+        <description>最後更新：2020/04/27 尺寸計算 各品質物品的尺寸大小為最小尺寸與最大尺寸的線性插值。 源代碼 1 2 3 4 5 6 7 8 9 10 private float CalculateSizeFromQuality() { if (this.Master.MaxSize == 0f) { return 0f; }</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_6000159.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>尺寸大小</category>
+            
+          
+            
+              <category>捕蟲</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>44種蟲類出貨價格</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-shipping-prices-bugs/</link>
+        <pubDate>Tue, 14 Apr 2020 22:01:12 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Tue, 14 Apr 2020 22:01:12 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-shipping-prices-bugs/</guid>
+        <description>最後更新：2020/04/27 出貨價格 物品出貨價格索引 品質等級為1的物品，出貨價格為基本售價。 品質等級超過1的物品，出貨價格會根據上一品質等</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_6000133.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>出貨價格</category>
+            
+          
+            
+              <category>捕蟲</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

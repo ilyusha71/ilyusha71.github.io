@@ -14,13 +14,121 @@
     <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
     <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 22 Apr 2020 00:00:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 17:25:02 +0800</lastBuildDate>
     
         <atom:link href="https://ilyusha71.github.io/tags/mod/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>地面MOD</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-mod-ground/</link>
+        <pubDate>Fri, 01 May 2020 17:25:02 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 01 May 2020 17:25:02 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-mod-ground/</guid>
+        <description>最後更新：2020/05/01 地面MOD 地面介面 地面介面：IGround @020001DD 繼承類： 耕作地面介面：CultivatedGround @020001C6 剷平命令：</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301010000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>MOD</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>工具大全</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-mod-tool/</link>
+        <pubDate>Fri, 01 May 2020 17:25:02 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 01 May 2020 17:25:02 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-mod-tool/</guid>
+        <description>最後更新：2020/05/01 工具ID 工具名稱 工具威力 體力消耗 蓄水量 最大蓄力等級 蓄力時間 1000 1 1 1 1001 1 1 1 0.6 1002 1 1 2 0.6 1003 1 1 2 0.4 1004 1 1 3 0.4 1005 1</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301010000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>MOD</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>障礙MOD</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-mod-obstacle/</link>
+        <pubDate>Fri, 01 May 2020 17:25:02 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 01 May 2020 17:25:02 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-mod-obstacle/</guid>
+        <description>最後更新：2020/05/01 障礙MOD 定義 障礙類 障礙類：Obstacle @0200048F 類型枚舉：TypeEnum @02000490 類型枚舉 1 2 3 4 5 6 7 8 9 10 11 12 13 public</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301010000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>MOD</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>克魯波克魯小店</title>
@@ -38,6 +146,18 @@
         
           
             
+              <category>商店</category>
+            
+          
+            
+              <category>秘密道具</category>
+            
+          
+            
+              <category>工具</category>
+            
+          
+            
               <category>NPC</category>
             
           
@@ -50,10 +170,6 @@
           
             
               <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
             
           
         
@@ -73,7 +189,7 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sun, 19 Apr 2020 23:00:44 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-21300-sandy-tackle-shop/</guid>
-        <description>最後更新：2020/04/20 席菲小姐的釣具店 Tackle Shop / Sandy&amp;rsquo;s Tackle Shop 地理 濤濤海岬 席菲小姐的釣具店 劇情發展 08 釣具店 席菲 營業時間 營業時間 上午 下午 星期日 8點</description>
+        <description>最後更新：2020/04/27 席菲小姐的釣具店 Tackle Shop / Sandy&amp;rsquo;s Tackle Shop 地理 濤濤海岬 席菲小姐的釣具店 劇情發展 08 釣具店 席菲 營業時間 營業時間 上午 下午 星期日 8點</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/21300.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -82,7 +198,11 @@
         
           
             
-              <category>動物</category>
+              <category>商店</category>
+            
+          
+            
+              <category>釣魚</category>
             
           
             
@@ -94,10 +214,6 @@
           
             
               <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
             
           
         
@@ -126,7 +242,7 @@
         
           
             
-              <category>MOD</category>
+              <category>商店</category>
             
           
             
@@ -137,15 +253,15 @@
               <category>機器</category>
             
           
+            
+              <category>MOD</category>
+            
+          
         
         
           
             
               <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
             
           
         
@@ -165,13 +281,17 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sun, 19 Apr 2020 23:00:44 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-20900-regis-clinic/</guid>
-        <description>最後更新：2020/04/20 洛克德先生的醫院 Clinic / Regis&amp;rsquo;s Clinic 地理 萬物鎮東 洛克德先生的醫院 劇情發展 02 醫院 洛克德 瑟露娜 靜香 營業時間 營業時間 上午 下午 星期</description>
+        <description>最後更新：2020/04/27 洛克德先生的醫院 Clinic / Regis&amp;rsquo;s Clinic 地理 萬物鎮東 洛克德先生的醫院 劇情發展 02 醫院 洛克德 瑟露娜 靜香 營業時間 營業時間 上午 下午 星期</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/20900.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
+          
+            
+              <category>商店</category>
+            
           
             
               <category>飲料</category>
@@ -186,10 +306,6 @@
           
             
               <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
             
           
         
@@ -209,7 +325,7 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Wed, 15 Apr 2020 23:00:44 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-20400-hammer-carpenter-shop/</guid>
-        <description>最後更新：2020/04/20 木工店 咚吭噹 Carpenter / Hammer - Carpenter Shop 地理 樵之森 木工店 劇情發展 01 木工店 潘特 胖虎 營業時間 營業時間 上午 下午 星期日 10點~12點 1</description>
+        <description>最後更新：2020/04/27 木工店 咚吭噹 Carpenter / Hammer - Carpenter Shop 地理 樵之森 木工店 劇情發展 01 木工店 潘特 胖虎 營業時間 營業時間 上午 下午 星期日 10點~12點 1</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/20400.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -218,7 +334,15 @@
         
           
             
+              <category>商店</category>
+            
+          
+            
               <category>建築</category>
+            
+          
+            
+              <category>家具</category>
             
           
             
@@ -230,10 +354,6 @@
           
             
               <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
             
           
         
@@ -253,7 +373,7 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 06 Apr 2020 23:27:02 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-20200-cuckoo-house-chickens/</guid>
-        <description>最後更新：2020/04/20 小雞商店 咕咕之家 Chicken Shop / Cuckoo House Chickens 地理 萬物鎮西 小雞商店 劇情發展 06 小雞商店 赫連 奇克 肯 營業時間 營業時間 白天 星期日 9點~1</description>
+        <description>最後更新：2020/04/27 小雞商店 咕咕之家 Chicken Shop / Cuckoo House Chickens 地理 萬物鎮西 小雞商店 劇情發展 06 小雞商店 赫連 奇克 肯 營業時間 營業時間 白天 星期日 9點~1</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/20200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -262,7 +382,19 @@
         
           
             
+              <category>商店</category>
+            
+          
+            
               <category>動物</category>
+            
+          
+            
+              <category>畜牧</category>
+            
+          
+            
+              <category>工具</category>
             
           
             
@@ -274,10 +406,6 @@
           
             
               <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
             
           
         
@@ -297,7 +425,7 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Mon, 06 Apr 2020 23:25:25 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-20500-gouter-mawk-livestock/</guid>
-        <description>最後更新：2020/04/20 動物商店 古騰摩克 Cattle Shop / Gouter Mawk Livestock 地理 萬物鎮西 動物商店 劇情發展 07 動物商店 布魯 優 菈姆 營業時間 營業時間 上午 下午 星期日 9點</description>
+        <description>最後更新：2020/04/27 動物商店 古騰摩克 Cattle Shop / Gouter Mawk Livestock 地理 萬物鎮西 動物商店 劇情發展 07 動物商店 布魯 優 菈姆 營業時間 營業時間 上午 下午 星期日 9點</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/20500.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -306,7 +434,19 @@
         
           
             
+              <category>商店</category>
+            
+          
+            
               <category>動物</category>
+            
+          
+            
+              <category>畜牧</category>
+            
+          
+            
+              <category>工具</category>
             
           
             
@@ -318,10 +458,6 @@
           
             
               <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
             
           
         
@@ -341,7 +477,7 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sun, 05 Apr 2020 09:50:21 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-21200-cafe-delish/</guid>
-        <description>最後更新：2020/04/20 料理店 嚼嚼餐廳 Cafe Delish 地理 萬物鎮東 料理店 劇情發展 03 料理店 萊斯特 托蘭 小夫 營業時間 營業時間 白天 晚上 星期日 12點~16點</description>
+        <description>最後更新：2020/04/27 料理店 嚼嚼餐廳 Cafe Delish 地理 萬物鎮東 料理店 劇情發展 03 料理店 萊斯特 托蘭 小夫 營業時間 營業時間 白天 晚上 星期日 12點~16點</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/21200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -350,19 +486,11 @@
         
           
             
+              <category>商店</category>
+            
+          
+            
               <category>MOD</category>
-            
-          
-            
-              <category>食譜</category>
-            
-          
-            
-              <category>料理</category>
-            
-          
-            
-              <category>作物</category>
             
           
         
@@ -370,10 +498,6 @@
           
             
               <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
             
           
         
@@ -393,13 +517,21 @@
         <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
         <atom:modified>Sat, 04 Apr 2020 19:00:26 +0800</atom:modified>
         <guid>https://ilyusha71.github.io/posts/doraemon-story-shop-20700-knick-knacks-general-store/</guid>
-        <description>最後更新：2020/04/20 雜貨店 小玩意兒 General Store / Knick Knacks GenStore 地理 萬物鎮東 雜貨店 劇情發展 05 雜貨店 涅萊爾 埃蒂 緹拉兒 營業時間 營業時間 下午 星期日 15點~</description>
+        <description>最後更新：2020/05/04 雜貨店 小玩意兒 General Store / Knick Knacks GenStore 地理 萬物鎮東 雜貨店 劇情發展 05 雜貨店 涅萊爾 埃蒂 緹拉兒 營業時間 營業時間 下午 星期日 15點~</description>
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Building/20700.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
+          
+            
+              <category>商店</category>
+            
+          
+            
+              <category>耕作</category>
+            
           
             
               <category>作物</category>
@@ -411,50 +543,6 @@
           
             
               <category>MOD</category>
-            
-          
-        
-        
-          
-            
-              <category>哆啦A夢</category>
-            
-          
-            
-              <category>商店</category>
-            
-          
-        
-        
-          
-            
-              <category>哆啦A夢牧場物語</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>【哆啦A夢牧場物語】作物播種與收成的品質計算</title>
-        <link>https://ilyusha71.github.io/posts/doraemon-story-crop-part1/</link>
-        <pubDate>Fri, 03 Apr 2020 16:25:02 +0800</pubDate>
-        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
-        <atom:modified>Fri, 03 Apr 2020 16:25:02 +0800</atom:modified>
-        <guid>https://ilyusha71.github.io/posts/doraemon-story-crop-part1/</guid>
-        <description>相關分析 【哆啦A夢牧場物語】作物播種與收成的品質計算 【哆啦A夢牧場物語】肥料對作物的品質影響 【哆啦A夢牧場物語】作物的成長過程與相關計算 作物</description>
-        
-        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
-        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301051200.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>MOD</category>
-            
-          
-            
-              <category>作物</category>
             
           
         
@@ -485,6 +573,82 @@
         
         <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
         <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_301001000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>MOD</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>耕作與作物MOD</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-mod-crop/</link>
+        <pubDate>Sat, 28 Mar 2020 17:25:02 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 28 Mar 2020 17:25:02 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-mod-crop/</guid>
+        <description>最後更新：2020/04/29 作物MOD資料庫 作物資料檔：CropData.text 作物資料類：CCropData 作物資料結構：SCropD</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_1001000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>MOD</category>
+            
+          
+            
+              <category>作物</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>物品MOD</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-mod-item/</link>
+        <pubDate>Thu, 26 Mar 2020 17:25:02 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Thu, 26 Mar 2020 17:25:02 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-mod-item/</guid>
+        <description>最後更新：2020/04/29 定義 物品模板類： 物品模板類：ItemModel @0200056E 品質等級：ItemModel.Quality : int @17000837 品質等級 1 2</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_1001000.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
