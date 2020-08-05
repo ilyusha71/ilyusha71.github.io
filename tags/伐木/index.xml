@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>伐木 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
+    <link>https://ilyusha71.github.io/tags/%E4%BC%90%E6%9C%A8/</link>
+    <description>Recent content in 伐木 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 02 May 2020 18:00:44 +0800</lastBuildDate>
+    
+        <atom:link href="https://ilyusha71.github.io/tags/%E4%BC%90%E6%9C%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>野外資訊</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-live-wild/</link>
+        <pubDate>Sat, 02 May 2020 18:00:44 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Sat, 02 May 2020 18:00:44 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-live-wild/</guid>
+        <description>採石 採石需使用槌子。 採石的對象分為石頭。 石頭分為小石頭、岩石與巨岩三種。 石頭的主要參數是HP。 HP的大小相當於石頭的厚度，HP越高的石頭所需</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_1001040.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>伐木</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

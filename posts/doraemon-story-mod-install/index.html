@@ -1693,7 +1693,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年04月02日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;6&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">👩🏿‍🚀&nbsp;伊琉沙 AKA 哇咔咔</span>
   
@@ -1725,6 +1725,12 @@
         <li><a href="#第一類mod整合的assembly-csharpdll">第一類MOD：整合的Assembly-CSharp.dll</a></li>
         <li><a href="#第二類mod單獨的dll檔">第二類MOD：單獨的.dll檔</a></li>
         <li><a href="#第三類mod壓縮檔帶有dll檔與json文件">第三類MOD：壓縮檔帶有dll檔與json文件</a></li>
+      </ul>
+    </li>
+    <li><a href="#mod-1">MOD</a>
+      <ul>
+        <li><a href="#調用方法">調用方法</a></li>
+        <li><a href="#商店模板">商店模板</a></li>
       </ul>
     </li>
   </ul>
@@ -1840,6 +1846,107 @@
 <li><a href="https://mod.3dmgame.com/mod/146203">减少钓鱼的等待时间</a> by <u><em><strong>a_nderw</strong></em></u></li>
 <li><a href="https://mod.3dmgame.com/mod/146222">用双击快速存取物品</a> by <u><em><strong>a_nderw</strong></em></u></li>
 <li><a href="https://mod.3dmgame.com/mod/146238">午睡回复更多的体力</a> by <u><em><strong>a_nderw</strong></em></u></li>
+</ul>
+<h2 id="mod-1">MOD</h2>
+<ul>
+<li>
+<p>商店集成：<code>ShopMasterCollection</code></p>
+<ul>
+<li>
+<p>取得<code>展示</code>在<code>小雞商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllDisplayChickenShopDatas() : ShopMasterModel[] @06002BD9</code></p>
+</li>
+<li>
+<p>取得<code>非展示</code>在<code>小雞商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllNotDisplayChickenShopDatas() : ShopMasterModel[] @06002BDA</code></p>
+</li>
+<li>
+<p>取得<code>建築商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllBuildingShopDatas() : BuildingShopMasterModel[] @06002BE0</code></p>
+</li>
+<li>
+<p>取得<code>家具商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllFurnitureShopDatas() : FurnitureShopMasterModel[] @06002BE1</code></p>
+</li>
+<li>
+<p>取得<code>家具商店</code>的資料：<br><code>ShopMasterCollection.GetFurnitureShopDatas(bool) : FurnitureShopMasterModel[] @06002BE2</code></p>
+</li>
+<li>
+<p>取得<code>資材商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllMaterialShopDatas() : ShopMasterModel[] @06002BE3</code></p>
+</li>
+<li>
+<p>取得<code>展示</code>在<code>動物商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllDisplayCattleAndSheepShopDatas() : ShopMasterModel[] @06002BDB</code></p>
+</li>
+<li>
+<p>取得<code>非展示</code>在<code>動物商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllNotDisplayCattleAndSheepShopDatas() : ShopMasterModel[] @06002BDC</code></p>
+</li>
+<li>
+<p>取得<code>雜貨店</code>的所有資料：<br><code>ShopMasterCollection.GetAllVarietyShopDatas() : ShopMasterModel[] @06002BEA</code></p>
+</li>
+<li>
+<p>取得<code>雜貨店</code>的<code>首年販售</code>資料：<br><code>ShopMasterCollection.GetFirstYearVarietyShopDatas() : ShopMasterModel[] @06002BEB</code></p>
+</li>
+<li>
+<p>取得<code>醫院</code>的<code>日常販售</code>資料：<br><code>ShopMasterCollection.GetDailySaleHospitalShopDatas() : Dictionary&lt;int, List&lt;HospitalShopMasterModel&gt;&gt; @06002BEE</code></p>
+</li>
+<li>
+<p>取得<code>醫院</code>的<code>指定</code>資料：<br><code>ShopMasterCollection.GetHospitalShopData(int) : HospitalShopMasterModel @06002BEF</code></p>
+</li>
+<li>
+<p>取得<code>醫院</code>的<code>非日常販售</code>資料：<br><code>ShopMasterCollection.GetNotDailySaleHospitalShopDatas() : HospitalShopMasterModel[] @06002BED</code></p>
+</li>
+<li>
+<p>取得<code>升級工具商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllUpgradeToolShopDatas() : UpgradeToolShopMasterModel[] @06002BDD</code></p>
+</li>
+<li>
+<p>取得<code>礦石商店</code>的資料：<br><code>ShopMasterCollection.GetMineralShopDatas(int) : ShopMasterModel[] @06002BDE</code></p>
+</li>
+<li>
+<p>取得<code>機器商店</code>的所有資料：<br><code>ShopMasterCollection.GetAllMakerShopDatas() : MakerShopMasterModel[] @06002BDF</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="調用方法">調用方法</h3>
+<ul>
+<li>增加<a href="../doraemon-story-shop-21200-cafe-delish">料理店</a>商店介面的響應方法：<br><code>FarmWorkState.AddCookingShopResponse(ResponseModel, NpcModel) : void @06001358</code>
+<ul>
+<li>更新<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%B2%A9%E5%94%AE%E8%B3%87%E6%96%99">料理店</a>商店資料：<br><code>FarmModel.UpdateRestaurantShopData(TimeModel) : void @06002E1A</code></li>
+<li>取得料理店<a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a>商品資料：<br><code>FarmModel.GetRestaurantShopCookingRecipeItems() : ShopItemDataModel[] @06002E1B</code></li>
+<li>取得料理店<a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a>商品資料：<br><code>FarmModel.GetRestaurantShopDishItems() : ShopItemDataModel[] @06002E1C</code></li>
+<li>取得料理店<a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a>商品資料：<br><code>FarmModel.GetRestaurantShopCropItems() : ShopItemDataModel[] @06002E1D</code></li>
+<li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a>商品資料：<br><code>FarmWorkState.GetCookingToolShopItemDatas() : ShopItemDataModel[] @06001359</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="商店模板">商店模板</h3>
+<ul>
+<li>料理店商店主模板類：<code>RestaurantShopMasterModel</code>
+<ul>
+<li>取得<code>料理店</code>的<code>商店主模板</code>資料：<br><code>ShopMasterCollection.GetRestaurantShopData(int) : RestaurantShopMasterModel @06002BE8</code></li>
+<li>取得<code>特定季節</code>的<a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a>商店資料：<br><code>ShopMasterCollection.GetGroupedBySeasonCookingRecipeShopDatas(int) : RestaurantShopMasterModel[] @06002BE4</code></li>
+<li>取得<code>特定季節</code>的<a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a>商店資料：<br><code>ShopMasterCollection.GetGroupedBySeasonDishShopDatas(int) : RestaurantShopMasterModel[] @06002BE5</code></li>
+<li>取得<code>特定季節</code>的<a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a>商店資料：<br><code>ShopMasterCollection.GetGroupedBySeasonCropShopDatas(int) : RestaurantShopMasterModel[] @06002BE6</code></li>
+<li>取得<a href="../doraemon-story-shop-21200-cafe-delish/#%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7">調理器具</a>的所有資料：<br><code>ShopMasterCollection.GetAllCookingToolShopDatas() : RestaurantShopMasterModel[] @06002BE7</code></li>
+</ul>
+</li>
+<li>料理店商店資料模板類：<code>RestaurantShopDataModel</code>
+<ul>
+<li>更新商店資料：<br><code>RestaurantShopDataModel.UpdateShopDatas(TimeModel) : void @060032AE</code>
+<ul>
+<li>更新<a href="../doraemon-story-shop-21200-cafe-delish-recipes">食譜</a>商品資料：<br><code>RestaurantShopDataModel.UpdateCookingRecipeShopItemDatas(bool, int) : void @060032B0</code></li>
+<li>更新<a href="../doraemon-story-shop-21200-cafe-delish-meals">料理</a>商品資料：<br><code>RestaurantShopDataModel.UpdateDishShopItemDatas(bool, int) : void @060032B1</code></li>
+<li>更新<a href="../doraemon-story-shop-21200-cafe-delish-produce">農產品</a>商品資料：<br><code>RestaurantShopDataModel.UpdateCropShopItemDatas(bool, int) : void @060032B2</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>取得<code>釣具店</code>的所有資料：<br><code>ShopMasterCollection.GetAllFishingTackleShopDatas() : ShopMasterModel[] @06002BEC</code></p>
+</li>
+<li>
+<p>取得<code>克魯波克魯小店</code>的所有資料：<br><code>ShopMasterCollection.GetAllKorobokkurShopDatas() : ShopMasterModel[] @06002BE9</code></p>
+</li>
 </ul>
 
     </article>

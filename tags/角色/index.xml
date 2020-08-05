@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>角色 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</title>
+    <link>https://ilyusha71.github.io/tags/%E8%A7%92%E8%89%B2/</link>
+    <description>Recent content in 角色 on 哇咔咔逗比遊戲實驗室 Wakaka Dubi Game Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</managingEditor>
+    <webMaster>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 24 Apr 2020 14:26:33 +0800</lastBuildDate>
+    
+        <atom:link href="https://ilyusha71.github.io/tags/%E8%A7%92%E8%89%B2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>角色喜好物</title>
+        <link>https://ilyusha71.github.io/posts/doraemon-story-character/</link>
+        <pubDate>Fri, 24 Apr 2020 14:26:33 +0800</pubDate>
+        <author>ilyusha71@gmail.com (伊琉沙 AKA 哇咔咔)</author>
+        <atom:modified>Fri, 24 Apr 2020 14:26:33 +0800</atom:modified>
+        <guid>https://ilyusha71.github.io/posts/doraemon-story-character/</guid>
+        <description>角色ID 角色名稱 喜歡😊 最愛😍 討厭🤢 100 大雄 蘭奇家 角色ID 角色名稱 喜歡😊 最愛😍 討厭🤢 105 蘭奇 筑前煮 馬鈴薯 向日葵 乾草 天婦羅 雜草 106 帕絲琪 秋季沙拉 撫子花</description>
+        
+        <dc:creator>伊琉沙 AKA 哇咔咔</dc:creator>
+        <media:content url="https://ilyusha71.github.io/images/post/Season_of_Story/Sprite/icon_201173001.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>角色</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢</category>
+            
+          
+        
+        
+          
+            
+              <category>哆啦A夢牧場物語</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
